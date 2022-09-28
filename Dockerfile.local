@@ -34,6 +34,8 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log && \
 # when we change our application's dependencies:
 COPY package.json /tmp/package.json
 COPY yarn.lock /tmp/yarn.lock
+COPY .npmrc /tmp/.npmrc
+
 WORKDIR /tmp
 RUN ["yarn", "install"]
 
