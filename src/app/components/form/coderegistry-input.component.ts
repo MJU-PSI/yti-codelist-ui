@@ -5,7 +5,7 @@ import { CodeRegistry } from '../../entities/code-registry';
 import { DataService } from '../../services/data.service';
 import { TranslateService } from '@ngx-translate/core';
 import { LanguageService } from '../../services/language.service';
-import { Options } from '@vrk-yti/yti-common-ui';
+import { Options } from '@goraresult/yti-common-ui';
 
 @Component({
   selector: 'app-registry-input',

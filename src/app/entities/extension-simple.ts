@@ -2,7 +2,7 @@ import { formatDate, formatDateTime, formatDisplayDateTime, parseDate, parseDate
 import { Moment } from 'moment';
 import { ExtensionSimpleType } from '../services/api-schema';
 import { PropertyType } from './property-type';
-import { Location, Localizable, Status, hasLocalization, contains, restrictedStatuses, Localizer } from '@vrk-yti/yti-common-ui';
+import { Location, Localizable, Status, hasLocalization, contains, restrictedStatuses, Localizer } from '@goraresult/yti-common-ui';
 
 export class ExtensionSimple {
 

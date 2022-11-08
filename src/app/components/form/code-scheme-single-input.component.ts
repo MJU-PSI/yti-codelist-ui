@@ -6,7 +6,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { CodeScheme } from '../../entities/code-scheme';
 import { LanguageService } from '../../services/language.service';
 import { SearchLinkedCodeSchemeModalService } from './search-linked-code-scheme-modal.component';
-import { ignoreModalClose } from '@vrk-yti/yti-common-ui';
+import { ignoreModalClose } from '@goraresult/yti-common-ui';
 
 function addToControl<T>(control: FormControl, item: T) {
 

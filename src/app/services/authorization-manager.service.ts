@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { EditableEntity } from '../entities/editable-entity';
 import { CodeRegistry } from '../entities/code-registry';
 import {CodeScheme} from '../entities/code-scheme';
-import { UserService } from '@vrk-yti/yti-common-ui';
+import { UserService } from '@goraresult/yti-common-ui';
 import { Organization } from '../entities/organization';
 
 @Injectable()

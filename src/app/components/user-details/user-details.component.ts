@@ -6,7 +6,7 @@ import { BehaviorSubject } from 'rxjs';
 import { MessagingService } from '../../services/messaging-service';
 import { ConfigurationService } from '../../services/configuration.service';
 import { NgbNav, NgbNavChangeEvent } from '@ng-bootstrap/ng-bootstrap';
-import { UserService } from '@vrk-yti/yti-common-ui';
+import { UserService } from '@goraresult/yti-common-ui';
 
 @Component({
   selector: 'app-user-details',

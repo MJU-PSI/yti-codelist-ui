@@ -3,7 +3,7 @@ import { EditableService } from '../../services/editable.service';
 import { ControlValueAccessor, NgControl } from '@angular/forms';
 import { LanguageService } from '../../services/language.service';
 import { CodePlain } from '../../entities/code-simple';
-import { Localizable } from '@vrk-yti/yti-common-ui';
+import { Localizable } from '@goraresult/yti-common-ui';
 
 @Component({
   selector: 'app-localizable-textarea-with-language-indicator-for-all-languages',

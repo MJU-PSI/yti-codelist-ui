@@ -1,4 +1,4 @@
-import { Localizable } from '@vrk-yti/yti-common-ui';
+import { Localizable } from '@goraresult/yti-common-ui';
 import { InfoDomainType } from '../services/api-schema';
 
 export class InfoDomain {

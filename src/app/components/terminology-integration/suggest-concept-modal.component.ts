@@ -4,7 +4,7 @@ import { EditableService } from '../../services/editable.service';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { LanguageService } from '../../services/language.service';
 import { TranslateService } from '@ngx-translate/core';
-import { Localizable, ModalService } from '@vrk-yti/yti-common-ui';
+import { Localizable, ModalService } from '@goraresult/yti-common-ui';
 
 @Component({
   selector: 'app-suggest-concept-modal',

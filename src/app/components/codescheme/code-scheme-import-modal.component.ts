@@ -6,7 +6,7 @@ import { CodeRegistry } from '../../entities/code-registry';
 import { Router } from '@angular/router';
 import { CodeListErrorModalService } from '../common/error-modal.service';
 import { CodeScheme } from '../../entities/code-scheme';
-import { ModalService } from '@vrk-yti/yti-common-ui';
+import { ModalService } from '@goraresult/yti-common-ui';
 
 @Component({
   selector: 'app-code-scheme-import-modal',

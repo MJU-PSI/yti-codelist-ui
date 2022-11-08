@@ -26,9 +26,9 @@
     "@angular/platform-browser-dynamic": "^12.1.1",
     "@angular/router": "^12.1.1",
     "@fortawesome/fontawesome-free-webfonts": "^1.0.9",
+    "@goraresult/yti-common-ui": "0.0.1-alpha-20221107.gcaac578.gora-dev",
     "@ng-bootstrap/ng-bootstrap": "^10.0.0",
     "@ngx-translate/core": "^13.0.0",
-    "@vrk-yti/yti-common-ui": "0.0.1-alpha-20210928.g2ff813c.feature-angular-library",
     "bootstrap": "^4.5.0",
     "material-design-icons": "^3.0.1",
     "moment": "^2.29.2",
@@ -63,6 +63,6 @@
     "**/@types/node": "~8.9.4"
   },
   "engines": {
-    "node": ">=16.3.1 <17.0.0"
+    "node": ">=14.18.1 <17.0.0"
   }
 }

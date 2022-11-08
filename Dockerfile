@@ -46,7 +46,7 @@ WORKDIR /usr/src/yti-codelist-ui/
 COPY . .
 RUN \
       echo "$VERSION" > src/version.txt && \
-      sed -i 's#"@vrk-yti/yti-common-ui": "[^"]*"#"\@vrk-yti/yti-common-ui": "file://usr/src/yti-common-ui/dist/yti-common-ui/"#' package.json && \
+      sed -i 's#"@goraresult/yti-common-ui": "[^"]*"#"\@goraresult/yti-common-ui": "file://usr/src/yti-common-ui/dist/yti-common-ui/"#' package.json && \
       if [ -s "/tmp/_npmrc" ]; then cp /tmp/_npmrc .npmrc; fi && \
       locktt --registry="`npm get registry`" && \
       yarn `test "$VERBOSE" = "true" && echo "--verbose"` install && \

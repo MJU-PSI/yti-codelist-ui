@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Language, LanguageService } from '../../services/language.service';
 import { DataService } from '../../services/data.service';
 import { ConfigurationService } from '../../services/configuration.service';
-import { LoginModalService, UserService } from '@vrk-yti/yti-common-ui';
+import { LoginModalService, UserService } from '@goraresult/yti-common-ui';
 
 @Component({
   selector: 'app-navigation-bar',
@@ -35,7 +35,7 @@ export class NavigationBarComponent {
   }
 
   logIn() {
-    this.loginModal.open();
+    this.userService.login();
   }
 
   logOut() {

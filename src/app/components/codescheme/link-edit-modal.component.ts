@@ -4,7 +4,7 @@ import { ExternalReference } from '../../entities/external-reference';
 import { EditableService } from '../../services/editable.service';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { CodePlain } from '../../entities/code-simple';
-import { httpOrHttpsUrlRegex, ModalService } from '@vrk-yti/yti-common-ui';
+import { httpOrHttpsUrlRegex, ModalService } from '@goraresult/yti-common-ui';
 
 @Component({
   selector: 'app-link-edit-modal',

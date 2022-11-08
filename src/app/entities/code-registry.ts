@@ -4,7 +4,7 @@ import { CodeRegistryType } from '../services/api-schema';
 import { EditableEntity } from './editable-entity';
 import { formatDateTime, formatDisplayDateTime, parseDateTime } from '../utils/date';
 import { Moment } from 'moment';
-import { Location, Localizable, hasLocalization } from '@vrk-yti/yti-common-ui';
+import { Location, Localizable, hasLocalization } from '@goraresult/yti-common-ui';
 import { getAllOrganizationIds, getMainOrganizations } from './entity-utils';
 
 export class CodeRegistry extends AbstractResource implements EditableEntity {

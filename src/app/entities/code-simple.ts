@@ -1,6 +1,6 @@
 import { AbstractResource } from './abstract-resource';
 import { CodePlainType } from '../services/api-schema';
-import { Status } from '@vrk-yti/yti-common-ui';
+import { Status } from '@goraresult/yti-common-ui';
 
 export class CodePlain extends AbstractResource {
 

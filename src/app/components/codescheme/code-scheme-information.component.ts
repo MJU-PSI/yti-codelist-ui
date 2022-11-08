@@ -15,7 +15,7 @@ import { ConfigurationService } from '../../services/configuration.service';
 import { nonEmptyLocalizableValidator } from '../../utils/validators';
 import { UserSimple } from '../../entities/user-simple';
 import { AuthorizationManager } from '../../services/authorization-manager.service';
-import { comparingLocalizable, ignoreModalClose, requiredList, UserService } from '@vrk-yti/yti-common-ui';
+import { comparingLocalizable, ignoreModalClose, requiredList, UserService } from '@goraresult/yti-common-ui';
 
 @Component({
   selector: 'app-code-scheme-information',

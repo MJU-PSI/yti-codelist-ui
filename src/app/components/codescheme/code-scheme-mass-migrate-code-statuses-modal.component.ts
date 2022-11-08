@@ -9,7 +9,7 @@ import { CodeScheme } from '../../entities/code-scheme';
 import { TranslateService } from '@ngx-translate/core';
 import { BehaviorSubject, combineLatest } from 'rxjs';
 import { CodeListConfirmationModalService } from '../../components/common/confirmation-modal.service';
-import { AlertModalService, allowedTargetStatuses, changeToRestrictedStatus, FilterOptions, ignoreModalClose, ModalService, selectableStatuses, Status, UserService } from '@vrk-yti/yti-common-ui';
+import { AlertModalService, allowedTargetStatuses, changeToRestrictedStatus, FilterOptions, ignoreModalClose, ModalService, selectableStatuses, Status, UserService } from '@goraresult/yti-common-ui';
 
 @Component({
   selector: 'app-code-scheme-mass-migrate-code-statuses-modal',

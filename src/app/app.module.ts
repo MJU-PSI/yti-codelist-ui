@@ -130,10 +130,11 @@ import {
 import enPo from 'raw-loader!po-loader?format=mf!../../po/en.po';
 import svPo from 'raw-loader!po-loader?format=mf!../../po/sv.po';
 import fiPo from 'raw-loader!po-loader?format=mf!../../po/fi.po';
-import fiCommonPo from 'raw-loader!po-loader?format=mf!../../node_modules/@vrk-yti/yti-common-ui/po/fi.po';
-import svCommonPo from 'raw-loader!po-loader?format=mf!../../node_modules/@vrk-yti/yti-common-ui/po/sv.po';
-import enCommonPo from 'raw-loader!po-loader?format=mf!../../node_modules/@vrk-yti/yti-common-ui/po/en.po';
-import { AUTHENTICATED_USER_ENDPOINT, LOCALIZER, ModalService, YtiCommonModule } from '@vrk-yti/yti-common-ui';
+import fiCommonPo from 'raw-loader!po-loader?format=mf!../../node_modules/@goraresult/yti-common-ui/po/fi.po';
+import svCommonPo from 'raw-loader!po-loader?format=mf!../../node_modules/@goraresult/yti-common-ui/po/sv.po';
+import enCommonPo from 'raw-loader!po-loader?format=mf!../../node_modules/@goraresult/yti-common-ui/po/en.po';
+import { AUTHENTICATED_USER_ENDPOINT, LOCALIZER, ModalService, YtiCommonModule } from '@goraresult/yti-common-ui';
+import { environment } from '../environments/environment.prod';
 
 function removeEmptyValues(obj: {}) {
 
@@ -332,12 +333,12 @@ export function createMissingTranslationHandler(): MissingTranslationHandler {
     SuggestConceptModalComponent
   ],
   imports: [
-    HttpClientModule,
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterModule.forRoot(appRoutes, { relativeLinkResolution: 'legacy' }),
+    HttpClientModule,
     NgbModule,
+    RouterModule.forRoot(appRoutes, { relativeLinkResolution: 'legacy' }),
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -345,7 +346,11 @@ export function createMissingTranslationHandler(): MissingTranslationHandler {
       },
       missingTranslationHandler: { provide: MissingTranslationHandler, useFactory: createMissingTranslationHandler },
     }),
-    YtiCommonModule,
+    YtiCommonModule.forRoot({
+      url: environment.url,
+      realm: environment.realm,
+      clientId: environment.clientId
+    }),
     ClipboardModule,
     ScrollingModule
     // ,SelectModule
@@ -395,4 +400,16 @@ export class AppModule {
       }
     });
   }
+}
+
+export function initializeApp2() {
+  return (): Promise<any> => {
+    return new Promise((resolve, reject) => {
+      console.log(`initializeApp2 called`);
+      setTimeout(() => {
+        console.log(`initializeApp2 Finished`);
+        resolve(true);
+      }, 10000);
+    });
+  };
 }

@@ -12,7 +12,7 @@ import { LocationService } from '../../services/location.service';
 import { flatMap, map, tap } from 'rxjs/operators';
 import { PropertyType } from '../../entities/property-type';
 import { CodeListConfirmationModalService } from '../common/confirmation-modal.service';
-import { contains, restrictedStatuses, Status } from '@vrk-yti/yti-common-ui';
+import { contains, restrictedStatuses, Status } from '@goraresult/yti-common-ui';
 
 @Component({
   selector: 'app-extension-create',

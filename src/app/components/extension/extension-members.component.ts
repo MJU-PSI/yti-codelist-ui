@@ -3,7 +3,7 @@ import { Member } from '../../entities/member';
 import { Extension } from '../../entities/extension';
 import { MemberSimple } from '../../entities/member-simple';
 import { Subscription } from 'rxjs';
-import { contains, localizableMatches } from '@vrk-yti/yti-common-ui';
+import { contains, localizableMatches } from '@goraresult/yti-common-ui';
 
 @Component({
   selector: 'app-extension-members',

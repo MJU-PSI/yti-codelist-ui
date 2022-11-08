@@ -7,7 +7,7 @@ import { BehaviorSubject, concat, Observable } from 'rxjs';
 import { debounceTime, skip, take } from 'rxjs/operators';
 import { CodeScheme } from '../../entities/code-scheme';
 import { CodeListErrorModalService } from '../common/error-modal.service';
-import { anyMatching, ModalService } from '@vrk-yti/yti-common-ui';
+import { anyMatching, ModalService } from '@goraresult/yti-common-ui';
 
 function debounceSearch(search$: Observable<string>): Observable<string> {
   const initialSearch = search$.pipe(take(1));

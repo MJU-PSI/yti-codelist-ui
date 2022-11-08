@@ -7,7 +7,7 @@ import { ConfigurationService } from '../../services/configuration.service';
 import { BehaviorSubject } from 'rxjs';
 import { MessagingService } from '../../services/messaging-service';
 import { NgbNav } from '@ng-bootstrap/ng-bootstrap';
-import { comparingLocalizable, comparingPrimitive, ignoreModalClose, UserService } from '@vrk-yti/yti-common-ui';
+import { comparingLocalizable, comparingPrimitive, ignoreModalClose, UserService } from '@goraresult/yti-common-ui';
 
 @Component({
   selector: 'app-user-details-subscriptions',

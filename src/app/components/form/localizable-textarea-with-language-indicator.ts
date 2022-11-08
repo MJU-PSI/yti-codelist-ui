@@ -2,7 +2,7 @@ import { Component, Input, Optional, Self } from '@angular/core';
 import { EditableService } from '../../services/editable.service';
 import { LanguageService } from '../../services/language.service';
 import { ControlValueAccessor, NgControl } from '@angular/forms';
-import { Localizable } from '@vrk-yti/yti-common-ui';
+import { Localizable } from '@goraresult/yti-common-ui';
 
 @Component({
   selector: 'app-localizable-textarea-with-language-indicator',

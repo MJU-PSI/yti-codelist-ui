@@ -1,5 +1,5 @@
 import { Component, Input, OnChanges, SimpleChange, SimpleChanges } from '@angular/core';
-import { contains, localizableMatches } from '@vrk-yti/yti-common-ui';
+import { contains, localizableMatches } from '@goraresult/yti-common-ui';
 import { CodeScheme } from '../../entities/code-scheme';
 import { CodePlain } from '../../entities/code-simple';
 

@@ -10,7 +10,7 @@ import { LanguageService } from '../../services/language.service';
 import { MemberSimple } from '../../entities/member-simple';
 import { Observable } from 'rxjs';
 import { CodeScheme } from '../../entities/code-scheme';
-import { ignoreModalClose } from '@vrk-yti/yti-common-ui';
+import { ignoreModalClose } from '@goraresult/yti-common-ui';
 
 function addToControl<T>(control: FormControl, item: T) {
 

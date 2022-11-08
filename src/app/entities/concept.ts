@@ -1,4 +1,4 @@
-import { labelNameToResourceIdIdentifier, Localizable, Localizer } from '@vrk-yti/yti-common-ui';
+import { labelNameToResourceIdIdentifier, Localizable, Localizer } from '@goraresult/yti-common-ui';
 import { ConceptType } from '../services/api-schema';
 
 export class Concept {

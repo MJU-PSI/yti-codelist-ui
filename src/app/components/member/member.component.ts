@@ -17,7 +17,7 @@ import { MemberValueType } from '../../services/api-schema';
 import { MemberValue } from '../../entities/member-value';
 import { ValueType } from '../../entities/value-type';
 import { CodeScheme } from '../../entities/code-scheme';
-import { ignoreModalClose, UserService } from '@vrk-yti/yti-common-ui';
+import { ignoreModalClose, UserService } from '@goraresult/yti-common-ui';
 
 @Component({
   selector: 'app-member',

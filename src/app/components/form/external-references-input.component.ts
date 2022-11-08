@@ -13,7 +13,7 @@ import { PropertyType } from '../../entities/property-type';
 import { LinkCreateModalService } from '../codescheme/link-create-modal.component';
 import { Subscription } from 'rxjs';
 import { CodeScheme } from '../../entities/code-scheme';
-import { ignoreModalClose, remove } from '@vrk-yti/yti-common-ui';
+import { ignoreModalClose, remove } from '@goraresult/yti-common-ui';
 
 @Component({
   selector: 'app-external-references-input',

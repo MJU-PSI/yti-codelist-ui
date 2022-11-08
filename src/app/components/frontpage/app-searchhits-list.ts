@@ -4,7 +4,7 @@ import { ConfigurationService } from '../../services/configuration.service';
 import { Router } from '@angular/router';
 import { LanguageService } from '../../services/language.service';
 import { CodeScheme } from '../../entities/code-scheme';
-import { Localizable } from '@vrk-yti/yti-common-ui';
+import { Localizable } from '@goraresult/yti-common-ui';
 
 @Component({
   selector: 'app-searchhits-list',

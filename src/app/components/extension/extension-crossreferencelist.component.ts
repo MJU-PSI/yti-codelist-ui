@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
 import { LanguageService } from '../../services/language.service';
 import { TranslateService } from '@ngx-translate/core';
 import { ConfigurationService } from '../../services/configuration.service';
-import { contains, localizableMatches } from '@vrk-yti/yti-common-ui';
+import { contains, localizableMatches } from '@goraresult/yti-common-ui';
 
 @Component({
   selector: 'app-extension-crossreferencelist',

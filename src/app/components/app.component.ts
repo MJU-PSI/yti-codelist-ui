@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { LocationService } from '../services/location.service';
 import { Router } from '@angular/router';
 import { Subject } from 'rxjs';
-import { Location } from '@vrk-yti/yti-common-ui';
+import { Location } from '@goraresult/yti-common-ui';
 
 @Component({
   selector: 'app-root',
