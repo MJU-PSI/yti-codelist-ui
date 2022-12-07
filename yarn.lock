@@ -1254,10 +1254,10 @@
   resolved "https://registry.yarnpkg.com/@gar/promisify/-/promisify-1.1.2.tgz#30aa825f11d438671d585bd44e7fd564535fc210"
   integrity sha512-82cpyJyKRoQoRi+14ibCeGPu0CwypgtBAdBhq1WfvagpCZNKqwXbKwXllYSMG91DhmG4jt9gN8eP6lGOtozuaw==
 
-"@goraresult/yti-common-ui@0.0.1-alpha-20221107.gcaac578.gora-dev":
-  version "0.0.1-alpha-20221107.gcaac578.gora-dev"
-  resolved "https://npm.pkg.github.com/download/@goraresult/yti-common-ui/0.0.1-alpha-20221107.gcaac578.gora-dev/1767ba763d88db7ffd5fe9a4949a2ebd144235c1#1767ba763d88db7ffd5fe9a4949a2ebd144235c1"
-  integrity sha512-ID94VhXOuDgRejM5s8ebCG6+kDOkFiNcDfBodNoqk/0rEGJLFWOPd4atMFrHATlbfUddN6VKRb/ogjoiwHkbQA==
+"@goraresult/yti-common-ui@0.0.2-alpha-20221206.gd829b57.gora-dev":
+  version "0.0.2-alpha-20221206.gd829b57.gora-dev"
+  resolved "https://npm.pkg.github.com/download/@goraresult/yti-common-ui/0.0.2-alpha-20221206.gd829b57.gora-dev/56a3dcaa843def96fb86b896f8a0e2c57d7d233f#56a3dcaa843def96fb86b896f8a0e2c57d7d233f"
+  integrity sha512-fF91JMx9ALSahBreyz9NFGs5X50LNV+IO5kBXA6jbbwXYftofZPlo8aNv1pzTLI3V9fzWKrl/wJVAnlwmTMbog==
   dependencies:
     keycloak-angular "^8.1.0"
     keycloak-js "^12.0.2"

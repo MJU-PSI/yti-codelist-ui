@@ -134,7 +134,6 @@ import fiCommonPo from 'raw-loader!po-loader?format=mf!../../node_modules/@gorar
 import svCommonPo from 'raw-loader!po-loader?format=mf!../../node_modules/@goraresult/yti-common-ui/po/sv.po';
 import enCommonPo from 'raw-loader!po-loader?format=mf!../../node_modules/@goraresult/yti-common-ui/po/en.po';
 import { AUTHENTICATED_USER_ENDPOINT, LOCALIZER, ModalService, YtiCommonModule } from '@goraresult/yti-common-ui';
-import { environment } from '../environments/environment.prod';
 
 function removeEmptyValues(obj: {}) {
 
@@ -346,11 +345,7 @@ export function createMissingTranslationHandler(): MissingTranslationHandler {
       },
       missingTranslationHandler: { provide: MissingTranslationHandler, useFactory: createMissingTranslationHandler },
     }),
-    YtiCommonModule.forRoot({
-      url: environment.url,
-      realm: environment.realm,
-      clientId: environment.clientId
-    }),
+    YtiCommonModule,
     ClipboardModule,
     ScrollingModule
     // ,SelectModule

@@ -27,6 +27,9 @@ RUN \
       # yarn 2.x should work with --registry
       npm install -g lock-treatment-tool@0.4.1
 
+# We need this to be able to overwrite config based on environment variables.
+RUN apk add jq gawk
+
 RUN   mkdir -p /usr/src/yti-codelist-ui && \
       echo -n "$NPMRC" > /tmp/_npmrc
 
@@ -86,4 +89,5 @@ COPY --from=builder /usr/src/yti-codelist-ui/dist/ ./dist/
 
 # Start web server and expose http
 EXPOSE 80
-CMD ["nginx"]
+
+ENTRYPOINT ["/app/entrypoint.sh"]
