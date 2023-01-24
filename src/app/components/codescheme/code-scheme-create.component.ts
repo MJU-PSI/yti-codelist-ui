@@ -18,7 +18,7 @@ import { flatMap, map, tap } from 'rxjs/operators';
 import { CodeListConfirmationModalService } from '../common/confirmation-modal.service';
 import { Organization } from '../../entities/organization';
 import { nonEmptyLocalizableValidator } from '../../utils/validators';
-import { contains, ignoreModalClose, requiredList, restrictedStatuses, Status, UserService } from '@goraresult/yti-common-ui';
+import { contains, ignoreModalClose, requiredList, restrictedStatuses, Status, UserService, availableLanguages } from '@goraresult/yti-common-ui';
 
 @Component({
   selector: 'app-code-scheme-create',
@@ -35,6 +35,7 @@ export class CodeSchemeCreateComponent implements OnInit {
   allLanguageCodes: CodePlain[];
   initialLanguageCodes: CodePlain[];
   originalCodeScheme: CodeScheme;
+  availableLanguages: any;
 
   codeSchemeForm = new FormGroup({
     newVersionEmpty: new FormControl('false', Validators.required),
@@ -71,6 +72,7 @@ export class CodeSchemeCreateComponent implements OnInit {
               private confirmationModalService: CodeListConfirmationModalService,
               private userService: UserService) {
 
+    this.availableLanguages = availableLanguages;
     editableService.onSave = (formValue: any) => this.save(formValue);
     editableService.cancel$.subscribe(() => this.back());
     this.editableService.edit();
@@ -170,15 +172,24 @@ export class CodeSchemeCreateComponent implements OnInit {
     if (cloning) {
       defaultLanguageCodes = originalCodeScheme ? originalCodeScheme.languageCodes : [];
     } else {
+      const languages: any[] = this.availableLanguages.map((lang: { code: any; }) => { return lang.code });
       defaultLanguageCodes = this.allLanguageCodes.filter(languageCode =>
-        codeValueMatches('fi', languageCode) ||
-        codeValueMatches('sv', languageCode) ||
-        codeValueMatches('en', languageCode)
+        defaultLanguagesMatches(languages, languageCode)
       );
     }
 
     this.codeSchemeForm.patchValue({ languageCodes: defaultLanguageCodes });
     this.initialLanguageCodes = defaultLanguageCodes;
+
+    function defaultLanguagesMatches(languages: any, code: CodePlain) {
+      let match: boolean = false;
+      languages.forEach((lang: string) => {
+        if (!match) {
+          match = codeValueMatches(lang, code)
+        }
+      });
+      return match;
+    }
 
     function codeValueMatches(languageCode: string, code: CodePlain) {
       return code.codeValue === languageCode;

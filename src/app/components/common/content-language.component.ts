@@ -1,6 +1,7 @@
 import { Component, Input, OnChanges, OnInit, SimpleChange, SimpleChanges } from '@angular/core';
 import { Language, LanguageService } from '../../services/language.service';
 import { CodePlain } from '../../entities/code-simple';
+import { availableLanguages } from '@goraresult/yti-common-ui';
 
 @Component({
   selector: 'app-content-language',
@@ -37,7 +38,7 @@ import { CodePlain } from '../../entities/code-simple';
                               [class.active]="translateStringToLanguage(allLangsCode.codeValue) === contentLanguage"
                               (click)="contentLanguage = translateStringToLanguage(allLangsCode.codeValue)">{{allLangsCode.prefLabel | translateValue:true}}</button>
                   </div>
-                  <div *ngFor="let language of languages">
+                  <div *ngFor="let language of availableLanguages">
                       <button id="{{language.code + '_content_lang_dropdown_button'}}"
                               class="dropdown-item"
                               type="button"
@@ -56,12 +57,7 @@ export class ContentLanguageComponent implements OnChanges, OnInit {
   @Input() isSomeRegistryPage = false;
   actualLanguageCodes: CodePlain[];
   allLangsCodeInitiated = false;
-
-  languages = [
-    { code: 'fi' as Language, name: 'Suomeksi (FI)' },
-    { code: 'sv' as Language, name: 'På svenska (SV)' },
-    { code: 'en' as Language, name: 'In English (EN)' },
-  ];
+  availableLanguages: any[];
 
   allLangsCode: CodePlain;
 
@@ -91,6 +87,7 @@ export class ContentLanguageComponent implements OnChanges, OnInit {
   }
 
   constructor(public languageService: LanguageService) {
+    this.availableLanguages = availableLanguages;
   }
 
   get hasCustomLanguages(): boolean {
