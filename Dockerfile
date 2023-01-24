@@ -16,9 +16,6 @@ ARG NPMRC
 # correct registry
 ARG VERBOSE
 
-# checkout a specific commit id of yti-common-ui project
-ARG COMMON_UI_COMMIT_ID=2ff813cdce4c2e913cb6226192f3757d2599a76b
-
 RUN \
       # Install tooling
       apk add --update git && \
@@ -30,30 +27,16 @@ RUN \
 # We need this to be able to overwrite config based on environment variables.
 RUN apk add jq gawk
 
-RUN   mkdir -p /usr/src/yti-codelist-ui && \
-      echo -n "$NPMRC" > /tmp/_npmrc
+# Fetch dependencies
+ADD . /tmp
+WORKDIR /tmp
+RUN echo "$NPMRC" > .npmrc && yarn install && rm -f .npmrc
 
-# build yti-common-ui
-WORKDIR /usr/src
-RUN \
-      git clone https://github.com/VRK-YTI/yti-common-ui && \
-      cd yti-common-ui && \
-      git -c advice.detachedHead=false checkout $COMMON_UI_COMMIT_ID && \
-      if [ -s "/tmp/_npmrc" ]; then cp /tmp/_npmrc .npmrc; fi && \
-      npm `test "$VERBOSE" = "true" && echo "--loglevel verbose"` install && \
-      npm run build:prod && \
-      cd ..
+# Create version.txt
+RUN echo "$VERSION" > src/version.txt
 
-# build yti-codelist-ui
-WORKDIR /usr/src/yti-codelist-ui/
-COPY . .
-RUN \
-      echo "$VERSION" > src/version.txt && \
-      sed -i 's#"@goraresult/yti-common-ui": "[^"]*"#"\@goraresult/yti-common-ui": "file://usr/src/yti-common-ui/dist/yti-common-ui/"#' package.json && \
-      if [ -s "/tmp/_npmrc" ]; then cp /tmp/_npmrc .npmrc; fi && \
-      locktt --registry="`npm get registry`" && \
-      yarn `test "$VERBOSE" = "true" && echo "--verbose"` install && \
-      yarn run build --output-hashing=all
+# Build the dist dir containing the static files
+RUN ["npm", "run", "build"]
 
 #
 # INSTALL STAGE
@@ -85,7 +68,8 @@ ADD nginx.conf /etc/nginx/nginx.conf
 
 WORKDIR /app
 
-COPY --from=builder /usr/src/yti-codelist-ui/dist/ ./dist/
+COPY --from=builder /tmp/dist ./dist
+COPY --from=builder /tmp/entrypoint.sh .
 
 # Start web server and expose http
 EXPOSE 80

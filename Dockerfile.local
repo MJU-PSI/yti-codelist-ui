@@ -3,6 +3,8 @@ FROM node:16.13.1-alpine3.14@sha256:a9b9cb880fa429b0bea899cd3b1bc081ab7277cc97e6
 
 ARG VERSION
 
+ARG NPMRC
+
 # Install git
 RUN apk add --update git
 
@@ -37,10 +39,11 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log && \
 # when we change our application's dependencies:
 COPY package.json /tmp/package.json
 COPY yarn.lock /tmp/yarn.lock
-COPY .npmrc /tmp/.npmrc
+RUN echo "$NPMRC" > /tmp/.npmrc
 
 WORKDIR /tmp
 RUN ["yarn", "install"]
+RUN rm -f .npmrc
 
 # Add the project files (works with .dockerignore to exclude node_modules, dist)
 ADD . /app
@@ -57,7 +60,7 @@ WORKDIR /app
 # Create version.txt
 RUN echo "$VERSION" > src/version.txt
 
-RUN ["npm", "run", "build", "--", "--prod", "--output-hashing=all"]
+RUN ["npm", "run", "build"]
 
 # Start web server and expose http
 EXPOSE 80

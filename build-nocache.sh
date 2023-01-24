@@ -1,4 +1,4 @@
 #!/bin/bash
 #
 #
-docker build --no-cache -f Dockerfile.local -t yti-codelist-ui .
+docker build --no-cache -f Dockerfile.local -t yti-codelist-ui . --build-arg NPMRC
