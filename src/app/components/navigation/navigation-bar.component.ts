@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Language, LanguageService } from '../../services/language.service';
 import { DataService } from '../../services/data.service';
 import { ConfigurationService } from '../../services/configuration.service';
-import { LoginModalService, UserService } from '@goraresult/yti-common-ui';
+import { LoginModalService, UserService, availableLanguages } from '@goraresult/yti-common-ui';
 
 @Component({
   selector: 'app-navigation-bar',
@@ -11,11 +11,9 @@ import { LoginModalService, UserService } from '@goraresult/yti-common-ui';
 })
 export class NavigationBarComponent {
 
-  availableLanguages = [
-    { code: 'fi' as Language, name: 'Suomeksi (FI)' },
-    { code: 'sv' as Language, name: 'På svenska (SV)' },
-    { code: 'en' as Language, name: 'In English (EN)' }
-  ];
+
+  availableLanguages: any[];
+  defaultLanguage: any;
 
   fakeableUsers: { email: string, firstName: string, lastName: string }[] = [];
 
@@ -24,6 +22,8 @@ export class NavigationBarComponent {
               private loginModal: LoginModalService,
               private dataService: DataService,
               public configurationService: ConfigurationService) {
+
+    this.availableLanguages = availableLanguages;
 
     dataService.getFakeableUsers().subscribe(users => {
       this.fakeableUsers = users;
