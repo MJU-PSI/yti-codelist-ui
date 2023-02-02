@@ -12,7 +12,7 @@ import { CodeScheme } from '../../entities/code-scheme';
 import { ConfigurationService } from '../../services/configuration.service';
 import { UserSimple } from '../../entities/user-simple';
 import { AuthorizationManager } from '../../services/authorization-manager.service';
-import { UserService } from '@goraresult/yti-common-ui';
+import { UserService } from '@mju-psi/yti-common-ui';
 
 @Component({
   selector: 'app-extension-information',

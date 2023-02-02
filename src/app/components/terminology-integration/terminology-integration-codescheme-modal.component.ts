@@ -12,7 +12,7 @@ import { CodeListConfirmationModalService } from '../common/confirmation-modal.s
 import { Code } from '../../entities/code';
 import { Meta } from '../../entities/meta';
 import { SuggestConceptModalService } from './suggest-concept-modal.component';
-import { allStatuses, comparingLocalizable, comparingPrimitive, FilterOptions, ignoreModalClose, Localizable, Localizer, ModalService, Status } from '@goraresult/yti-common-ui';
+import { allStatuses, comparingLocalizable, comparingPrimitive, FilterOptions, ignoreModalClose, Localizable, Localizer, ModalService, Status } from '@mju-psi/yti-common-ui';
 
 function debounceSearch(search$: Observable<string>): Observable<string> {
   const initialSearch = search$.pipe(take(1));

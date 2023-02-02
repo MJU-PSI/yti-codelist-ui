@@ -8,7 +8,7 @@ import { Observable, Subscription } from 'rxjs';
 import { TranslateService } from '@ngx-translate/core';
 import { CodePlain } from '../../entities/code-simple';
 import { LanguageService } from '../../services/language.service';
-import { comparingLocalizable, ignoreModalClose } from '@goraresult/yti-common-ui';
+import { comparingLocalizable, ignoreModalClose } from '@mju-psi/yti-common-ui';
 
 @Component({
   selector: 'app-languagecodes-input',

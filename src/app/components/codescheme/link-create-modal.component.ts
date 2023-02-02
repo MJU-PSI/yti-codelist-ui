@@ -10,7 +10,7 @@ import { CodeScheme } from '../../entities/code-scheme';
 import { ExternalReferenceType } from '../../services/api-schema';
 import { DataService } from '../../services/data.service';
 import { Observable } from 'rxjs';
-import { httpOrHttpsUrlRegex, ModalService } from '@goraresult/yti-common-ui';
+import { httpOrHttpsUrlRegex, ModalService } from '@mju-psi/yti-common-ui';
 
 @Component({
   selector: 'app-link-create-modal',

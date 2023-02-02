@@ -7,7 +7,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { Organization } from '../../entities/organization';
 import { SearchLinkedOrganizationModalService } from './search-linked-organization-modal.component';
 import { LanguageService } from '../../services/language.service';
-import { comparingLocalizable, ignoreModalClose } from '@goraresult/yti-common-ui';
+import { comparingLocalizable, ignoreModalClose } from '@mju-psi/yti-common-ui';
 import { getMainOrganizations } from '../../entities/entity-utils';
 
 function addToControl<T>(control: FormControl, itemToAdd: T) {

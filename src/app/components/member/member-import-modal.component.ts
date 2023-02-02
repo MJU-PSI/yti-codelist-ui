@@ -5,7 +5,7 @@ import { DataService } from '../../services/data.service';
 import { Router } from '@angular/router';
 import { CodeListErrorModalService } from '../common/error-modal.service';
 import { Extension } from '../../entities/extension';
-import { ModalService } from '@goraresult/yti-common-ui';
+import { ModalService } from '@mju-psi/yti-common-ui';
 
 @Component({
   selector: 'app-member-import-modal',

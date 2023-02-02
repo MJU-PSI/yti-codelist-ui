@@ -21,7 +21,7 @@ import { MemberValue } from '../../entities/member-value';
 import { PropertyType } from '../../entities/property-type';
 import { ValueType } from '../../entities/value-type';
 import { MemberValueValidators } from '../form/member-value-validators';
-import { comparingLocalizable, contains, ignoreModalClose, restrictedStatuses, Status } from '@goraresult/yti-common-ui';
+import { comparingLocalizable, contains, ignoreModalClose, restrictedStatuses, Status } from '@mju-psi/yti-common-ui';
 
 @Component({
   selector: 'app-code-create',

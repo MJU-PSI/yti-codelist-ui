@@ -11,7 +11,7 @@ import { LocationService } from '../../services/location.service';
 import { Organization } from '../../entities/organization';
 import { map, tap } from 'rxjs/operators';
 import { nonEmptyLocalizableValidator } from '../../utils/validators';
-import { requiredList } from '@goraresult/yti-common-ui';
+import { requiredList } from '@mju-psi/yti-common-ui';
 
 @Component({
   selector: 'app-registry-create',

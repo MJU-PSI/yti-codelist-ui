@@ -3,7 +3,7 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { ExternalReference } from '../../entities/external-reference';
 import { EditableService } from '../../services/editable.service';
 import { CodePlain } from '../../entities/code-simple';
-import { ModalService } from '@goraresult/yti-common-ui';
+import { ModalService } from '@mju-psi/yti-common-ui';
 
 @Component({
   selector: 'app-link-show-modal',

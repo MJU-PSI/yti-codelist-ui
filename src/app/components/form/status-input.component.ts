@@ -1,6 +1,6 @@
 import { Component, Input, Optional, Self } from '@angular/core';
 import { ControlValueAccessor, FormControl, NgControl } from '@angular/forms';
-import { Status } from '@goraresult/yti-common-ui';
+import { Status } from '@mju-psi/yti-common-ui';
 import { EditableService } from '../../services/editable.service';
 
 @Component({

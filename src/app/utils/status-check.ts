@@ -1,4 +1,4 @@
-import { allowedTargetStatuses, contains, restrictedStatuses, Status } from '@goraresult/yti-common-ui';
+import { allowedTargetStatuses, contains, restrictedStatuses, Status } from '@mju-psi/yti-common-ui';
 import { Code } from '../entities/code';
 import { CodeScheme } from '../entities/code-scheme';
 import { Extension } from '../entities/extension';

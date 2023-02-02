@@ -12,7 +12,7 @@ import { CodeListErrorModalService } from '../common/error-modal.service';
 import { CodeRegistry } from '../../entities/code-registry';
 import { tap } from 'rxjs/operators';
 import { TranslateService } from '@ngx-translate/core';
-import { AlertModalService, ignoreModalClose, UserService } from '@goraresult/yti-common-ui';
+import { AlertModalService, ignoreModalClose, UserService } from '@mju-psi/yti-common-ui';
 
 @Component({
   selector: 'app-code-registry',

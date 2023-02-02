@@ -15,7 +15,7 @@ import { Code } from '../../entities/code';
 import { MemberValue } from '../../entities/member-value';
 import { ValueType } from '../../entities/value-type';
 import { ConfigurationService } from '../../services/configuration.service';
-import { comparingLocalizable } from '@goraresult/yti-common-ui';
+import { comparingLocalizable } from '@mju-psi/yti-common-ui';
 
 @Component({
   selector: 'app-member-create',

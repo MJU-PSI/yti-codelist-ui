@@ -5,7 +5,7 @@ import { Extension } from '../../entities/extension';
 import { MemberValue } from '../../entities/member-value';
 import { ValueType } from '../../entities/value-type';
 import { LanguageService } from '../../services/language.service';
-import { comparingLocalizable } from '@goraresult/yti-common-ui';
+import { comparingLocalizable } from '@mju-psi/yti-common-ui';
 
 @Component({
   selector: 'app-code-extensions-input',

@@ -25,7 +25,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { ApiResponseType } from '../../services/api-schema';
 import { MessagingService } from '../../services/messaging-service';
 import { ConfigurationService } from '../../services/configuration.service';
-import { AlertModalService, comparingLocalizable, ignoreModalClose, UserService } from '@goraresult/yti-common-ui';
+import { AlertModalService, comparingLocalizable, ignoreModalClose, UserService } from '@mju-psi/yti-common-ui';
 
 @Component({
   selector: 'app-code-scheme',

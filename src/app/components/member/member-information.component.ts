@@ -17,7 +17,7 @@ import { ValueType } from '../../entities/value-type';
 import { ConfigurationService } from '../../services/configuration.service';
 import { UserSimple } from '../../entities/user-simple';
 import { AuthorizationManager } from '../../services/authorization-manager.service';
-import { comparingLocalizable, UserService } from '@goraresult/yti-common-ui';
+import { comparingLocalizable, UserService } from '@mju-psi/yti-common-ui';
 
 @Component({
   selector: 'app-member-information',

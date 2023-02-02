@@ -11,7 +11,7 @@ import { ConfigurationService } from '../../services/configuration.service';
 import { nonEmptyLocalizableValidator } from '../../utils/validators';
 import { AuthorizationManager } from '../../services/authorization-manager.service';
 import { UserSimple } from '../../entities/user-simple';
-import { requiredList, UserService } from '@goraresult/yti-common-ui';
+import { requiredList, UserService } from '@mju-psi/yti-common-ui';
 
 @Component({
   selector: 'app-code-registry-information',

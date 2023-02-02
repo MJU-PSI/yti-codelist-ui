@@ -18,7 +18,7 @@ import { flatMap, map, tap } from 'rxjs/operators';
 import { CodeListConfirmationModalService } from '../common/confirmation-modal.service';
 import { Organization } from '../../entities/organization';
 import { nonEmptyLocalizableValidator } from '../../utils/validators';
-import { contains, ignoreModalClose, requiredList, restrictedStatuses, Status, UserService, availableLanguages } from '@goraresult/yti-common-ui';
+import { contains, ignoreModalClose, requiredList, restrictedStatuses, Status, UserService, availableLanguages } from '@mju-psi/yti-common-ui';
 
 @Component({
   selector: 'app-code-scheme-create',

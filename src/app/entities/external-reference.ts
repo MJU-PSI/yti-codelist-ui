@@ -1,6 +1,6 @@
 import { PropertyType } from './property-type';
 import { ExternalReferenceType } from '../services/api-schema';
-import { comparingLocalizable, groupBy, index, labelNameToResourceIdIdentifier, Localizable, Localizer, requireDefined } from '@goraresult/yti-common-ui';
+import { comparingLocalizable, groupBy, index, labelNameToResourceIdIdentifier, Localizable, Localizer, requireDefined } from '@mju-psi/yti-common-ui';
 
 export const CCBy40LicenseLinkId = '9a25f7fc-e4be-11e7-82ab-479f4f288376';
 export const CC0LicenseLinkId = '9553aad0-e4be-11e7-81e9-1faf2d228a02';

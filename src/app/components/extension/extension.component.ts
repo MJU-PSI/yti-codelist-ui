@@ -17,7 +17,7 @@ import { MemberSimple } from '../../entities/member-simple';
 import { ConfigurationService } from '../../services/configuration.service';
 import { CodeScheme } from '../../entities/code-scheme';
 import { TranslateService } from '@ngx-translate/core';
-import { AlertModalService, ignoreModalClose, UserService } from '@goraresult/yti-common-ui';
+import { AlertModalService, ignoreModalClose, UserService } from '@mju-psi/yti-common-ui';
 
 @Component({
   selector: 'app-extension',

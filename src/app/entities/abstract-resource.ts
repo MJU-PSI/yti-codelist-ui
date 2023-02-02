@@ -1,4 +1,4 @@
-import { hasLocalization, Localizable, Localizer } from '@goraresult/yti-common-ui';
+import { hasLocalization, Localizable, Localizer } from '@mju-psi/yti-common-ui';
 import { BaseResourceType } from '../services/api-schema';
 
 export abstract class AbstractResource {

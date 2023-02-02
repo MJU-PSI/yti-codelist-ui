@@ -9,7 +9,7 @@ import { PropertyType } from '../../entities/property-type';
 import { TranslateService } from '@ngx-translate/core';
 import { BehaviorSubject } from 'rxjs';
 import { CodeScheme } from '../../entities/code-scheme';
-import { FilterOptions, ModalService } from '@goraresult/yti-common-ui';
+import { FilterOptions, ModalService } from '@mju-psi/yti-common-ui';
 
 @Component({
   selector: 'app-link-list-modal',

@@ -20,7 +20,7 @@ import { MemberValue } from '../../entities/member-value';
 import { ValueType } from '../../entities/value-type';
 import { formatDate } from '../../utils/date';
 import { NgbNav, NgbNavChangeEvent } from '@ng-bootstrap/ng-bootstrap';
-import { ignoreModalClose, UserService } from '@goraresult/yti-common-ui';
+import { ignoreModalClose, UserService } from '@mju-psi/yti-common-ui';
 
 @Component({
   selector: 'app-code',

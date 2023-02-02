@@ -4,7 +4,7 @@ import { BehaviorSubject, combineLatest, concat, Observable } from 'rxjs';
 import { LanguageService } from '../../services/language.service';
 import { Organization } from '../../entities/organization';
 import { debounceTime, map, skip, take, tap } from 'rxjs/operators';
-import { comparingLocalizable, contains, ModalService } from '@goraresult/yti-common-ui';
+import { comparingLocalizable, contains, ModalService } from '@mju-psi/yti-common-ui';
 
 @Component({
   selector: 'app-search-linked-organizatione-modal',

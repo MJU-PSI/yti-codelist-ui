@@ -3,7 +3,7 @@ import { NgControl } from '@angular/forms';
 import { EditableService } from '../../services/editable.service';
 import { LanguageService } from '../../services/language.service';
 import { CodePlain } from '../../entities/code-simple';
-import { Localizable } from '@goraresult/yti-common-ui';
+import { Localizable } from '@mju-psi/yti-common-ui';
 
 @Component({
   selector: 'app-localizable-literal-with-language-indicator-for-all-languages',

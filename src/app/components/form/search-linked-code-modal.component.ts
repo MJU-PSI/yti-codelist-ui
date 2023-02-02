@@ -7,7 +7,7 @@ import { Code } from '../../entities/code';
 import { CodeScheme } from '../../entities/code-scheme';
 import { DataService } from '../../services/data.service';
 import { TranslateService } from '@ngx-translate/core';
-import { contains, FilterOptions, ModalService, selectableStatuses, Status } from '@goraresult/yti-common-ui';
+import { contains, FilterOptions, ModalService, selectableStatuses, Status } from '@mju-psi/yti-common-ui';
 
 @Component({
   selector: 'app-search-linked-code-modal',

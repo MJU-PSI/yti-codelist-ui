@@ -8,7 +8,7 @@ import { debounceTime, map, skip, take, tap } from 'rxjs/operators';
 import { CodeScheme } from '../../entities/code-scheme';
 import { Code } from '../../entities/code';
 import { DataService } from '../../services/data.service';
-import { contains, ModalService } from '@goraresult/yti-common-ui';
+import { contains, ModalService } from '@mju-psi/yti-common-ui';
 
 @Component({
   selector: 'app-search-linked-member-modal',

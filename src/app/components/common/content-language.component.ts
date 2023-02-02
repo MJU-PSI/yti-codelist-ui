@@ -1,7 +1,7 @@
 import { Component, Input, OnChanges, OnInit, SimpleChange, SimpleChanges } from '@angular/core';
 import { Language, LanguageService } from '../../services/language.service';
 import { CodePlain } from '../../entities/code-simple';
-import { availableLanguages } from '@goraresult/yti-common-ui';
+import { availableLanguages } from '@mju-psi/yti-common-ui';
 
 @Component({
   selector: 'app-content-language',

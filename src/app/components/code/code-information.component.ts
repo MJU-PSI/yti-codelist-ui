@@ -21,7 +21,7 @@ import { ValueType } from '../../entities/value-type';
 import { MemberValueValidators } from '../form/member-value-validators';
 import { UserSimple } from '../../entities/user-simple';
 import { AuthorizationManager } from '../../services/authorization-manager.service';
-import { comparingLocalizable, ignoreModalClose, UserService } from '@goraresult/yti-common-ui';
+import { comparingLocalizable, ignoreModalClose, UserService } from '@mju-psi/yti-common-ui';
 
 @Component({
   selector: 'app-code-information',

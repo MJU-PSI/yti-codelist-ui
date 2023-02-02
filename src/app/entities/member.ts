@@ -8,7 +8,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { Code } from './code';
 import { MemberValue } from './member-value';
 import { ValueType } from './value-type';
-import { Location, Localizable, hasLocalization, Localizer } from '@goraresult/yti-common-ui';
+import { Location, Localizable, hasLocalization, Localizer } from '@mju-psi/yti-common-ui';
 import { getAllOrganizationIds } from './entity-utils';
 
 export class Member implements EditableEntity {

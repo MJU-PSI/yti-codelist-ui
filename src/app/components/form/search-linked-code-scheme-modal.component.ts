@@ -7,7 +7,7 @@ import { DataService } from '../../services/data.service';
 import { debounceTime, map, skip, take, tap } from 'rxjs/operators';
 import { TranslateService } from '@ngx-translate/core';
 import { Code } from '../../entities/code';
-import { contains, FilterOptions, ModalService, selectableStatuses, Status } from '@goraresult/yti-common-ui';
+import { contains, FilterOptions, ModalService, selectableStatuses, Status } from '@mju-psi/yti-common-ui';
 
 @Component({
   selector: 'app-search-linked-code-scheme-modal',

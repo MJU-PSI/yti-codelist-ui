@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpErrorResponse } from '@angular/common/http';
-import { ErrorModalService } from '@goraresult/yti-common-ui';
+import { ErrorModalService } from '@mju-psi/yti-common-ui';
 
 @Injectable()
 export class CodeListErrorModalService {

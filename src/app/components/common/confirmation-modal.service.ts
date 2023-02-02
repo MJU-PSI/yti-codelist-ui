@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ConfirmationModalService } from '@goraresult/yti-common-ui';
+import { ConfirmationModalService } from '@mju-psi/yti-common-ui';
 import { CodeScheme } from '../../entities/code-scheme';
 
 @Injectable()

@@ -6,7 +6,7 @@ import { LanguageService } from '../../services/language.service';
 import { LocationService } from '../../services/location.service';
 import { DataService } from '../../services/data.service';
 import { Organization } from '../../entities/organization';
-import { combineSets, comparingLocalizable, hasAny, index, labelNameToResourceIdIdentifier, Options, Role, UserService } from '@goraresult/yti-common-ui';
+import { combineSets, comparingLocalizable, hasAny, index, labelNameToResourceIdIdentifier, Options, Role, UserService } from '@mju-psi/yti-common-ui';
 
 interface UserOrganizationRoles {
   organization?: Organization;

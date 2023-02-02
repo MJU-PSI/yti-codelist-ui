@@ -6,7 +6,7 @@ import { CodeListConfirmationModalService } from '../common/confirmation-modal.s
 import { AuthorizationManager } from '../../services/authorization-manager.service';
 import { ConfigurationService } from '../../services/configuration.service';
 import { LanguageService } from '../../services/language.service';
-import { ignoreModalClose } from '@goraresult/yti-common-ui';
+import { ignoreModalClose } from '@mju-psi/yti-common-ui';
 
 @Component({
   selector: 'app-code-scheme-variants',

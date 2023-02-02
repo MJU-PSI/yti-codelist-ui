@@ -1,4 +1,4 @@
-import { Localizable } from '@goraresult/yti-common-ui';
+import { Localizable } from '@mju-psi/yti-common-ui';
 import { ValueTypeType } from '../services/api-schema';
 
 export class ValueType {
