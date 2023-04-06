@@ -5,8 +5,6 @@
   "scripts": {
     "ng": "node -- node_modules/@angular/cli/bin/ng",
     "start": "ng serve --port 9600 --proxy-config proxy.conf.json",
-    "start-dev": "ng serve --port 9600 --proxy-config proxy-dev.conf.json --ssl true",
-    "start-prod": "ng serve --configuration production --port 9600 --proxy-config proxy.conf.json",
     "build": "ng build --configuration production",
     "build:traefik": "ng build --configuration production --base-href /codelist-app/",
     "test": "ng test",
