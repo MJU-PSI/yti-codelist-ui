@@ -27,7 +27,7 @@
               {
                 "glob": "**/*",
                 "input": "./node_modules/@mju-psi/yti-common-ui/assets/",
-                "output": "./assets/"
+                "output": "/assets/"
               }
             ],
             "styles": [
