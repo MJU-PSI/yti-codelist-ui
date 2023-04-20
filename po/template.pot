@@ -485,13 +485,13 @@ msgstr ""
 msgid "Registries"
 msgstr ""
 
-msgid "Suomi.fi Terminologies"
+msgid "Terminologies"
 msgstr ""
 
-msgid "Suomi.fi Data Vocabularies"
+msgid "Data Vocabularies"
 msgstr ""
 
-msgid "Suomi.fi Comments"
+msgid "Comments"
 msgstr ""
 
 msgid "User right management"

@@ -224,7 +224,7 @@ msgid "Create code"
 msgstr "Luo koodi"
 
 msgid "Get concept from Terminologies"
-msgstr "Tuo käsite Suomi.fi-sanastoista"
+msgstr "Tuo käsite sanastoista"
 
 msgid "URI"
 msgstr "URI"
@@ -669,14 +669,14 @@ msgstr "Käyttäjätiedot"
 msgid "Registries"
 msgstr "Rekisterit"
 
-msgid "Suomi.fi Terminologies"
-msgstr "Suomi.fi-sanastot"
+msgid "Terminologies"
+msgstr "Sanastot"
 
-msgid "Suomi.fi Data Vocabularies"
-msgstr "Suomi.fi-tietomallit"
+msgid "Data Vocabularies"
+msgstr "Tietomallit"
 
-msgid "Suomi.fi Comments"
-msgstr "Suomi.fi-kommentit"
+msgid "Comments"
+msgstr "Kommentit"
 
 msgid "User right management"
 msgstr "Oikeuksienhallinta"
@@ -873,20 +873,15 @@ msgstr "Ajanjakso, jolloin koodisto on voimassa"
 
 msgid "INFO_TEXT_URI"
 msgstr ""
-"Koodiston pysyvä tunniste ja verkko-osoite. Muodostuu ohjelmallisesti seuraavasti http://"
-"uri.suomi.fi/codelist/[rekisteri]/[koodiston tunnus]"
+"Koodiston pysyvä tunniste ja verkko-osoite."
 
 msgid "INFO_TEXT_URI_MEMBER"
 msgstr ""
-"Laajennuksen jäsenen pysyvä tunniste ja verkko-osoite. Muodostuu ohjelmallisesti "
-"seuraavasti http://uri.suomi.fi/codelist/[rekisteri]/[koodiston tunnus]/extension/"
-"[laajennuksen tunnus]/member/[jäsenen tunnus]"
+"Laajennuksen jäsenen pysyvä tunniste ja verkko-osoite."
 
 msgid "INFO_TEXT_URI_EXTENSION"
 msgstr ""
-"Laajennuksen pysyvä tunniste ja verkko-osoite. Muodostuu ohjelmallisesti seuraavasti "
-"http://uri.suomi.fi/codelist/[rekisteri]/[koodiston tunnus]/extension/[laajennuksen "
-"tunnus]"
+"Laajennuksen pysyvä tunniste ja verkko-osoite."
 
 msgid "INFO_TEXT_CODELIST_LAST_MODIFICATION"
 msgstr "Viimeisin muokkauksen ajanhetki"
@@ -937,8 +932,7 @@ msgstr "Ajanjakso, jolloin koodi on voimassa"
 
 msgid "INFO_TEXT_CODE_URI"
 msgstr ""
-"Koodin pysyvä tunniste ja verkko-osoite. Muodostuu ohjelmallisesti seuraavasti http://"
-"uri.suomi.fi/codelist/[rekisteri]/[koodiston tunnus]/[koodi]"
+"Koodin pysyvä tunniste ja verkko-osoite."
 
 msgid "INFO_TEXT_CODE_CONCEPT_URI"
 msgstr "Koodiin liitetyn käsitteen pysyvä tunniste ja verkko-osoite."

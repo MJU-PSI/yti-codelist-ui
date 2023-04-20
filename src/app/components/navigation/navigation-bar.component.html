@@ -58,18 +58,15 @@
         <a class="dropdown-item"
            id="navigation_link_registries"
            [routerLink]="['/registries']" translate>Registries</a>
-        <a id="navigation_interoperability_platform_link"
-           class="dropdown-item"
-           href="https://yhteentoimiva.suomi.fi/" target="_blank" rel="noopener noreferrer">yhteentoimiva.suomi.fi</a>
         <a id="navigation_terminologies_link"
            class="dropdown-item"
-           [href]="configurationService.terminologyUrl" target="_blank" rel="noopener noreferrer" translate>Suomi.fi Terminologies</a>
+           [href]="configurationService.terminologyUrl" target="_blank" rel="noopener noreferrer" translate>Terminologies</a>
         <a id="navigation_data_vocabularies_link"
            class="dropdown-item"
-           [href]="configurationService.dataModelUrl" target="_blank" rel="noopener noreferrer" translate>Suomi.fi Data Vocabularies</a>
+           [href]="configurationService.dataModelUrl" target="_blank" rel="noopener noreferrer" translate>Data Vocabularies</a>
         <a id="navigation_comments_link"
            class="dropdown-item"
-          [href]="configurationService.commentsUrl" target="_blank" rel="noopener noreferrer" translate>Suomi.fi Comments</a>
+          [href]="configurationService.commentsUrl" target="_blank" rel="noopener noreferrer" translate>Comments</a>
         <a class="dropdown-item"
            id="navigation_groupmanagement_link"
            *ngIf="showGroupManagementUrl()"

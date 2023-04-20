@@ -223,7 +223,7 @@ msgid "Create code"
 msgstr "Skapa kod"
 
 msgid "Get concept from Terminologies"
-msgstr "Importera begreppet från Suomi.fi-ordlistor"
+msgstr "Importera begreppet från ordlistor"
 
 msgid "URI"
 msgstr "URI"
@@ -671,14 +671,14 @@ msgstr "Användaruppgifter"
 msgid "Registries"
 msgstr "Register"
 
-msgid "Suomi.fi Terminologies"
-msgstr "Suomi.fi-ordlistor"
+msgid "Terminologies"
+msgstr "Ordlistor"
 
-msgid "Suomi.fi Data Vocabularies"
-msgstr "Suomi.fi-informationsmodeller"
+msgid "Data Vocabularies"
+msgstr "Informationsmodeller"
 
-msgid "Suomi.fi Comments"
-msgstr "Suomi.fi-kommentarer"
+msgid "Comments"
+msgstr "Kommentarer"
 
 msgid "User right management"
 msgstr "Administrering av behörigheter"
@@ -876,20 +876,15 @@ msgstr "Den period under vilken kodlistan är i kraft."
 
 msgid "INFO_TEXT_URI"
 msgstr ""
-"Permanent identifikationsuppgift och webbadress för kodlistan. Bildas systematiskt på "
-"följande sätt http://uri.suomi.fi/codelist/[register]/[kodlistans kod]"
+"Permanent identifikationsuppgift och webbadress för kodlistan."
 
 msgid "INFO_TEXT_URI_MEMBER"
 msgstr ""
-"Permanent identifikationsuppgift och webbadress för tilläggets medlem. Bildas "
-"systematiskt på följande sätt http://uri.suomi.fi/codelist/[register]/[kodlistans kod]/"
-"extension/[tilläggets kod]/member/[medlemmens kod]"
+"Permanent identifikationsuppgift och webbadress för tilläggets medlem."
 
 msgid "INFO_TEXT_URI_EXTENSION"
 msgstr ""
-"Permanent identifikationsuppgift och webbadress för tillägget. Bildas systematiskt på "
-"följande sätt http://uri.suomi.fi/codelist/[register]/[kodlistans kod]/extension/"
-"[tilläggets kod]"
+"Permanent identifikationsuppgift och webbadress för tillägget."
 
 msgid "INFO_TEXT_CODELIST_LAST_MODIFICATION"
 msgstr "Tidpunkt för senaste redigering"
@@ -939,8 +934,7 @@ msgstr "Den period under vilken koden är i kraft."
 
 msgid "INFO_TEXT_CODE_URI"
 msgstr ""
-"Permanent identifikationsuppgift och webbadress för koden. Bildas systematiskt på "
-"följande sätt http://uri.suomi.fi/codelist/[register]/[kodlistans kod]/[kod]"
+"Permanent identifikationsuppgift och webbadress för koden."
 
 msgid "INFO_TEXT_CODE_CONCEPT_URI"
 msgstr ""
