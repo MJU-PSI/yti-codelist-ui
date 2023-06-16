@@ -1,35 +1,29 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: 2020-01-24 09:40+0200\n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.4\n"
-"X-Poedit-Basepath: .\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: POEditor.com\n"
+"Project-Id-Version: yti-codelist-ui\n"
+"Language: sl\n"
 
 msgid "No codes were found with the starting status. No changes to code statuses."
-msgstr "Začetnim statusom ni bilo najdenih kod. Ni sprememb statusov kod."
+msgstr "Ni bilo najdenih kod z začetnim stanjem. Ni sprememb na stanjih kod."
 
 msgid "Status changed to one code."
-msgstr "Status spremenjen na eno kodo."
+msgstr "Stanje spremenjeno na eno kodo."
 
 msgid "Status changed to "
-msgstr " Stanje spremenjeno v"
+msgstr "Stanje spremenjeno v"
 
-msgid " codes."
-msgstr " kode."
+msgid "codes."
+msgstr "kode."
 
 msgid "Choose starting status"
-msgstr "Izberite začetni status"
+msgstr "Izberite začetno stanje"
 
 msgid "Choose target status"
-msgstr "Izberite ciljni status"
+msgstr "Izberite ciljno stanje"
 
 msgid "All link types"
 msgstr "Vse vrste povezav"
@@ -41,25 +35,25 @@ msgid "Select"
 msgstr "Izberite"
 
 msgid "Create new"
-msgstr "Ustvari novo"
+msgstr "Ustvarite novo"
 
 msgid "{{title}}"
-msgstr ""
+msgstr "{{naslov}}"
 
 msgid "No new members created. All codes have a corresponding member already or there are no codes in the scope of the extension."
-msgstr "Ni novih članov. Vse kode že imajo ustreznega člana ali pa v obsegu razširitve ni kod."
+msgstr "Ni ustvarjenih novih članov. Vse kode že imajo ustreznega člana ali pa v obsegu razširitve ni kod."
 
 msgid " missing member created."
-msgstr " ustvarjen manjkajoči član."
+msgstr " manjkajoči član ustvarjen."
 
 msgid " missing members created."
-msgstr " ustvarjenih manjkajočih članov."
+msgstr " manjkajoči člani ustvarjeni."
 
 msgid "Select code"
 msgstr "Izberite kodo"
 
 msgid "Search code"
-msgstr "Koda iskanja"
+msgstr "Iščite kodo"
 
 msgid "Add code list"
 msgstr "Dodajte šifrant"
@@ -68,10 +62,10 @@ msgid "Select code list"
 msgstr "Izberite šifrant"
 
 msgid "Search code list"
-msgstr "Seznam kod iskanja"
+msgstr "Iščite šifrant"
 
 msgid "No registry"
-msgstr "Brez registra"
+msgstr "Ni registra"
 
 msgid "Valid from"
 msgstr "Velja od"
@@ -80,19 +74,19 @@ msgid "Valid to"
 msgstr "Velja do"
 
 msgid "Save"
-msgstr "Shrani"
+msgstr "Shranite"
 
 msgid "Cancel"
-msgstr "Prekliči"
+msgstr "Prekličite"
 
 msgid "Edit"
-msgstr "Uredi"
+msgstr "Uredite"
 
 msgid "{{errorKey}}"
 msgstr "{{errorKey}}"
 
 msgid "Add link"
-msgstr "Dodaj povezavo"
+msgstr "Dodajte povezavo"
 
 msgid "Add information domain"
 msgstr "Dodajte informacijsko domeno"
@@ -101,10 +95,10 @@ msgid "Select information domain"
 msgstr "Izberite informacijsko domeno"
 
 msgid "Search information domain"
-msgstr "Domena iskanja informacij"
+msgstr "Iščite informacijsko domeno"
 
 msgid "Copy value to clipboard"
-msgstr "Kopiraj {{value}} v odložišče"
+msgstr "Kopirajte vrednost v odložišče"
 
 msgid "Copied to clipboard"
 msgstr "Kopirano v odložišče"
@@ -116,16 +110,16 @@ msgid "Select language code"
 msgstr "Izberite kodo jezika"
 
 msgid "Search language code"
-msgstr "Iskanje kode jezika"
+msgstr "Iščite kodo jezika"
 
 msgid "INFO_TEXT_CLARIFICATION_OF_FEEDBACK_CHANNEL"
-msgstr "Upoštevajte, da je vsebina tega polja javna. Ne uporabljajte osebnih kontaktnih podatkov!"
+msgstr "Prosimo upoštevajte, da je vsebina tega polja javna. Ne vnašajte osebnih kontaktnih podatkov!"
 
 msgid "Select member"
 msgstr "Izberite člana"
 
 msgid "Search member"
-msgstr "Član iskanja"
+msgstr "Iščite člana"
 
 msgid "Add organization"
 msgstr "Dodajte organizacijo"
@@ -134,7 +128,7 @@ msgid "Select organization"
 msgstr "Izberite organizacijo"
 
 msgid "Search organization"
-msgstr "Organizacija iskanja"
+msgstr "Iščite organizacijo"
 
 msgid "Code list"
 msgstr "Šifrant"
@@ -146,10 +140,10 @@ msgid "All statuses"
 msgstr "Vsi statusi"
 
 msgid "Filter results"
-msgstr "Filtriraj rezultate"
+msgstr "Filtrirajte rezultate"
 
 msgid "All codeschemes"
-msgstr "Vsi seznami kod"
+msgstr "Vsi šifranti"
 
 msgid "Status"
 msgstr "Stanje"
@@ -158,7 +152,7 @@ msgid "theCodes"
 msgstr "Kode"
 
 msgid "See all results"
-msgstr "Oglejte si vse {{count}} rezultatov"
+msgstr "Oglejte si vse {{count}} rezultate"
 
 msgid "theExtensions"
 msgstr "Razširitve"
@@ -176,7 +170,7 @@ msgid "REDIRECTING_TO_FRONT_PAGE"
 msgstr "REDIRECTING_TO_FRONT_PAGE"
 
 msgid "All vocabularies"
-msgstr "Vsi besednjaki"
+msgstr "Vsa besedišča"
 
 msgid "All languages"
 msgstr "Vsi jeziki"
@@ -188,16 +182,16 @@ msgid "LABEL_TEXT_CODE_VALUE"
 msgstr "Vrednost kode"
 
 msgid "Code name"
-msgstr "Kodno ime"
+msgstr "Ime kode"
 
 msgid "Vocabularies URI"
-msgstr "URI besednjakov"
+msgstr "URI besedišča"
 
 msgid "Description"
 msgstr "Opis"
 
 msgid "Definition"
-msgstr "Opredelitev"
+msgstr "Definicija"
 
 msgid "Short name"
 msgstr "Kratko ime"
@@ -206,7 +200,7 @@ msgid "Broader code"
 msgstr "Širša koda"
 
 msgid "Sub code list"
-msgstr "Podšifran seznam"
+msgstr "Seznam podrejenih kod"
 
 msgid "Validity"
 msgstr "Veljavnost"
@@ -215,7 +209,7 @@ msgid "Links"
 msgstr "Povezave"
 
 msgid "Create code"
-msgstr "Ustvari kodo"
+msgstr "Ustvarite kodo"
 
 msgid "Get concept from Terminologies"
 msgstr "Pridobite koncept iz terminologij"
@@ -230,16 +224,16 @@ msgid "Last modification"
 msgstr "Zadnja sprememba"
 
 msgid "Enforce status transition rules"
-msgstr "Uveljavite pravila za prehod statusa"
+msgstr "Uveljavite pravila za prehod stanja"
 
 msgid "Choose action"
 msgstr "Izberite akcijo"
 
 msgid "Delete code"
-msgstr "Izbriši kodo"
+msgstr "Izbrišite kodo"
 
 msgid "Registry"
-msgstr "register"
+msgstr "Register"
 
 msgid "InfoDomain"
 msgstr "Informacijska domena"
@@ -251,25 +245,25 @@ msgid "INFORMATION"
 msgstr "INFORMACIJE"
 
 msgid "Import codes to code list"
-msgstr "Uvozi kode v šifrant"
+msgstr "Uvozite kode v šifrant"
 
 msgid "INFO_TEXT_IMPORT_CODES_MODAL_HELP_TEXT"
 msgstr "To funkcijo lahko uporabite za posodobitev podatkov, ki jih vrne funkcija izvoznih kod."
 
 msgid "File format"
-msgstr "Format datoteke"
+msgstr "Tip datoteke"
 
 msgid "File to be uploaded"
 msgstr "Datoteka za nalaganje"
 
 msgid "Import"
-msgstr "Uvozi"
+msgstr "Uvozite"
 
 msgid "Search for code"
 msgstr "Poiščite kodo"
 
 msgid "code"
-msgstr "Koda"
+msgstr "koda"
 
 msgid "codes"
 msgstr "kode"
@@ -278,10 +272,10 @@ msgid "Search did not find any codes."
 msgstr "Iskanje ni našlo kod."
 
 msgid "Expand all"
-msgstr "Razširi vse"
+msgstr "Razširite vse"
 
 msgid "Collapse all"
-msgstr "Strniti vse"
+msgstr "Strnite vse"
 
 msgid "This code list does not have any codes yet."
 msgstr "Ta šifrant še nima nobenih kod."
@@ -293,10 +287,10 @@ msgid "Code list name"
 msgstr "Ime šifranta"
 
 msgid "Language code"
-msgstr "Jezikovna koda"
+msgstr "Koda jezika"
 
 msgid "Change note"
-msgstr "Spremeni opombo"
+msgstr "Spremenite opombo"
 
 msgid "Version"
 msgstr "Različica"
@@ -332,22 +326,22 @@ msgid "CODE EXTENSIONS"
 msgstr "RAZŠIRITVE KODE"
 
 msgid "Import code list by uploading a CSV- or Excel formatted file. Look up more detailed guide and information about using code list files from"
-msgstr "Uvozite seznam kod tako, da naložite datoteko v formatu CSV ali Excel. Poiščite podrobnejši vodnik in informacije o uporabi datotek kodnih seznamov pri"
+msgstr "Uvozite seznam kod tako, da naložite datoteko v formatu CSV ali Excel. Poiščite podrobnejša navodila in informacije o uporabi datotek iz šifranta pri"
 
 msgid "LINK_TXT_FROM_SERVICE_HELP"
-msgstr "servisna pomoč"
+msgstr "pomoč servisa"
 
 msgid "Using the imported file, a new code list is created or an older code list is updated with new meta-information. Upon uploading the file, you get to review and cancel the changes if needed."
-msgstr "Z uporabo uvožene datoteke se ustvari nov šifrant ali pa se starejši šifrant posodobi z novimi metapodatki. Ko naložite datoteko, lahko pregledate in po potrebi prekličete spremembe."
+msgstr "Z uporabo uvožene datoteke se ustvari nov šifrant ali pa se starejši šifrant posodobi z novimi metapodatki. Po naložitvi datoteke, jo lahko pregledate in po potrebi prekličete spremembe."
 
 msgid "Import code list from a file"
-msgstr "Uvoz šifranta iz datoteke"
+msgstr "Uvozite šifrant iz datoteke"
 
 msgid "You can also add a new code list by creating it via the user interface of the Koodistot service."
 msgstr "Nov šifrant lahko dodate tudi tako, da ga ustvarite preko uporabniškega vmesnika storitve Koodistot."
 
 msgid "Create new code list"
-msgstr "Ustvari nov šifrant"
+msgstr "Ustvarite nov šifrant"
 
 msgid "Registry for the code list"
 msgstr "Register za šifrant"
@@ -356,7 +350,7 @@ msgid "Import code list"
 msgstr "Uvoz šifranta"
 
 msgid "Update code list"
-msgstr "Posodobite šifrant"
+msgstr "Posodobitev šifranta"
 
 msgid "INFO_TEXT_IMPORT_CODELIST_FRONTPAGE_MODAL_HELP_TEXT"
 msgstr "To funkcijo lahko uporabite za uvoz novega šifranta ali posodobitev podatkov, vrnjenih s funkcijo izvoza šifranta."
@@ -374,7 +368,7 @@ msgid "Default code"
 msgstr "Privzeta koda"
 
 msgid "Change code statuses at the same time"
-msgstr "Hkrati spremenite statuse kod"
+msgstr "Spremenite stanja kod istočasno"
 
 msgid "Update code list's codes' statuses"
 msgstr "Posodobite stanja kod"
@@ -386,52 +380,52 @@ msgid "You will receive an email notification when this resource changes."
 msgstr "Ko se ta vir spremeni, boste prejeli e-poštno obvestilo."
 
 msgid "Add email subscription"
-msgstr "Dodajte e-poštno naročnino"
+msgstr "Dodajte naročnino na e-poštna obvestila"
 
 msgid "Remove email subscription"
-msgstr "Odstrani e-poštno naročnino"
+msgstr "Odstranite naročnino na e-poštna obvestila"
 
 msgid "Import codes"
-msgstr "Uvozite kode"
+msgstr "Uvoz kod"
 
 msgid "Create a new version"
 msgstr "Ustvarite novo različico"
 
 msgid "Create a new version from file"
-msgstr "Ustvari novo različico iz datoteke"
+msgstr "Ustvarite novo različico iz datoteke"
 
 msgid "Attach variant to code list"
-msgstr "Varianto pripni šifrantu"
+msgstr "Varianto pripnite šifrantu"
 
 msgid "Create calculation hierarchy"
-msgstr "Ustvari hierarhijo izračuna"
+msgstr "Ustvarite hierarhijo izračuna"
 
 msgid "Create definition hierarchy"
-msgstr "Ustvari hierarhijo definicij"
+msgstr "Ustvarite hierarhijo definicije"
 
 msgid "Create cross-reference list"
-msgstr "Ustvari seznam navzkrižnih sklicevanj"
+msgstr "Ustvarite seznam sklicevanj"
 
 msgid "Create DPM metric"
-msgstr "Ustvari metriko DPM"
+msgstr "Ustvarite metriko DPM"
 
 msgid "Create DPM explicit domain"
-msgstr "Ustvari eksplicitno domeno DPM"
+msgstr "Ustvarite eksplicitno domeno DPM"
 
 msgid "Create DPM dimension"
 msgstr "Ustvarite dimenzijo DPM"
 
 msgid "Create DPM typed domain"
-msgstr "Ustvari domeno tipa DPM"
+msgstr "Ustvarite domeno tipa DPM"
 
 msgid "Import extensions"
-msgstr "Uvoz razširitev"
+msgstr "Uvozite razširitev"
 
 msgid "{{deleteCodeSchemeButtonTitle}}"
 msgstr "{{deleteCodeSchemeButtonTitle}}"
 
 msgid "Export"
-msgstr "Izvozi"
+msgstr "Izvoz"
 
 msgid "Export codelist Excel"
 msgstr "Izvoz šifranta Excel"
@@ -440,22 +434,22 @@ msgid "Export codelist CSV"
 msgstr "Izvoz šifranta CSV"
 
 msgid "Export codes CSV"
-msgstr "Izvoz kod CSV"
+msgstr "Izvoz CSV kode"
 
 msgid "Export codes Excel"
-msgstr "Izvoz kod Excel"
+msgstr "Izvoz Excel kode"
 
 msgid "Export codelist JSON"
 msgstr "Izvoz kodnega seznama JSON"
 
 msgid "Show codelist JSON"
-msgstr "Prikaži kodni seznam JSON"
+msgstr "Prikaz seznama kod JSON"
 
 msgid "Show JSON enumeration"
-msgstr "Pokaži naštevanje JSON"
+msgstr "Prikaz naštevanja JSON"
 
 msgid "Download JSON enumeration"
-msgstr "Prenesite naštevanje JSON"
+msgstr "Prenos naštevanja JSON"
 
 msgid "CODES"
 msgstr "KODE"
@@ -473,7 +467,7 @@ msgid "Variants of this code list"
 msgstr "Naslednji šifranti so različice tega šifranta:"
 
 msgid "Variant in other code lists"
-msgstr " Ta šifrant je bil določen kot različica v naslednjih šifrantih:"
+msgstr "Ta šifrant je bil določen kot različica v naslednjih šifrantih:"
 
 msgid "Link title"
 msgstr "Naslov povezave"
@@ -485,25 +479,25 @@ msgid "Link type"
 msgstr "Vrsta povezave"
 
 msgid "Create new link"
-msgstr "Ustvari novo povezavo"
+msgstr "Ustvarite novo povezavo"
 
 msgid "Add"
-msgstr "Dodaj"
+msgstr "Dodajte"
 
 msgid "Edit link"
-msgstr "Uredi povezavo"
+msgstr "Uredite povezavo"
 
 msgid "There are no links available, please create new ones."
-msgstr "Ni na voljo nobenih povezav, ustvarite nove."
+msgstr "Na voljo ni nobenih povezav, ustvarite nove."
 
 msgid "Show link"
-msgstr "Pokaži povezavo"
+msgstr "Pokažite povezavo"
 
 msgid "Ok"
 msgstr "V redu"
 
 msgid "Search for code lists"
-msgstr "Poiščite kodne sezname"
+msgstr "Iskanje šifrantov"
 
 msgid "variantModalPageTitle"
 msgstr "Šifrantu priložite varianto"
@@ -539,22 +533,22 @@ msgid "members"
 msgstr "člani"
 
 msgid "Search did not find any members."
-msgstr "Iskanje ni našlo nobenega člana."
+msgstr "Iskalnik ni našel nobenega člana."
 
 msgid "This extension does not have any members yet."
 msgstr "Ta razširitev še nima nobenega člana."
 
 msgid "Create member"
-msgstr "Ustvari člana"
+msgstr "Ustvarite člana"
 
 msgid "Create missing members for the extension"
-msgstr "Ustvari manjkajoče člane za razširitev"
+msgstr "Ustvarite manjkajoče člane za razširitev"
 
 msgid "Import members"
 msgstr "Uvoz članov"
 
 msgid "Delete extension"
-msgstr "Izbriši razširitev"
+msgstr "Izbris razširitve"
 
 msgid "Export members Excel"
 msgstr "Izvoz članov Excel"
@@ -563,13 +557,13 @@ msgid "Export members CSV"
 msgstr "Izvoz članov CSV"
 
 msgid "Export Cross-Reference List Excel"
-msgstr "Izvozi seznam navzkrižnih sklicev Excel"
+msgstr "Izvoz seznama Excel navzkrižnih sklicev"
 
 msgid "Export Cross-Reference List CSV"
-msgstr "Izvoz CSV seznama navzkrižnih sklicev"
+msgstr "Izvoz seznama CSV navzkrižnih sklicev"
 
 msgid "CROSS-REFERENCE LIST"
-msgstr "Seznam navzkrižnih sklicevanj"
+msgstr "Seznam sklicevanj"
 
 msgid "MEMBERS"
 msgstr "ČLANI"
@@ -581,13 +575,13 @@ msgid "search result"
 msgstr "rezultat iskanja"
 
 msgid "search results"
-msgstr "Rezultati iskanja"
+msgstr "rezultati iskanja"
 
 msgid "Frontpage long description"
-msgstr "Orodje za referenčne podatke je tehnična platforma za zbiranje in skupno rabo skupnih šifrantov javnega sektorja in referenčnih podatkov. Seznami kod in njihove jezikovne različice so posodobljeni, zanesljivi, po njih lahko brskajo vsi zunaj sektorskih omejitev in jih je mogoče prenesti za lastno uporabo. Uporaba skupnih šifrantov omogoča interoperabilnost v statistiki in med sistemi IT."
+msgstr "Orodje za referenčne podatke je tehnična platforma za zbiranje in skupno rabo skupnih šifrantov javnega sektorja in referenčnih podatkov. Seznami kod in njihove jezikovne različice so posodobljeni, zanesljivi, po njih lahko brskajo vsi zunaj sektorskih omejitev in jih je mogoče prenesti za lastno uporabo. Uporaba skupnih šifrantov omogoča interoperabilnost v statistiki in med IT sistemi."
 
 msgid "Extend search to"
-msgstr "Razširi iskanje na"
+msgstr "Razširitev iskanja na"
 
 msgid "to_codes"
 msgstr "kode"
@@ -614,22 +608,22 @@ msgid "Code URI"
 msgstr "Koda URI"
 
 msgid "Code vocabularies URI"
-msgstr "URI slovarjev kode"
+msgstr "URI besedišča kode"
 
 msgid "Code"
 msgstr "Koda"
 
 msgid "INFO_TEXT_IMPORT_MEMBERS_MODAL_HELP_TEXT"
-msgstr "To funkcijo lahko uporabite za posodobitev podatkov, ki jih vrne funkcija izvoza članov."
+msgstr "To funkcijo lahko uporabite za posodobitev podatkov, ki jih vrne funkcija Izvozi člane."
 
 msgid "Delete member"
-msgstr "Izbriši člana"
+msgstr "Izbris člana"
 
 msgid "Impersonate user"
-msgstr "Lažno predstavljanje uporabnika"
+msgstr "Imitiranje uporabnika"
 
 msgid "LOG IN"
-msgstr "VPIŠI SE"
+msgstr "VPIS"
 
 msgid "LOG OUT"
 msgstr "ODJAVA"
@@ -644,7 +638,7 @@ msgid "Terminologies"
 msgstr "Terminologije"
 
 msgid "Data Vocabularies"
-msgstr "Podatkovni besednjaki"
+msgstr "Podatkovno besedišče"
 
 msgid "Comments"
 msgstr "Komentarji"
@@ -653,7 +647,7 @@ msgid "User right management"
 msgstr "Upravljanje uporabniških pravic"
 
 msgid "Create registry"
-msgstr "Ustvari register"
+msgstr "Ustvarite register"
 
 msgid "No registries found."
 msgstr "Ni najdenih registrov."
@@ -677,7 +671,7 @@ msgid "Code registry name"
 msgstr "Ime registra kod"
 
 msgid "Delete registry"
-msgstr "Izbriši register"
+msgstr "Izbris registra"
 
 msgid "CODE LISTS"
 msgstr "ŠIFRANTI"
@@ -686,7 +680,7 @@ msgid "Concept name"
 msgstr "Ime koncepta"
 
 msgid "Concept definition"
-msgstr "Opredelitev koncepta"
+msgstr "Definicija koncepta"
 
 msgid "Suggest the concept to Terminologies"
 msgstr "Predlagajte koncept Terminologijam"
@@ -695,19 +689,19 @@ msgid "Search for concept"
 msgstr "Iskanje koncepta"
 
 msgid "CONCEPT_SEARCH_MATCHED_RESULTS_LARGE"
-msgstr "Vaše iskanje se ujema s {{ count }} pojmi. Prikazanih je prvih {{ showCount }} rezultatov. Zožite iskanje, da dobite boljše rezultate."
+msgstr "Vaše iskanje se ujema s {{ count }} pojmi. Prikazani so prvi {{ showCount }} rezultati. Zožajte iskanje za boljše rezultate."
 
 msgid "CONCEPT_SEARCH_MATCHED_RESULTS"
 msgstr "{{ count }} rezultatov iskanja"
 
 msgid "{{terminologyIntegrationModalPageTitle}}"
-msgstr "Išči varianto"
+msgstr "Iščite varianto"
 
 msgid "{{terminologyIntegrationModalInstructionText}}"
-msgstr ""
+msgstr "{{terminologyIntegrationModalInstructionText}}"
 
 msgid "Concept suggestion instruction text"
-msgstr "Če ustrezen koncept ne obstaja, ga predlagajte Terminologies. Izberite besedišče za predlog."
+msgstr "Če ustrezen koncept ne obstaja, ga predlagajte Terminologiji. Izberite besedišče za predlog."
 
 msgid "Email"
 msgstr "E-naslov"
@@ -719,16 +713,16 @@ msgid "Unknown organization"
 msgstr "Neznana organizacija"
 
 msgid "Waiting for approval"
-msgstr "Čakam na odobritev"
+msgstr "Čakanje na odobritev"
 
 msgid "Send access request"
-msgstr "Pošlji zahtevo za dostop"
+msgstr "Pošljite zahtevo za dostop"
 
 msgid "Send"
-msgstr "Pošlji"
+msgstr "Pošljite"
 
 msgid "You have subscribed to be notified via email when the following resources change. To remove the subscription, click the icon next to the resource."
-msgstr "Naročili ste se na prejemanje obvestil po e-pošti, ko se spremenijo naslednji viri. Če želite odstraniti naročnino, kliknite ikono poleg vira."
+msgstr "Naročeni ste na prejemanje obvestil po e-pošti, ko se spremenijo sledeči viri. Če želite odstraniti naročnino, kliknite ikono poleg vira."
 
 msgid "Email notifications"
 msgstr "E-poštna obvestila"
@@ -764,7 +758,7 @@ msgid "INFO_TEXT_CODELIST_NAME"
 msgstr "Ime šifranta"
 
 msgid "INFO_TEXT_VOCABULARIES_URI"
-msgstr "Stalni spletni naslov koncepta v orodju Terminologies"
+msgstr "Stalni spletni naslov koncepta v orodju Terminologije"
 
 msgid "INFO_TEXT_DEFAULT_CODE"
 msgstr "Koda šifranta, ki je izbrana kot privzeta. Privzeta koda se uporablja v posebnih primerih."
@@ -776,16 +770,16 @@ msgid "INFO_TEXT_EXTENSION_CODE_LISTS"
 msgstr "Zunanji seznami kod, s katerimi je povezana ta razširitev"
 
 msgid "INFO_TEXT_CODELIST_ORGANIZATION"
-msgstr "Odgovorne organizacije. Organizacija, ki ima in vzdržuje šifrant."
+msgstr "Odgovorne organizacije. Organizacija, ki lasti in vzdržuje šifrant."
 
 msgid "INFO_TEXT_CODELIST_DESCRIPTION"
 msgstr "Opis vsebine"
 
 msgid "INFO_TEXT_CODELIST_DEFINITION"
-msgstr "Opredelitev izraza v zvezi z informacijsko vsebino kodiranja Koncept besedišča orodja besednega zaklada ali samodefinirana definicija."
+msgstr "Opredelitev izraza v zvezi z informacijsko vsebino kodiranja orodja Besedišče, koncepta ali samodefinirane definicije."
 
 msgid "INFO_TEXT_CODELIST_CHANGE_NOTE"
-msgstr "Spremenite informacije, na primer spremembe na prejšnjo različico ali spremembe, kot je opisano za daljše časovno obdobje. Spremembe, ki so pomembne za uporabnika šifranta."
+msgstr "Spremenite informacije, na primer, spremembe na prejšnjo različico ali spremembe, kot so opisane za daljše časovno obdobje. Spremembe, ki so pomembne za uporabnika šifranta."
 
 msgid "INFO_TEXT_CODELIST_VERSION"
 msgstr "Številka različice referenčnega niza podatkov/seznama kod"
@@ -800,7 +794,7 @@ msgid "INFO_TEXT_CODELIST_LEGAL_BASE"
 msgstr "Označuje, da je šifrant ali informacijsko področje zajeto s pravnim aktom ali kakšnim drugim formalnim sporazumom."
 
 msgid "INFO_TEXT_CODELIST_GOVERNANCE_POLICY"
-msgstr "Vir, kot je spletno dostopen dokument, ki opisuje politiko upravljanja, ki velja za ta register."
+msgstr "Vir, kot je spletno dostopen dokument, ki opisuje politiko upravljanja veljavno za ta register."
 
 msgid "INFO_TEXT_CODELIST_STATUS"
 msgstr "Administrativni in življenjski status. Dovoljeni prehodi so: Nedokončano => Osnutek, Osnutek => Nedokončano ali Veljavno, Veljavno => Umaknjeno ali Neveljavno, Umaknjeno => Veljavno ali Neveljavno, Neveljavno => Veljavno ali Umaknjeno."
@@ -827,7 +821,7 @@ msgid "INFO_TEXT_EXTERNAL_REFERENCES"
 msgstr "Povezave"
 
 msgid "INFO_TEXT_CODELIST_VALIDITY_START_DATE"
-msgstr "Datum začetka veljavnosti. Datum, ko je vir veljaven ali veljaven."
+msgstr "Datum začetka veljavnosti. Datum, ko je vir učinkovit ali veljaven."
 
 msgid "INFO_TEXT_CODELIST_VALIDITY_END_DATE"
 msgstr "Končni datum veljavnosti. Datum, ko vir ni več učinkovit ali veljaven."
@@ -869,7 +863,7 @@ msgid "INFO_TEXT_CODE_EXTERNAL_REFERENCES"
 msgstr "Povezave"
 
 msgid "INFO_TEXT_CODE_VALIDITY_START_DATE"
-msgstr "Datum začetka veljavnosti. Datum, ko je vir veljaven ali veljaven."
+msgstr "Datum začetka veljavnosti. Datum, ko je vir učinkovit ali veljaven."
 
 msgid "INFO_TEXT_CODE_VALIDITY_END_DATE"
 msgstr "Končni datum veljavnosti. Datum, ko vir ni več učinkovit ali veljaven."
@@ -929,7 +923,7 @@ msgid "INFO_TEXT_EXTENSION_LAST_MODIFICATION"
 msgstr "Čas zadnjega urejanja"
 
 msgid "INFO_TEXT_EXTENSION_VALIDITY_START_DATE"
-msgstr "Datum začetka veljavnosti. Datum, ko je vir veljaven ali veljaven."
+msgstr "Datum začetka veljavnosti. Datum, ko je vir učinkovit ali veljaven."
 
 msgid "INFO_TEXT_EXTENSION_VALIDITY_END_DATE"
 msgstr "Končni datum veljavnosti. Datum, ko vir ni več učinkovit ali veljaven."
@@ -938,7 +932,7 @@ msgid "INFO_TEXT_CREATE_EXTENSION_ID"
 msgstr "Tehnična koda ali stalni identifikator razširitve"
 
 msgid "INFO_TEXT_FRONTPAGE_SEARCH"
-msgstr "Imena šifrantov se privzeto iščejo. Imena kod lahko iščete tako, da potrdite polje \"Razširi iskanje na kode\""
+msgstr "Imena šifrantov se privzeto iščejo. Imena kod lahko iščete tako, da potrdite polje \"Razširite iskanje na kode\""
 
 msgid "INFO_TEXT_FRONTPAGE_FILTER_W_INFODOMAIN"
 msgstr "Vsi šifranti so razvrščeni v informacijske domene. Če želite videti šifrante, razvrščene v določeno informacijsko domeno, kliknite ime informacijske domene. Filter lahko odstranite s ponovnim klikom na ime informacijske domene."
@@ -953,7 +947,7 @@ msgid "INFO_TEXT_MEMBER_VALIDITY"
 msgstr "Obdobje, v katerem je član veljaven"
 
 msgid "INFO_TEXT_MEMBER_VALIDITY_START_DATE"
-msgstr "Datum začetka veljavnosti. Datum, ko je vir veljaven ali veljaven."
+msgstr "Datum začetka veljavnosti. Datum, ko je vir učinkovit ali veljaven."
 
 msgid "INFO_TEXT_MEMBER_VALIDITY_END_DATE"
 msgstr "Končni datum veljavnosti. Datum, ko vir ni več učinkovit ali veljaven."
@@ -992,10 +986,10 @@ msgid "INFO_TEXT_CODELIST_FEEDBACK_CHANNEL"
 msgstr "Kanal povratnih informacij za referenčne podatke, npr. elektronski naslov."
 
 msgid "INFO_TEXT_EMAIL_SUBSCRIPTIONS"
-msgstr "Ta funkcija izbere, ali so naročnine aktivne ali ne. Če počistite polje »Dnevno«, lahko onemogočite vse naročnine hkrati. Če ga označite, se naročnine znova aktivirajo."
+msgstr "Ta funkcija izbere, ali so naročnine aktivne ali ne. Če odkljukate polje »Dnevno«, lahko onemogočite vse naročnine hkrati. Če ga označite, se naročnine znova aktivirajo."
 
 msgid "Front page"
-msgstr "Prednja stran"
+msgstr ""
 
 msgid "SUPERSEDED"
 msgstr "Nadomeščeno"
@@ -1004,7 +998,7 @@ msgid "SUBMITTED"
 msgstr "Oddano"
 
 msgid "RETIRED"
-msgstr "Upokojena"
+msgstr "Umaknjeno"
 
 msgid "VALID"
 msgstr "Veljavno"
@@ -1016,19 +1010,19 @@ msgid "DRAFT"
 msgstr "Osnutek"
 
 msgid "INCOMPLETE"
-msgstr "Nepopolna"
+msgstr "Nepopolno"
 
 msgid "required"
 msgstr "Obvezno"
 
 msgid "Member"
-msgstr "član"
+msgstr "Član"
 
 msgid "value"
 msgstr "vrednost"
 
 msgid "Submit error"
-msgstr "Napaka pri pošiljanju"
+msgstr "Posredujte napako"
 
 msgid "Unexpected error"
 msgstr "Nepričakovana napaka"
@@ -1040,28 +1034,28 @@ msgid "Are you sure that you want to continue? By continuing unsaved changes wil
 msgstr "Ste prepričani, da želite nadaljevati? Če nadaljujete, bodo neshranjene spremembe izgubljene."
 
 msgid "Create code list"
-msgstr "Ustvari šifrant"
+msgstr "Ustvarite šifrant"
 
 msgid "REMOVE LINK?"
-msgstr "ODSTRANI POVEZAVO?"
+msgstr "ODSTRANITEV POVEZAVE?"
 
 msgid "REMOVE REGISTRY?"
-msgstr "ODSTRANI REGISTAR?"
+msgstr "ODSTRANITEV REGISTRA?"
 
 msgid "REMOVE CODE?"
-msgstr "ODSTRANITE KODO?"
+msgstr "ODSTRANITEV KODE?"
 
 msgid "REMOVE CODE LIST?"
-msgstr "ODSTRANITE SEZNAM KODE?"
+msgstr "ODSTRANITEV SEZNAMA KODE?"
 
 msgid "REMOVE EXTENSION?"
-msgstr "ODSTRANITE RAZŠIRITEV?"
+msgstr "ODSTRANITEV RAZŠIRITVE?"
 
 msgid "REMOVE MEMBER?"
-msgstr "ODSTRANITE ČLANA?"
+msgstr "ODSTRANITEV ČLANA?"
 
 msgid "DETACH VARIANT?"
-msgstr "Odstraniti povezavo med različico in tem šifrantom?"
+msgstr "Odstranitev povezave med različico in tem šifrantom?"
 
 msgid "CALCULATIONHIERARCHIES"
 msgstr "HIERARHIJE RAČUNANJA"
@@ -1073,19 +1067,19 @@ msgid "CROSSREFERENCELISTS"
 msgstr "Seznami navzkrižnih sklicevanj"
 
 msgid "ADMIN"
-msgstr "skrbnik"
+msgstr "Administrator"
 
 msgid "DATA_MODEL_EDITOR"
 msgstr "Urejevalnik podatkovnih modelov"
 
 msgid "TERMINOLOGY_EDITOR"
-msgstr "Terminološki urednik"
+msgstr "Urejevalnik terminologije"
 
 msgid "CODE_LIST_EDITOR"
 msgstr "Urejevalnik šifrantov"
 
 msgid "MEMBER"
-msgstr "član"
+msgstr "Član"
 
 msgid "ERR_MSG_USER_401"
 msgstr "Nimate pooblastila za izvajanje tega dejanja."
@@ -1100,7 +1094,7 @@ msgid "ERR_MSG_USER_500"
 msgstr "Nepričakovana napaka"
 
 msgid "ERR_MSG_USER_FILE_TRANSMISSION_ERROR"
-msgstr "Napaka pri prenosu datoteke. Prosim poskusite ponovno."
+msgstr "Napaka pri prenosu datoteke. Prosimo poskusite ponovno."
 
 msgid "ERR_MSG_USER_END_BEFORE_START_DATE"
 msgstr "Končni datum je pred začetnim datumom."
@@ -1124,7 +1118,7 @@ msgid "ERR_MSG_USER_MISSING_HEADER_CODEVALUE"
 msgstr "Podatkom manjka stolpec z naslovom CODEVALUE."
 
 msgid "ERR_MSG_USER_MISSING_HEADER_PREFLABEL"
-msgstr "Podatkom manjka stolpec z glavo PREFLABEL_<koda jezika>."
+msgstr "Podatkom manjka stolpec z glavo PREFLABEL_<languagecode>."
 
 msgid "ERR_MSG_USER_MISSING_HEADER_ORGANIZATION"
 msgstr "Podatkom manjka stolpec z naslovom ORGANIZATION."
@@ -1178,10 +1172,10 @@ msgid "ERR_MSG_USER_DUPLICATE_HEADER_VALUE_WITH_IDENTIFIER"
 msgstr "Najdena podvojena vrednost glave {{ identifier }}, napaka."
 
 msgid "ERR_MSG_BROADER_CODE_DOES_NOT_EXIST"
-msgstr "Širša koda se sklicuje na kodno vrednost, ki ne obstaja, z vrednostjo kode {{ identifier }}, neuspešno."
+msgstr "Širša koda se sklicuje na kodno vrednost, ki ne obstaja, z vrednostjo kode {{ identifier }}, napaka."
 
 msgid "ERR_MSG_BROADER_CODE_SELF_REFERENCE"
-msgstr "Širša koda se sklicuje na kodno vrednost same kode, neuspešno."
+msgstr "Širša koda se sklicuje na kodno vrednost same kode, napaka."
 
 msgid "ERR_MSG_STATUS_NOT_VALID"
 msgstr "Neveljavna vrednost STATUS, določena v podatkih: {{ identifier }}"
@@ -1229,13 +1223,13 @@ msgid "ERR_MSG_USER_MEMBER_CODE_NOT_FOUND_WITH_IDENTIFIER"
 msgstr "Koda, povezana s članom, ne obstaja z identifikatorjem: {{ identifier }}"
 
 msgid "ERR_MSG_CODE_ORDER_CONTAINS_DUPLICATE_VALUES"
-msgstr "Vrstni red kod ima podvojene vrednosti."
+msgstr "Vrstni red kode ima podvojene vrednosti."
 
 msgid "ERR_MSG_USER_MEMBER_CODE_NOT_ALLOWED"
 msgstr "Koda, povezana s članom, ne pripada nadrejenemu šifrantu ali nobenemu povezanemu šifrantu."
 
 msgid "ERR_MSG_USER_MEMBER_HIERARCHY_MAXLEVEL_REACHED"
-msgstr "Za člane so bile dosežene največje hierarhije."
+msgstr "Največje možno število hierarhij je bilo doseženih za člane."
 
 msgid "ERR_MSG_USER_MEMBERVALUE_NOT_SET"
 msgstr "Vrednost člana ni nastavljena ali pa je prazna."
@@ -1286,7 +1280,7 @@ msgid "ERR_MSG_USER_CODE_CANNOT_BE_DELETED_BECAUSE_CUMULATIVE_CODELIST"
 msgstr "Te kode ni mogoče izbrisati, ker je del kumulativnega seznama kod."
 
 msgid "ERR_MSG_USER_CODE_HIERARCHY_MAXLEVEL_REACHED"
-msgstr "Za kode je bila dosežena največja hierarhija."
+msgstr "Največje možno število hierarhij pri kodah je bilo doseženih."
 
 msgid "ERR_MSG_USER_CODE_CYCLIC_DEPENDENCY_ISSUE"
 msgstr "Ciklična odvisnost pri povezovanju kode. Prepričajte se, da verižne kode niso povezane z vsako na ciklični način."
@@ -1463,7 +1457,7 @@ msgid "ERR_MSG_USER_CODE_STATUS_TRANSITION_WRONG_INITIAL_STATUS"
 msgstr "Napačno začetno stanje."
 
 msgid "ERR_MSG_USER_CODE_STATUS_TRANSITION_WRONG_END_STATUS"
-msgstr "Napačen končni status."
+msgstr "Napačno končno stanje."
 
 msgid "ERR_MSG_USER_PROPERTYTYPE_NOT_ALLOWED_FOR_EXTENSION"
 msgstr "Določena vrsta lastnosti ni dovoljena za razširitev: {{ identifier }}"
@@ -1472,19 +1466,19 @@ msgid "ERR_MSG_USER_IMPORTED_DATA_CONTAINS_INVALID_URLS_IN_LINKS"
 msgstr "Uvoženi podatki vsebujejo neveljavne URL-je v stolpcih HREF zunanjih referenc."
 
 msgid "Do you want to replace the existing values with new ones?"
-msgstr "Ali želite obstoječe vrednosti zamenjati z novimi?"
+msgstr ""
 
 msgid "cancelTextForCodeCreation"
-msgstr "Ustvari kodo brez koncepta"
+msgstr "Ustvarite kodo brez koncepta"
 
 msgid "cancelTextForCodeSchemeCreation"
-msgstr "Ustvari šifrant brez koncepta"
+msgstr "Ustvarite šifrant brez koncepta"
 
 msgid "terminologyIntegrationModalPageTitleWhenCreatingCode"
-msgstr "Ustvarite kodno ime tako, da ga uvozite iz orodja Terminologies"
+msgstr "Ustvarite kodno ime tako, da ga uvozite iz orodja Terminologije"
 
 msgid "terminologyIntegrationModalPageTitleWhenCreatingCodeScheme"
-msgstr "Ustvarite ime kodnega seznama tako, da ga uvozite iz orodja Terminologies"
+msgstr "Ustvarite ime kodnega seznama tako, da ga uvozite iz orodja Terminologije"
 
 msgid "terminologyIntegrationModalInstructionTextWhenCreatingCode"
 msgstr "Poiščite koncept, ki ustreza imenu kode iz orodja Terminologije. Prinesite koncept kot ime kode s klikom na rezultat iskanja. Izraz in definicija koncepta bosta kopirana kot ime in definicija kode. Prav tako bo URI koncepta kopiran v orodje za referenčne podatke."
@@ -1493,16 +1487,16 @@ msgid "terminologyIntegrationModalInstructionTextWhenCreatingCodeScheme"
 msgstr "Poiščite koncept, ki ustreza imenu šifranta v orodju Terminologije. Koncept prinesite kot ime šifranta s klikom na rezultat iskanja. Izraz in definicija pojma bosta kopirana kot ime in definicija šifranta. Prav tako bo URI koncepta kopiran v orodje za referenčne podatke."
 
 msgid "CHANGE STATUS?"
-msgstr "SPREMENITI STANJE?"
+msgstr ""
 
 msgid "CHANGE_STATUS_CONFIRMATION_PARAGRAPH_1"
 msgstr "Ali ste prepričani, da želite spremeniti status?"
 
 msgid "STATUS_CONFIRMATION_PARAGRAPH_2"
-msgstr "Po shranjevanju statusa ne morete spremeniti nazaj v nedokončano ali osnutek."
+msgstr "Po shranitvi, statusa ne morete spremeniti nazaj v nedokončano ali osnutek."
 
 msgid "CHOOSE STATUS?"
-msgstr "IZBERI STANJE?"
+msgstr ""
 
 msgid "CHOOSE_STATUS_CONFIRMATION_PARAGRAPH_1"
 msgstr "Ali ste prepričani, da želite izbrati ta status?"
@@ -1511,13 +1505,13 @@ msgid "CHANGE CODE STATUSES TOO?"
 msgstr "Ali naj se vse kode s statusom {{startStatus}} spremenijo v status {{endStatus}}?"
 
 msgid "searchresult"
-msgstr "rezultat iskanja"
+msgstr "Rezultat iskanja"
 
 msgid "searchresults"
 msgstr "Rezultati iskanja"
 
 msgid "SUGGEST CONCEPT?"
-msgstr "Predlog za terminologije"
+msgstr "Predlog za Terminologije"
 
 msgid "SUGGEST CONCEPT MODAL QUESTION"
 msgstr "Ali želite predlagati koncept {{concept}} k besedišču {{vocabulary}}?"
@@ -1526,55 +1520,55 @@ msgid "Are you sure you want to create the version as empty?"
 msgstr "Vsebina je uvožena v novo različico"
 
 msgid "Create extension"
-msgstr "Ustvari razširitev"
+msgstr ""
 
 msgid "Cross-reference code"
 msgstr "Član za navzkrižno sklicevanje"
 
 msgid "Broader member"
-msgstr "Širši člen"
+msgstr ""
 
 msgid "CREATE MISSING MEMBERS MODAL TITLE"
-msgstr "Ustvari manjkajoče člane"
+msgstr "Ustvarite manjkajoče člane"
 
 msgid "CREATE MISSING MEMBERS MODAL BODY TEXT"
 msgstr "Ta funkcionalnost ustvari manjkajoče člane za to razširitev. Manjkajoči člani bodo ustvarjeni iz kod naslednjih seznamov kod, če v kodi manjka član."
 
 msgid "Please wait. This could take a while..."
-msgstr "Prosim počakaj. To lahko traja nekaj časa ..."
+msgstr "Prosim počakajte. To lahko traja nekaj časa..."
 
 msgid "missing members created."
-msgstr "ustvarjenih manjkajočih članov."
+msgstr "manjkajoči člani ustvarjeni."
 
 msgid "extension"
 msgstr "razširitev"
 
 msgid "Searchhits:"
-msgstr "Iskalni zadetki:"
+msgstr "Zadetki iskanja:"
 
 msgid "truecumulative"
-msgstr "ja"
+msgstr "Da"
 
 msgid "falsecumulative"
-msgstr "št"
+msgstr "Ne"
 
 msgid "Delete code list version"
-msgstr "Izbriši različico šifranta"
+msgstr "Izbrišite različico šifranta"
 
 msgid "Delete code list"
-msgstr "Izbriši šifrant"
+msgstr "Izbrišite šifrant"
 
 msgid "Export JSON"
 msgstr "Izvoz JSON"
 
 msgid "Show JSON"
-msgstr "Prikaži JSON"
+msgstr "Prikaz JSON"
 
 msgid "INFO_TEXT_MASS_MIGRATE_CODELIST_CODES_MODAL_HELP_TEXT"
 msgstr "To funkcijo lahko uporabite za posodobitev podatkov, vrnjenih s funkcijo Izvozi kodni seznam."
 
 msgid "Change code statuses at the same time?"
-msgstr "Hkrati spremeniti statuse kod?"
+msgstr "Istočasna sprememba stanja kod?"
 
 msgid "CODE STATUS CHANGES RESULTS"
 msgstr "Rezultat sprememb statusa kode"
@@ -1583,16 +1577,16 @@ msgid "pattern"
 msgstr "Vnos ni v zahtevani obliki"
 
 msgid "ADD EMAIL SUBSCRIPTION TO RESOURCE REGARDING CHANGES?"
-msgstr "DODATI E-POŠTNO NAROČNINO NA VIR GLEDE SPREMEMB?"
+msgstr "DODAJANJE NAROČNINE NA E-POŠTNA OBVESTILA NA VIR GLEDE SPREMEMB?"
 
 msgid "REMOVE EMAIL SUBSCRIPTION TO RESOURCE?"
-msgstr "ODSTRANITE E-POŠTNO NAROČNINO NA VIR?"
+msgstr "ODSTRANITEV NAROČNINE NA E-POŠTNA OBVESTILA NA VIR?"
 
 msgid "ARE YOU SURE YOU WANT TO ENABLE THE NOTIFICATION EMAIL SUBSCRIPTION?"
-msgstr "STE PREPRIČANI, DA ŽELITE OMOGOČITI NAROČANJE NA E-POŠTO OBVESTILA?"
+msgstr "STE PREPRIČANI, DA ŽELITE OMOGOČITI NAROČANJE NA E-POŠTNA OBVESTILA?"
 
 msgid "ARE YOU SURE YOU WANT TO DISABLE THE NOTIFICATION EMAIL SUBSCRIPTION?"
-msgstr "STE PREPRIČANI, DA ŽELITE ONEMOGOČITI NAROČANJE NA ELEKTRONSKO OBVESTILO?"
+msgstr "STE PREPRIČANI, DA ŽELITE ONEMOGOČITI NAROČANJE NA E-POŠTNA OBVESTILA?"
 
 msgid "Adding subscription failed."
 msgstr "Dodajanje naročnine ni uspelo."
@@ -1640,7 +1634,7 @@ msgid "memberValueValidatorError"
 msgstr "Vrednost člana vsebuje nedovoljene znake. Pravilo veljavnosti je: {{ value }}."
 
 msgid "memberValueRequired"
-msgstr "Vrednost člana je obvezen vnos."
+msgstr "Vnos vrednosti člana je obvezen podatek."
 
 msgid "localizableValueRequired"
 msgstr "Obvezno"
