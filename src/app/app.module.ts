@@ -319,24 +319,6 @@ export function createMissingTranslationHandler(): MissingTranslationHandler {
     CodeSchemeSingleInputComponent,
     SearchHitsListComponent
   ],
-  entryComponents: [ // needed for modal components
-    CodeSchemeImportModalComponent,
-    CodeSchemeCodesImportModalComponent,
-    CodeSchemeMassMigrateCodeStatusesModalComponent,
-    ExtensionsImportModalComponent,
-    MembersImportModalComponent,
-    LinkShowModalComponent,
-    LinkEditModalComponent,
-    LinkCreateModalComponent,
-    LinkListModalComponent,
-    SearchLinkedOrganizationModalComponent,
-    SearchLinkedCodeModalComponent,
-    SearchLinkedCodeSchemeModalComponent,
-    SearchLinkedMemberModalComponent,
-    TerminologyIntegrationCodeschemeModalComponent,
-    CodeschemeVariantModalComponent,
-    SuggestConceptModalComponent
-  ],
   imports: [
     BrowserModule,
     FormsModule,
