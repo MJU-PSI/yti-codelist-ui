@@ -989,7 +989,7 @@ msgid "INFO_TEXT_EMAIL_SUBSCRIPTIONS"
 msgstr "Ta funkcija izbere, ali so naročnine aktivne ali ne. Če odkljukate polje »Dnevno«, lahko onemogočite vse naročnine hkrati. Če ga označite, se naročnine znova aktivirajo."
 
 msgid "Front page"
-msgstr ""
+msgstr "Naslovna stran"
 
 msgid "SUPERSEDED"
 msgstr "Nadomeščeno"
