@@ -65,6 +65,7 @@ const request = 'request';
 const vocabularies = 'vocabularies';
 const concepts = 'concepts';
 const suggestion = 'suggestion';
+const publicAdministrationServicesOntology = 'mju';
 
 const codeSchemesBasePath = `/${apiContext}/${api}/${version}/${codeSchemes}`;
 const codeRegistriesBasePath = `/${apiContext}/${api}/${version}/${registries}`;
@@ -276,7 +277,7 @@ export class DataService {
       params = params.append('language', language);
     }
 
-    return this.http.get<WithResults<CodeType>>(`${codeRegistriesBasePath}/jupo/${codeSchemes}/serviceclassification/${codes}/`, { params })
+    return this.http.get<WithResults<CodeType>>(`${codeRegistriesBasePath}/${publicAdministrationServicesOntology}/${codeSchemes}/serviceclassification/${codes}/`, { params })
       .pipe(map(res => res.results.map(data => new Code(data))));
   }
 
