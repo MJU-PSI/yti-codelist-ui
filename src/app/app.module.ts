@@ -209,7 +209,7 @@ export function initApp(configurationService: ConfigurationService) {
 }
 
 export function resolveAuthenticatedUserEndpoint() {
-  return '/codelist-intake/api/authenticated-user';
+  return 'codelist-intake/api/authenticated-user';
 }
 
 export function createTranslateLoader(): TranslateLoader {
