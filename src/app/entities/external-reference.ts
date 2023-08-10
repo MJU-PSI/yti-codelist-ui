@@ -44,9 +44,9 @@ export class ExternalReference {
   get image(): any {
     switch (this.id) {
       case CCBy40LicenseLinkId:
-        return '../../assets/images/ccby40-icon-88x31.png';
+        return 'assets/images/ccby40-icon-88x31.png';
       case CC0LicenseLinkId:
-        return '../../assets/images/cc0-icon-88x31.png';
+        return 'assets/images/cc0-icon-88x31.png';
       default:
         return null;
     }
