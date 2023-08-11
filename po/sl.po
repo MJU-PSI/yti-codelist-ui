@@ -635,7 +635,7 @@ msgid "Registries"
 msgstr "Registri"
 
 msgid "Terminologies"
-msgstr "Terminologije"
+msgstr "Terminologija"
 
 msgid "Data Vocabularies"
 msgstr "Podatkovni modeli"
