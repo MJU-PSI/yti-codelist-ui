@@ -1,6 +1,2 @@
 #!/bin/bash
-#
-#
-mkdir -p tmp
-cp -r ../yti-common-ui/dist/* tmp
-docker build -f Dockerfile -t yti-codelist-ui .
+docker build -t yti-codelist-ui:latest .
