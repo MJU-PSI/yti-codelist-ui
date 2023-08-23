@@ -68,22 +68,23 @@ const request = 'request';
 const vocabularies = 'vocabularies';
 const concepts = 'concepts';
 const suggestion = 'suggestion';
+const publicAdministrationServicesOntology = 'mju';
 
-const codeSchemesBasePath = `/${apiContext}/${api}/${version}/${codeSchemes}`;
-const codeRegistriesBasePath = `/${apiContext}/${api}/${version}/${registries}`;
-const membersBasePath = `/${apiContext}/${api}/${version}/${members}`;
-const membersIntakeBasePath = `/${intakeContext}/${api}/${version}/${members}`;
-const usersIntakeBasePath = `/${intakeContext}/${api}/${version}/${users}`;
-const configurationIntakeBasePath = `/${intakeContext}/${api}/${version}/${system}/${config}`;
-const externalReferencesBasePath = `/${apiContext}/${api}/${version}/${externalReferences}`;
-const codeRegistriesIntakeBasePath = `/${intakeContext}/${api}/${version}/${registries}`;
-const infoDomainsBasePath = `/${intakeContext}/${api}/${version}/${infodomains}`;
-const propertyTypesBasePath = `/${apiContext}/${api}/${version}/${propertytypes}`;
-const organizationsBasePath = `/${intakeContext}/${api}/${version}/${organizations}`;
-const fakeableUsersPath = `/${intakeContext}/${api}/${fakeableUsers}`;
-const groupManagementRequestBasePath = `/${intakeContext}/${api}/${version}/${groupmanagement}/${request}`;
-const groupManagementRequestsBasePath = `/${intakeContext}/${api}/${version}/${groupmanagement}/${requests}`;
-const terminologyBasePath = `/${intakeContext}/${api}/${version}/${terminologyContext}`;
+const codeSchemesBasePath = `${apiContext}/${api}/${version}/${codeSchemes}`;
+const codeRegistriesBasePath = `${apiContext}/${api}/${version}/${registries}`;
+const membersBasePath = `${apiContext}/${api}/${version}/${members}`;
+const membersIntakeBasePath = `${intakeContext}/${api}/${version}/${members}`;
+const usersIntakeBasePath = `${intakeContext}/${api}/${version}/${users}`;
+const configurationIntakeBasePath = `${intakeContext}/${api}/${version}/${system}/${config}`;
+const externalReferencesBasePath = `${apiContext}/${api}/${version}/${externalReferences}`;
+const codeRegistriesIntakeBasePath = `${intakeContext}/${api}/${version}/${registries}`;
+const infoDomainsBasePath = `${intakeContext}/${api}/${version}/${infodomains}`;
+const propertyTypesBasePath = `${apiContext}/${api}/${version}/${propertytypes}`;
+const organizationsBasePath = `${intakeContext}/${api}/${version}/${organizations}`;
+const fakeableUsersPath = `${intakeContext}/${api}/${fakeableUsers}`;
+const groupManagementRequestBasePath = `${intakeContext}/${api}/${version}/${groupmanagement}/${request}`;
+const groupManagementRequestsBasePath = `${intakeContext}/${api}/${version}/${groupmanagement}/${requests}`;
+const terminologyBasePath = `${intakeContext}/${api}/${version}/${terminologyContext}`;
 const terminologyVocabulariesPath = `${terminologyBasePath}/${vocabularies}`;
 const terminologyConceptsPath = `${terminologyBasePath}/${concepts}`;
 const terminologyConceptSuggestionPath = `${terminologyBasePath}/${suggestion}`;
@@ -281,7 +282,7 @@ export class DataService {
       params = params.append('language', language);
     }
 
-    return this.http.get<WithResults<CodeType>>(`${codeRegistriesBasePath}/mju/${codeSchemes}/serviceclassification/${codes}/`, { params })
+    return this.http.get<WithResults<CodeType>>(`${codeRegistriesBasePath}/${publicAdministrationServicesOntology}/${codeSchemes}/serviceclassification/${codes}/`, { params })
       .pipe(map(res => res.results.map(data => new Code(data))));
   }
 

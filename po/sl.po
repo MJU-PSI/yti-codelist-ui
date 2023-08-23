@@ -176,7 +176,7 @@ msgid "All languages"
 msgstr "Vsi jeziki"
 
 msgid "Reference Data"
-msgstr "Referenčni podatki"
+msgstr "Šifranti"
 
 msgid "LABEL_TEXT_CODE_VALUE"
 msgstr "Vrednost kode"
@@ -212,7 +212,7 @@ msgid "Create code"
 msgstr "Ustvarite kodo"
 
 msgid "Get concept from Terminologies"
-msgstr "Pridobite koncept iz terminologij"
+msgstr "Pridobite pojem iz terminologij"
 
 msgid "URI"
 msgstr "URI"
@@ -635,10 +635,10 @@ msgid "Registries"
 msgstr "Registri"
 
 msgid "Terminologies"
-msgstr "Terminologije"
+msgstr "Terminologija"
 
 msgid "Data Vocabularies"
-msgstr "Podatkovno besedišče"
+msgstr "Podatkovni modeli"
 
 msgid "Comments"
 msgstr "Komentarji"
@@ -677,16 +677,16 @@ msgid "CODE LISTS"
 msgstr "ŠIFRANTI"
 
 msgid "Concept name"
-msgstr "Ime koncepta"
+msgstr "Ime pojma"
 
 msgid "Concept definition"
-msgstr "Definicija koncepta"
+msgstr "Definicija pojma"
 
 msgid "Suggest the concept to Terminologies"
-msgstr "Predlagajte koncept Terminologijam"
+msgstr "Predlagajte pojem Terminologijam"
 
 msgid "Search for concept"
-msgstr "Iskanje koncepta"
+msgstr "Iskanje pojma"
 
 msgid "CONCEPT_SEARCH_MATCHED_RESULTS_LARGE"
 msgstr "Vaše iskanje se ujema s {{ count }} pojmi. Prikazani so prvi {{ showCount }} rezultati. Zožajte iskanje za boljše rezultate."
@@ -701,7 +701,7 @@ msgid "{{terminologyIntegrationModalInstructionText}}"
 msgstr "{{terminologyIntegrationModalInstructionText}}"
 
 msgid "Concept suggestion instruction text"
-msgstr "Če ustrezen koncept ne obstaja, ga predlagajte Terminologiji. Izberite besedišče za predlog."
+msgstr "Če ustrezen pojem ne obstaja, ga predlagajte Terminologiji. Izberite besedišče za predlog."
 
 msgid "Email"
 msgstr "E-naslov"
@@ -758,7 +758,7 @@ msgid "INFO_TEXT_CODELIST_NAME"
 msgstr "Ime šifranta"
 
 msgid "INFO_TEXT_VOCABULARIES_URI"
-msgstr "Stalni spletni naslov koncepta v orodju Terminologije"
+msgstr "Stalni spletni naslov pojma v orodju Terminologija"
 
 msgid "INFO_TEXT_DEFAULT_CODE"
 msgstr "Koda šifranta, ki je izbrana kot privzeta. Privzeta koda se uporablja v posebnih primerih."
@@ -776,7 +776,7 @@ msgid "INFO_TEXT_CODELIST_DESCRIPTION"
 msgstr "Opis vsebine"
 
 msgid "INFO_TEXT_CODELIST_DEFINITION"
-msgstr "Opredelitev izraza v zvezi z informacijsko vsebino kodiranja orodja Besedišče, koncepta ali samodefinirane definicije."
+msgstr "Opredelitev izraza v zvezi z informacijsko vsebino kodiranja orodja Besedišče, pojma ali samodefinirane definicije."
 
 msgid "INFO_TEXT_CODELIST_CHANGE_NOTE"
 msgstr "Spremenite informacije, na primer, spremembe na prejšnjo različico ali spremembe, kot so opisane za daljše časovno obdobje. Spremembe, ki so pomembne za uporabnika šifranta."
@@ -854,7 +854,7 @@ msgid "INFO_TEXT_CODE_URI"
 msgstr "Stalni spletni naslov kode"
 
 msgid "INFO_TEXT_CODE_CONCEPT_URI"
-msgstr "Stalni naslov koncepta, vezanega na kodo"
+msgstr "Stalni naslov pojma, vezanega na kodo"
 
 msgid "INFO_TEXT_CODE_LAST_MODIFICATION"
 msgstr "Čas zadnjega urejanja"
@@ -953,7 +953,7 @@ msgid "INFO_TEXT_MEMBER_VALIDITY_END_DATE"
 msgstr "Končni datum veljavnosti. Datum, ko vir ni več učinkovit ali veljaven."
 
 msgid "INFO_TEXT_CONCEPT_NAME"
-msgstr "Predlagano ime koncepta"
+msgstr "Predlagano ime pojma"
 
 msgid "INFO_TEXT_CONCEPT_DEFINITION"
 msgstr "Začetni predlog definicije ali opis pojma."
@@ -989,7 +989,7 @@ msgid "INFO_TEXT_EMAIL_SUBSCRIPTIONS"
 msgstr "Ta funkcija izbere, ali so naročnine aktivne ali ne. Če odkljukate polje »Dnevno«, lahko onemogočite vse naročnine hkrati. Če ga označite, se naročnine znova aktivirajo."
 
 msgid "Front page"
-msgstr ""
+msgstr "Naslovna stran"
 
 msgid "SUPERSEDED"
 msgstr "Nadomeščeno"
@@ -1208,7 +1208,7 @@ msgid "ERR_MSG_INVALID_CODEVALUE_WITH_IDENTIFIER"
 msgstr "Vrednost kode ni veljavna v vrstici {{ identifier }}. Dovoljeni znaki so: a-zA-Z0-9_-"
 
 msgid "ERR_MSG_CANT_REACH_TERMINOLOGY_API"
-msgstr "Orodja za terminologije ni mogoče doseči."
+msgstr "Orodja za terminologijo ni mogoče doseči."
 
 msgid "ERR_MSG_USER_ROW_MISSING_PROPERTYTYPE"
 msgstr "Številka vrstice {{ identifier}} v podatkih manjka vrednost v stolpcu PROPERTYTYPE."
@@ -1469,22 +1469,22 @@ msgid "Do you want to replace the existing values with new ones?"
 msgstr ""
 
 msgid "cancelTextForCodeCreation"
-msgstr "Ustvarite kodo brez koncepta"
+msgstr "Ustvarite kodo brez pojma"
 
 msgid "cancelTextForCodeSchemeCreation"
-msgstr "Ustvarite šifrant brez koncepta"
+msgstr "Ustvarite šifrant brez pojma"
 
 msgid "terminologyIntegrationModalPageTitleWhenCreatingCode"
-msgstr "Ustvarite kodno ime tako, da ga uvozite iz orodja Terminologije"
+msgstr "Ustvarite kodno ime tako, da ga uvozite iz orodja Terminologija"
 
 msgid "terminologyIntegrationModalPageTitleWhenCreatingCodeScheme"
-msgstr "Ustvarite ime kodnega seznama tako, da ga uvozite iz orodja Terminologije"
+msgstr "Ustvarite ime kodnega seznama tako, da ga uvozite iz orodja Terminologija"
 
 msgid "terminologyIntegrationModalInstructionTextWhenCreatingCode"
-msgstr "Poiščite koncept, ki ustreza imenu kode iz orodja Terminologije. Prinesite koncept kot ime kode s klikom na rezultat iskanja. Izraz in definicija koncepta bosta kopirana kot ime in definicija kode. Prav tako bo URI koncepta kopiran v orodje za referenčne podatke."
+msgstr "Poiščite pojem, ki ustreza imenu kode iz orodja Terminologija. Prinesite pojem kot ime kode s klikom na rezultat iskanja. Izraz in definicija pojma bosta kopirana kot ime in definicija kode. Prav tako bo URI pojma kopiran v orodje za referenčne podatke."
 
 msgid "terminologyIntegrationModalInstructionTextWhenCreatingCodeScheme"
-msgstr "Poiščite koncept, ki ustreza imenu šifranta v orodju Terminologije. Koncept prinesite kot ime šifranta s klikom na rezultat iskanja. Izraz in definicija pojma bosta kopirana kot ime in definicija šifranta. Prav tako bo URI koncepta kopiran v orodje za referenčne podatke."
+msgstr "Poiščite pojem, ki ustreza imenu šifranta v orodju Terminologija. Pojem prinesite kot ime šifranta s klikom na rezultat iskanja. Izraz in definicija pojma bosta kopirana kot ime in definicija šifranta. Prav tako bo URI pojma kopiran v orodje za referenčne podatke."
 
 msgid "CHANGE STATUS?"
 msgstr ""
@@ -1511,10 +1511,10 @@ msgid "searchresults"
 msgstr "Rezultati iskanja"
 
 msgid "SUGGEST CONCEPT?"
-msgstr "Predlog za Terminologije"
+msgstr "Predlog za Terminologijo"
 
 msgid "SUGGEST CONCEPT MODAL QUESTION"
-msgstr "Ali želite predlagati koncept {{concept}} k besedišču {{vocabulary}}?"
+msgstr "Ali želite predlagati pojem {{concept}} k besedišču {{vocabulary}}?"
 
 msgid "Are you sure you want to create the version as empty?"
 msgstr "Vsebina je uvožena v novo različico"

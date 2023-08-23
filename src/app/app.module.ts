@@ -222,7 +222,7 @@ export function initApp(configurationService: ConfigurationService) {
 }
 
 export function resolveAuthenticatedUserEndpoint() {
-  return '/codelist-intake/api/authenticated-user';
+  return 'codelist-intake/api/authenticated-user';
 }
 
 export function createTranslateLoader(): TranslateLoader {
@@ -338,24 +338,6 @@ export function createMissingTranslationHandler(): MissingTranslationHandler {
     CodeSchemeAnnotationsComponent,
     CodeSchemeAnnotationsInputComponent,
     SearchLinkedAnnotationModalComponent
-  ],
-  entryComponents: [ // needed for modal components
-    CodeSchemeImportModalComponent,
-    CodeSchemeCodesImportModalComponent,
-    CodeSchemeMassMigrateCodeStatusesModalComponent,
-    ExtensionsImportModalComponent,
-    MembersImportModalComponent,
-    LinkShowModalComponent,
-    LinkEditModalComponent,
-    LinkCreateModalComponent,
-    LinkListModalComponent,
-    SearchLinkedOrganizationModalComponent,
-    SearchLinkedCodeModalComponent,
-    SearchLinkedCodeSchemeModalComponent,
-    SearchLinkedMemberModalComponent,
-    TerminologyIntegrationCodeschemeModalComponent,
-    CodeschemeVariantModalComponent,
-    SuggestConceptModalComponent
   ],
   imports: [
     BrowserModule,
