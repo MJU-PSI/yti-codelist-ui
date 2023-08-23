@@ -1639,3 +1639,53 @@ msgstr "Vnos vrednosti člana je obvezen podatek."
 msgid "localizableValueRequired"
 msgstr "Obvezno"
 
+msgid "Create annotation"
+msgstr "Ustvarite anotacijo"
+
+msgid "Annotation ID"
+msgstr "ID anotacije"
+
+msgid "INFO_TEXT_ANNOTATION_CODE_VALUE"
+msgstr "Tehnična koda ali stalni identifikator."
+
+msgid "Annotation name"
+msgstr "Ime anotacije"
+
+msgid "INFO_TEXT_ANNOTATION_NAME"
+msgstr "Ime anotacije"
+
+msgid "INFO_TEXT_ANNOTATION_DESCRIPTION"
+msgstr "Opis anotacije"
+
+msgid "ERR_MSG_USER_ANNOTATION_PARSING_FAILED"
+msgstr "Napaka pri razčlenjevanju podatkov pripisov."
+
+msgid "annotationCodeValueExists"
+msgstr "ID anotacije je že v uporabi v tem registru."
+
+msgid "Add annotation"
+msgstr "Dodaj anotacijo"
+
+msgid "Annotations"
+msgstr "Anotacije"
+
+msgid "Search did not find any annotations."
+msgstr "Iskanje ni našlo nobenih anotacij."
+
+msgid "annotation"
+msgstr "anotacija"
+
+msgid "annotations"
+msgstr "anotacij"
+
+msgid "This annotation list does not have any annotations yet."
+msgstr "Seznam anotacij še nima dodanih nobenih anotacij"
+
+msgid "ID"
+msgstr ""
+
+msgid "Search for annotation"
+msgstr "Išči anotacijo"
+
+msgid "Back"
+msgstr "Nazaj"

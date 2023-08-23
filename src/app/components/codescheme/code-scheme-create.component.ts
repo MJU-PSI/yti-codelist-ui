@@ -19,6 +19,7 @@ import { CodeListConfirmationModalService } from '../common/confirmation-modal.s
 import { Organization } from '../../entities/organization';
 import { nonEmptyLocalizableValidator } from '../../utils/validators';
 import { contains, ignoreModalClose, requiredList, restrictedStatuses, Status, UserService, availableLanguages } from '@mju-psi/yti-common-ui';
+import { CodeSchemeAnnotation } from '../../entities/codeSchemeAnnotation';
 
 @Component({
   selector: 'app-code-scheme-create',
@@ -59,6 +60,7 @@ export class CodeSchemeCreateComponent implements OnInit {
     organizations: new FormControl([], [requiredList]),
     cumulative: new FormControl(),
     feedbackChannel: new FormControl(),
+    codeSchemeAnnotations: new FormControl(),
   }, null, this.codeValueExistsValidator());
 
   constructor(private router: Router,
@@ -126,6 +128,7 @@ export class CodeSchemeCreateComponent implements OnInit {
             this.codeSchemeForm.patchValue({ conceptUriInVocabularies: originalCodeScheme.conceptUriInVocabularies });
             this.codeSchemeForm.patchValue({ codeRegistry: originalCodeScheme.codeRegistry }); // when cloning, enforce same registry
             this.codeSchemeForm.patchValue({ organizations: originalCodeScheme.organizations });
+            this.codeSchemeForm.patchValue({ codeSchemeAnnotations: originalCodeScheme.codeSchemeAnnotations });
             if (originalCodeScheme.cumulative === true) {
               this.codeSchemeForm.patchValue({ cumulative: true });
               this.codeSchemeForm.patchValue({ newVersionEmpty: false }); // when cloning a cumulative codelist, never allow empty. The choice is hidden in UI as well.
@@ -206,7 +209,7 @@ export class CodeSchemeCreateComponent implements OnInit {
 
   save(formData: any): Observable<any> {
 
-    const { newVersionEmpty, validity, codeRegistry, defaultCode, infoDomains, languageCodes, externalReferences, organizations, ...rest } = formData;
+    const { newVersionEmpty, validity, codeRegistry, defaultCode, infoDomains, languageCodes, externalReferences, organizations, codeSchemeAnnotations, ...rest } = formData;
 
     const codeScheme: CodeSchemeType = <CodeSchemeType>{
       ...rest,
@@ -217,7 +220,8 @@ export class CodeSchemeCreateComponent implements OnInit {
       infoDomains: infoDomains.map((dc: CodePlain) => dc.serialize()),
       languageCodes: languageCodes.map((lc: CodePlain) => lc.serialize()),
       externalReferences: externalReferences.map((er: ExternalReference) => er.serialize()),
-      organizations: organizations.map((organization: Organization) => organization.serialize())
+      organizations: organizations.map((organization: Organization) => organization.serialize()),
+      codeSchemeAnnotations: codeSchemeAnnotations.map((codeSchemeAnnotation: CodeSchemeAnnotation) => codeSchemeAnnotation.serialize())
     };
 
     if (this.cloning) {

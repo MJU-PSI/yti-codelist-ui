@@ -1,0 +1,29 @@
+<div class="annotations row">
+  <div id="annotations_div" class="col-md-12" *ngIf="annotations.length > 0">
+    <table *ngIf="annotations.length > 0" class="table table-sm">
+      <thead class="thead-light">
+        <tr>
+          <th scope="col" translate>ID</th>
+          <th scope="col" translate>Name</th>
+          <th scope="col" translate>Description</th>
+          <th scope="col" width="50px">&nbsp;</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let annotation of annotations" [routerLink]="annotation.route">
+          <td scope="row">{{annotation.codeValue}}</td>
+          <td>{{annotation.prefLabel | translateValue:true}}</td>
+          <td>{{annotation.description | translateValue:true}}</td>
+          <td class="text-center">
+            <!-- <i class="icon fa fa-edit" (click)="editAnnotation(annotation)"></i> -->
+            <a class="icon fa fa-edit" [routerLink]="annotation.route"></a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="annotations" *ngIf="annotations.length === 0">
+    <span translate>This annotation list does not have any annotations yet.</span>
+  </div>
+</div>

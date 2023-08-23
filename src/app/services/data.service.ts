@@ -6,6 +6,7 @@ import { catchError, map, mergeMap } from 'rxjs/operators';
 import { InfoDomain } from '../entities/info-domain';
 import { Code } from '../entities/code';
 import {
+  AnnotationType,
   ApiResponseType,
   CodePlainType,
   CodeRegistryType,
@@ -38,6 +39,7 @@ import { HttpClient, HttpParams, HttpResponse } from '@angular/common/http';
 import { MemberSimple } from '../entities/member-simple';
 import { UserSimple } from '../entities/user-simple';
 import { ConceptResponse } from '../entities/concept-response';
+import { Annotation } from '../entities/annotation';
 
 const intakeContext = 'codelist-intake';
 const apiContext = 'codelist-api';
@@ -49,6 +51,7 @@ const system = 'system';
 const registries = 'coderegistries';
 const config = 'config';
 const codeSchemes = 'codeschemes';
+const annotations = 'annotations';
 const codes = 'codes';
 const externalReferences = 'externalreferences';
 const infodomains = 'infodomains';
@@ -84,6 +87,8 @@ const terminologyBasePath = `/${intakeContext}/${api}/${version}/${terminologyCo
 const terminologyVocabulariesPath = `${terminologyBasePath}/${vocabularies}`;
 const terminologyConceptsPath = `${terminologyBasePath}/${concepts}`;
 const terminologyConceptSuggestionPath = `${terminologyBasePath}/${suggestion}`;
+const annotationsBasePath = `/${apiContext}/${api}/${version}/${annotations}`;
+const annotationsIntakeBasePath = `/${intakeContext}/${api}/${version}/${annotations}`;
 
 interface FakeableUser {
   email: string;
@@ -197,7 +202,7 @@ export class DataService {
                     sortMode: string | null, searchCodes: boolean | false, searchExtensions: boolean | false, language: string | null): Observable<CodeScheme[]> {
 
     let params = new HttpParams()
-      .append('expand', 'codeRegistry,externalReference,propertyType,code,organization,extension,valueType,searchHit')
+      .append('expand', 'codeRegistry,externalReference,propertyType,code,organization,extension,valueType,codeSchemeAnnotation,annotation,searchHit')
       .append('searchCodes', searchCodes.toString())
       .append('searchExtensions', searchExtensions.toString());
 
@@ -276,14 +281,14 @@ export class DataService {
       params = params.append('language', language);
     }
 
-    return this.http.get<WithResults<CodeType>>(`${codeRegistriesBasePath}/jupo/${codeSchemes}/serviceclassification/${codes}/`, { params })
+    return this.http.get<WithResults<CodeType>>(`${codeRegistriesBasePath}/mju/${codeSchemes}/serviceclassification/${codes}/`, { params })
       .pipe(map(res => res.results.map(data => new Code(data))));
   }
 
   getCodeScheme(registryCodeValue: string, schemeCodeValue: string): Observable<CodeScheme> {
 
     const params = {
-      'expand': 'codeRegistry,organization,code,externalReference,propertyType,codeScheme,code,extension,valueType'
+      'expand': 'codeRegistry,organization,code,externalReference,propertyType,codeScheme,code,extension,valueType,codeSchemeAnnotation,annotation'
     };
 
     return this.http.get<CodeSchemeType>(`${codeRegistriesBasePath}/${registryCodeValue}/${codeSchemes}/${schemeCodeValue}/`, { params })
@@ -293,7 +298,7 @@ export class DataService {
   getCodeSchemeWithUuid(codeSchemeUuid: string): Observable<CodeScheme> {
 
     const params = {
-      'expand': 'codeRegistry,organization,code,externalReference,propertyType,codeScheme,code,extension,valueType'
+      'expand': 'codeRegistry,organization,code,externalReference,propertyType,codeScheme,code,extension,valueType,codeSchemeAnnotation,annotation'
     };
 
     return this.http.get<CodeSchemeType>(`${codeSchemesBasePath}/${codeSchemeUuid}`, { params })
@@ -899,5 +904,91 @@ export class DataService {
       return 'U+002EU+002E';
     }
     return encodeURIComponent(codeCodeValue).replace('#', '%23');
+  }
+
+  getAnnotations(searchTerm: string | undefined, language: string | undefined): Observable<Annotation[]> {
+
+    let params = new HttpParams()
+    if (language) {
+      params = params.append('language', language);
+    }
+    if (searchTerm) {
+      params = params.append('searchTerm', searchTerm);
+    }
+
+    // return this.http.get<WithResults<AnnotationType>>(`${annotationsBasePath}/${annotations}/`, { params })
+    return this.http.get<WithResults<AnnotationType>>(`${annotationsBasePath}/`, { params })
+      .pipe(map(res => res.results.map(data => new Annotation(data))));
+  }
+
+  getAnnotation(codeValue: string): Observable<Annotation> {
+
+    const params = {};
+
+    return this.http.get<AnnotationType>(`${annotationsBasePath}/${codeValue}`, { params })
+      .pipe(map(res => new Annotation(res)));
+  }  
+/* 
+  getCodes(registryCodeValue: string, schemeCodeValue: string, language: string | undefined): Observable<Code[]> {
+
+    let params = new HttpParams()
+      .append('expand', 'codeScheme,codeRegistry,externalReference,propertyType,valueType,extension');
+
+    if (language) {
+      params = params.append('language', language);
+    }
+
+    return this.http.get<WithResults<CodeType>>(`${codeRegistriesBasePath}/${registryCodeValue}/${codeSchemes}/${schemeCodeValue}/${codes}/`, { params })
+      .pipe(map(res => res.results.map(data => new Code(data))));
+  }
+   */
+  // getAnnotations(searchTerm: string, language: string): Observable<Annotation[]> {
+
+  //   const params = new HttpParams()
+  //     .append('language', language ? language : '')
+  //     .append('searchTerm', searchTerm);
+
+  //   return this.http.get<WithResults<AnnotationType>>(`${annotationsBasePath}/${annotations}/`, { params })
+  //     .pipe(map(res => res.results.map(data => new Annotation(data))));
+  // }
+
+  annotationCodeValueExists(codeValue: string): Observable<boolean> {
+
+    return this.http.head(`${annotationsBasePath}/${codeValue}`, { observe: 'response' })
+      .pipe(
+        map(res => res.status === 200),
+        catchError(err => of(false))
+      );
+  }
+
+  createAnnotation(annotationToCreate: AnnotationType): Observable<Annotation> {
+
+    return this.createAnnotations([annotationToCreate]).pipe(
+      map(createdAnnotations => {
+        if (createdAnnotations.length !== 1) {
+          throw new Error('Exactly one annotation needs to be created');
+        } else {
+          return createdAnnotations[0];
+        }
+      }));
+  }
+
+  createAnnotations(annotationList: AnnotationType[]): Observable<Annotation[]> {
+
+    return this.http.post<WithResults<AnnotationType>>(`${annotationsIntakeBasePath}/`,
+      annotationList)
+      .pipe(map(res => res.results.map(data => new Annotation(data))));
+  }
+
+  saveAnnotation(annotationToSave: AnnotationType): Observable<ApiResponseType> {
+
+    const params = {};
+
+    return this.http.post<ApiResponseType>(`${annotationsIntakeBasePath}/${annotationToSave.codeValue}/`, annotationToSave, { params });
+  }
+
+  deleteAnnotation(theAnnotation: Annotation): Observable<ApiResponseType> {
+
+    return this.http.delete<ApiResponseType>(`${annotationsIntakeBasePath}/${theAnnotation.codeValue}/`);
   }
 }

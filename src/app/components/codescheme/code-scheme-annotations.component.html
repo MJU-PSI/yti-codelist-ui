@@ -1,0 +1,27 @@
+<!-- <dl *ngIf="codeScheme.codeSchemeAnnotations && codeScheme.codeSchemeAnnotations.length > 0"> -->
+<dl *ngIf="editing || selectableCodeSchemeAnnotations.length > 0">
+  <dt>
+    <label translate>Annotations</label>
+    <app-information-symbol [infoText]="'INFO_TEXT_CODELIST_ANNOTATIONS'"></app-information-symbol>
+  </dt>
+
+  <span translate>INFO_TEXT_CODELIST_ANNOTATIONS</span>
+
+  <dd class="annotations">
+    <form [formGroup]="codeSchemeAnnotationForm" #form="ngForm">
+      <div *ngFor="let codeSchemeAnnotation of selectableCodeSchemeAnnotations">
+        <app-localizable-input-with-language-indicator-for-all-languages
+          [id]="'annotation_'+ codeSchemeAnnotation.annotation.codeValue"
+          [htmlIdentifierPrefix]="'annotation_'+ codeSchemeAnnotation.annotation.codeValue"
+          [label]=" codeSchemeAnnotation.annotation.prefLabel | translateValue"
+          [parentElementsLanguageCodes]="languageCodes"
+          [formControlName]="'annotation_' + codeSchemeAnnotation.annotation.codeValue" [remove]="codeSchemeAnnotation"
+          (removeAction)="removeCodeSchemeAnnotation($event)"></app-localizable-input-with-language-indicator-for-all-languages>
+
+      </div>
+
+      <button id="add_code_scheme_annotation_button" type="button" class="btn btn-sm btn-action mt-2" *ngIf="editing"
+        (click)="addCodeSchemeAnnotation()" translate>Add annotation</button>
+    </form>
+  </dd>
+</dl>

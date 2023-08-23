@@ -204,6 +204,10 @@
                                                                           [parentElementsLanguageCodes]="languageCodes"
                                                                           [formControlName]="'feedbackChannel'"></app-localizable-textarea-with-language-indicator-for-all-languages>
 
+      <app-code-scheme-annotations id="code_scheme_annotations" [codeScheme]="codeScheme"
+        [languageCodes]="codeSchemeForm.controls['languageCodes'].value" [restrict]="restricted"
+        [formControlName]="'codeSchemeAnnotations'"></app-code-scheme-annotations>
+
     </div>
     <div class="col-2">
       <app-editable-buttons [form]="form"

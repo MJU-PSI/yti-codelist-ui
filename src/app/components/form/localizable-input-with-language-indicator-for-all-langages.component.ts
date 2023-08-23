@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, OnInit, Optional, Self, SimpleChange, SimpleChanges } from '@angular/core';
+import { Component, EventEmitter, Input, OnChanges, OnInit, Optional, Output, Self, SimpleChange, SimpleChanges } from '@angular/core';
 import { EditableService } from '../../services/editable.service';
 import { ControlValueAccessor, NgControl } from '@angular/forms';
 import { LanguageService } from '../../services/language.service';
@@ -11,6 +11,9 @@ import { Localizable } from '@mju-psi/yti-common-ui';
   template: `
       <dl *ngIf="show && contentLanguage !== 'all'">
           <dt>
+              <a *ngIf="editing && remove" class="removal-X">
+                <i class="fa fa-times" (click)="delete()"></i>
+              </a>
               <label>{{label}}</label>
               <app-information-symbol [infoText]="infoText"></app-information-symbol>
               <app-required-symbol *ngIf="required && editing"></app-required-symbol>
@@ -44,6 +47,9 @@ import { Localizable } from '@mju-psi/yti-common-ui';
 
       <dl *ngIf="show && contentLanguage === 'all'">
           <dt>
+              <a *ngIf="editing && remove" class="removal-X">
+                <i class="fa fa-times" (click)="delete()"></i>
+              </a>
               <label>{{label}}</label>
               <app-information-symbol [infoText]="infoText"></app-information-symbol>
               <app-required-symbol *ngIf="required && editing"></app-required-symbol>
@@ -90,6 +96,8 @@ export class LocalizableInputWithLanguageIndicatorForAllLangagesComponent implem
   @Input() htmlIdentifierPrefix: string;
   @Input() infoText: string;
   @Input() parentElementsLanguageCodes: CodePlain[] = [];
+  @Input() remove: any;
+  @Output() removeAction: EventEmitter<any> = new EventEmitter();
   value: Localizable = {};
   realLanguageCodes: CodePlain[] = [];
 
@@ -103,6 +111,10 @@ export class LocalizableInputWithLanguageIndicatorForAllLangagesComponent implem
     if (parentControl) {
       parentControl.valueAccessor = this;
     }
+  }
+
+  delete() {
+    this.removeAction.emit(this.remove);
   }
 
   ngOnInit() {

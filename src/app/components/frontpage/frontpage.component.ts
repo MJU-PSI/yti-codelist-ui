@@ -243,6 +243,10 @@ export class FrontpageComponent implements OnInit, OnDestroy {
     this.router.navigate(['importandcreatecodescheme']);
   }
 
+  annotations() {
+    this.router.navigate(['annotations']);
+  }
+
   ngOnDestroy(): void {
     this.subscriptionToClean.forEach(s => s.unsubscribe());
   }

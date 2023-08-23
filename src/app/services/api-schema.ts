@@ -14,6 +14,24 @@ export interface BaseResourceType {
   prefLabel?: Localizable;
 }
 
+export interface AnnotationType {
+
+  id: string;
+  codeValue: string;
+  prefLabel?: Localizable;
+  modified?: string;
+  description?: Localizable;
+}
+
+export interface CodeSchemeAnnotationType {
+
+  codeschemeId: string;
+  annotationId: string;
+  codescheme: CodeSchemeType | null;
+  annotation: AnnotationType;
+  value: Localizable;
+}
+
 export interface CodeRegistryType extends BaseResourceType {
 
   modified?: string;
@@ -48,6 +66,7 @@ export interface CodeSchemeType extends BaseResourceType {
   prevCodeschemeId: string | null;
   lastCodeschemeId: string | null;
   organizations: OrganizationType[];
+  codeSchemeAnnotations: CodeSchemeAnnotationType[];
   searchHits: SearchHitType[];
   totalNrOfSearchHitsCodes: number;
   totalNrOfSearchHitsExtensions: number;

@@ -52,6 +52,7 @@ export class CodeSchemeInformationComponent implements OnChanges, OnDestroy, OnI
     cumulative: new FormControl(),
     changeCodeStatuses: new FormControl(false),
     feedbackChannel: new FormControl(),
+    codeSchemeAnnotations: new FormControl(),
   });
 
   user$ = new BehaviorSubject<UserSimple | null>(null);
@@ -124,7 +125,7 @@ export class CodeSchemeInformationComponent implements OnChanges, OnDestroy, OnI
       })
     }
 
-    const { externalReferences, infoDomains, defaultCode, startDate, endDate, organizations, languageCodes, ...rest } = this.codeScheme;
+    const { externalReferences, infoDomains, defaultCode, startDate, endDate, organizations, languageCodes, codeSchemeAnnotations, ...rest } = this.codeScheme;
 
     this.languageCodes = languageCodes; // needed to to get all langs showing properly again after a CANCEL click
 
@@ -138,6 +139,7 @@ export class CodeSchemeInformationComponent implements OnChanges, OnDestroy, OnI
       defaultCode: defaultCode,
       validity: { start: startDate, end: endDate },
       organizations: organizations.map(organization => organization.clone()),
+      codeSchemeAnnotations: codeSchemeAnnotations.map(codeSchemeAnnotation => codeSchemeAnnotation.clone()),
       changeCodeStatuses: false
     });
 

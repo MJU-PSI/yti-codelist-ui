@@ -1,0 +1,39 @@
+<div *ngIf="loading">
+  <app-ajax-loading-indicator></app-ajax-loading-indicator>
+</div>
+
+<div *ngIf="!loading" class="content-box">
+  <div class="main">
+    <div>
+      <h1 translate>{{pageTitle}}</h1>
+    </div>
+
+
+    <div class="float-right">
+      <button id="import_codelist_button" *ngIf="isSuperUser" type="button" class="btn btn-action float-right"
+        (click)="addAnnotation()" translate>Add annotation</button>
+
+      <!-- <app-content-language [languageCodes]="contentLanguages"></app-content-language> -->
+    </div>
+  </div>
+
+  <div class="row" *ngIf="annotations.length > 0">
+    <div class="col-md-4">
+      <div class="input-group input-group-lg input-group-search">
+        <input class="form-control" id="search_annotation_box_input" type="text" [(ngModel)]="searchTerm"
+          placeholder="{{'Search for annotation' | translate}}" />
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4" *ngIf="annotations.length > 0">
+    <div class="col-12 search-text">
+      <span *ngIf="emptySearch" translate>Search did not find any annotations.</span>
+      <span *ngIf="numberOfAnnotations == 1"><b>1</b> {{'annotation' | translate}}</span>
+      <span *ngIf="numberOfAnnotations > 1"><b>{{numberOfAnnotations}}</b> {{'annotations' | translate}}</span>
+    </div>
+  </div>
+
+  <app-annotations-table [annotations]="filteredAnnotations"></app-annotations-table>
+
+</div>

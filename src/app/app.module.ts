@@ -86,6 +86,11 @@ import {
 import { OrganizationsInputComponent } from './components/form/organizations-input.component';
 import { RegistryCreateComponent } from './components/registry/registry-create.component';
 import { CodeSchemeVersionsComponent } from './components/codescheme/code-scheme-versions.component';
+import { CodeSchemeAnnotationsComponent } from './components/codescheme/code-scheme-annotations.component';
+import {
+  SearchLinkedAnnotationModalComponent,
+  SearchLinkedAnnotationModalService
+} from './components/form/search-linked-annotation-modal.component';
 import { CodeSchemeVariantsComponent } from './components/codescheme/code-scheme-variants.component';
 import { CodeSchemeVariantMothersComponent } from './components/codescheme/code-scheme-variant-mothers.component';
 
@@ -136,6 +141,11 @@ import svCommonPo from 'raw-loader!po-loader?format=mf!../../node_modules/@mju-p
 import enCommonPo from 'raw-loader!po-loader?format=mf!../../node_modules/@mju-psi/yti-common-ui/po/en.po';
 import slCommonPo from 'raw-loader!po-loader?format=mf!../../node_modules/@mju-psi/yti-common-ui/po/sl.po';
 import { AUTHENTICATED_USER_ENDPOINT, LOCALIZER, ModalService, YtiCommonModule } from '@mju-psi/yti-common-ui';
+import { AnnotationCreateComponent } from './components/annotation/annotation-create.component';
+import { AnnotationsComponent } from './components/annotation/annotations.component';
+import { AnnotationsTableComponent } from './components/annotation/annotations-table.component';
+import { AnnotationComponent } from './components/annotation/annotation.component';
+import { CodeSchemeAnnotationsInputComponent } from './components/form/code-scheme-annotations-input.component';
 
 function removeEmptyValues(obj: {}) {
 
@@ -189,6 +199,9 @@ const appRoutes: Routes = [
   { path: 'information', component: InformationAboutServiceComponent },
   { path: 'registries', component: RegistriesComponent, pathMatch: 'full' },
   { path: 'registry', component: RegistryComponent, pathMatch: 'full' },
+  { path: 'createannotation', component: AnnotationCreateComponent, pathMatch: 'full' },
+  { path: 'annotations', component: AnnotationsComponent, pathMatch: 'full' },
+  { path: 'annotation', component: AnnotationComponent, pathMatch: 'full' },
   // NOTE: If createRefreshRouteMatcher(['re']) starts to work after angular upgrade, then switch to that.
   { matcher: refreshRouteMatcher, component: RefreshComponent }
 ];
@@ -317,7 +330,14 @@ export function createMissingTranslationHandler(): MissingTranslationHandler {
     CodeExtensionMemberValuesInputComponent,
     ExtensionCrossreferencelistComponent,
     CodeSchemeSingleInputComponent,
-    SearchHitsListComponent
+    SearchHitsListComponent,
+    AnnotationCreateComponent,
+    AnnotationsComponent,
+    AnnotationsTableComponent,
+    AnnotationComponent,
+    CodeSchemeAnnotationsComponent,
+    CodeSchemeAnnotationsInputComponent,
+    SearchLinkedAnnotationModalComponent
   ],
   entryComponents: [ // needed for modal components
     CodeSchemeImportModalComponent,
@@ -377,6 +397,7 @@ export function createMissingTranslationHandler(): MissingTranslationHandler {
     LinkListModalService,
     ModalService,
     SearchLinkedOrganizationModalService,
+    SearchLinkedAnnotationModalService,
     SearchLinkedCodeModalService,
     SearchLinkedCodeSchemeModalService,
     SearchLinkedMemberModalService,

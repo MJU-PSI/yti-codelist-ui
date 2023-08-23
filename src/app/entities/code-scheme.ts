@@ -12,6 +12,7 @@ import { Organization } from './organization';
 import { SearchHit } from './search-hit';
 import { Location, Localizable, Status, hasLocalization, contains, restrictedStatuses, Localizer } from '@mju-psi/yti-common-ui';
 import { getAllOrganizationIds, getMainOrganizations } from './entity-utils';
+import { CodeSchemeAnnotation } from './codeSchemeAnnotation';
 
 export class CodeScheme extends AbstractResource implements EditableEntity {
 
@@ -40,6 +41,7 @@ export class CodeScheme extends AbstractResource implements EditableEntity {
   lastCodeschemeId: string | null = null;
   allVersions: CodeSchemeListItem[] = [];
   organizations: Organization[];
+  codeSchemeAnnotations: CodeSchemeAnnotation[];
   searchHitsOfTheTypeCode: SearchHit[];
   totalNrOfSearchHitsCodes: number;
   totalNrOfSearchHitsExtensions: number;
@@ -97,6 +99,7 @@ export class CodeScheme extends AbstractResource implements EditableEntity {
       this.lastCodeschemeId = data.lastCodeschemeId;
     }
     this.organizations = (data.organizations || []).map(o => new Organization(o));
+    this.codeSchemeAnnotations = (data.codeSchemeAnnotations || []).map(o => new CodeSchemeAnnotation(o));
     this.searchHitsOfTheTypeCode = (data.searchHits || []).map(sh => new SearchHit(sh)).filter(sh => sh.type === 'code');
     this.searchHitsOfTheTypeExtension = (data.searchHits || []).map(sh => new SearchHit(sh)).filter(sh => sh.type === 'extension');
     this.totalNrOfSearchHitsCodes = data.totalNrOfSearchHitsCodes;
@@ -207,6 +210,7 @@ export class CodeScheme extends AbstractResource implements EditableEntity {
       lastCodeschemeId: this.lastCodeschemeId,
       allVersions: this.allVersions.map(li => li.serialize()),
       organizations: this.organizations.map(o => o.serialize()),
+      codeSchemeAnnotations: this.codeSchemeAnnotations.map(o => o.serialize()),
       searchHits: [], // this is not really a part of codescheme, never getting stored, so lets send nothing
       totalNrOfSearchHitsCodes: this.totalNrOfSearchHitsCodes,
       totalNrOfSearchHitsExtensions: this.totalNrOfSearchHitsExtensions,

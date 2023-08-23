@@ -9,6 +9,7 @@ import { CodeRegistry } from '../entities/code-registry';
 import { TranslateService } from '@ngx-translate/core';
 import { ConfigurationService } from './configuration.service';
 import { Title } from '@angular/platform-browser';
+import { Annotation } from '../entities/annotation';
 
 const frontPage = { localizationKey: 'Front page', route: [''] };
 const informationAboutServicePage = { localizationKey: 'Information about the service', route: ['information'] };
@@ -18,6 +19,9 @@ const createCodeSchemePage = { localizationKey: 'Create code list', route: ['cre
 const createCodePage = { localizationKey: 'Create code', route: ['createcode'] };
 const createMemberPage = { localizationKey: 'Create member', route: ['createmember'] };
 const createRegistryPage = { localizationKey: 'Create registry', route: ['createregistry'] };
+const annotationsPage = { localizationKey: 'Annotations', route: ['annotations'] };
+const annotationPage = { localizationKey: 'Annotation', route: ['annotation'] };
+const createAnnotationPage = [annotationsPage, { localizationKey: 'Create annotation', route: ['createannotation'] }];
 
 @Injectable()
 export class LocationService implements OnDestroy {
@@ -112,5 +116,17 @@ export class LocationService implements OnDestroy {
 
   atInformationAboutService(): void {
     this.changeLocation([informationAboutServicePage]);
+  }
+
+  atAnnotationCreatePage(): void {
+    this.changeLocation(createAnnotationPage);
+  }
+
+  atAnnotationsPage(): void {
+    this.changeLocation([annotationsPage]);
+  }
+
+  atAnnotationPage(annotation: Annotation): void {
+    this.changeLocation(annotation.location);
   }
 }

@@ -1,0 +1,46 @@
+<div *ngIf="loading">
+  <app-ajax-loading-indicator></app-ajax-loading-indicator>
+</div>
+
+<div *ngIf="!loading" class="content-box">
+  <div class="main">
+    <div>
+      <h1 translate>{{pageTitle}}</h1>
+    </div>
+    <div class="float-right">
+      <app-editable-buttons [form]="form"></app-editable-buttons>
+      <button id="editable_cancel_button" [hidden]="isEditing()" type="button" [disabled]="operationPending"
+        class="btn btn-link float-right" (click)="back()" translate>Back</button>
+      <app-content-language [languageCodes]="initialLanguageCodes"></app-content-language>
+    </div>
+  </div>
+
+  <form [formGroup]="annotationForm" #form="ngForm">
+    <div class="row">
+      <div class="col-lg-4 col-md-5">
+
+        <app-literal [id]="'annotation_value_input'" [label]="'Annotation ID' | translate"
+          [value]="annotation.codeValue" [infoText]="'INFO_TEXT_ANNOTATION_CODE_VALUE'"></app-literal>
+
+        <div class="form-group">
+          <app-error-messages id="code_list_form_error_messages" [control]="annotationForm"></app-error-messages>
+        </div>
+
+        <app-localizable-input-with-language-indicator-for-all-languages [id]="'annotation_name_input'"
+          [htmlIdentifierPrefix]="'annotation_name_input'" [label]="'Annotation name' | translate" [required]="true"
+          [infoText]="'INFO_TEXT_ANNOTATION_NAME'" [parentElementsLanguageCodes]="initialLanguageCodes"
+          [formControlName]="'prefLabel'"></app-localizable-input-with-language-indicator-for-all-languages>
+
+      </div>
+      <div class="col-lg-4 col-md-5">
+        <app-localizable-textarea-with-language-indicator-for-all-languages [id]="'annotation_description_textarea'"
+          [htmlIdentifierPrefix]="'annotation_description_textarea'" [label]="'Description' | translate"
+          [infoText]="'INFO_TEXT_ANNOTATION_DESCRIPTION'" [parentElementsLanguageCodes]="initialLanguageCodes"
+          [formControlName]="'description'"></app-localizable-textarea-with-language-indicator-for-all-languages>
+
+
+      </div>
+    </div>
+
+  </form>
+</div>

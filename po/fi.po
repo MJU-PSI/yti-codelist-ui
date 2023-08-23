@@ -1796,3 +1796,54 @@ msgstr "Jäsenen arvo on pakollinen syöte."
 
 msgid "localizableValueRequired"
 msgstr "Pakollinen syöte"
+
+msgid "Create annotation"
+msgstr ""
+
+msgid "Annotation ID"
+msgstr ""
+
+msgid "INFO_TEXT_ANNOTATION_CODE_VALUE"
+msgstr "The technical code or permanent identifier."
+
+msgid "Annotation name"
+msgstr ""
+
+msgid "INFO_TEXT_ANNOTATION_NAME"
+msgstr "The name of the annotation"
+
+msgid "INFO_TEXT_ANNOTATION_DESCRIPTION"
+msgstr "Description of the content"
+
+msgid "ERR_MSG_USER_ANNOTATION_PARSING_FAILED"
+msgstr "Error parsing annotation data."
+
+msgid "annotationCodeValueExists"
+msgstr "Annotation ID is already in use in this registry."
+
+msgid "Add annotation"
+msgstr ""
+
+msgid "Annotations"
+msgstr ""
+
+msgid "Search did not find any annotations."
+msgstr ""
+
+msgid "annotation"
+msgstr ""
+
+msgid "annotations"
+msgstr ""
+
+msgid "This annotation list does not have any annotations yet."
+msgstr ""
+
+msgid "ID"
+msgstr ""
+
+msgid "Search for annotation"
+msgstr ""
+
+msgid "Back"
+msgstr ""
