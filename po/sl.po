@@ -1689,3 +1689,12 @@ msgstr "Išči anotacijo"
 
 msgid "Back"
 msgstr "Nazaj"
+
+msgid "INFO_TEXT_CODELIST_ANNOTATIONS"
+msgstr "TODO nek tekst za annotacije"
+
+msgid "Select annotation"
+msgstr "Izberi annotacijo"
+
+msgid "Search annotation"
+msgstr "Išči annotacijo"
