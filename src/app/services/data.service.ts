@@ -88,8 +88,8 @@ const terminologyBasePath = `${intakeContext}/${api}/${version}/${terminologyCon
 const terminologyVocabulariesPath = `${terminologyBasePath}/${vocabularies}`;
 const terminologyConceptsPath = `${terminologyBasePath}/${concepts}`;
 const terminologyConceptSuggestionPath = `${terminologyBasePath}/${suggestion}`;
-const annotationsBasePath = `/${apiContext}/${api}/${version}/${annotations}`;
-const annotationsIntakeBasePath = `/${intakeContext}/${api}/${version}/${annotations}`;
+const annotationsBasePath = `${apiContext}/${api}/${version}/${annotations}`;
+const annotationsIntakeBasePath = `${intakeContext}/${api}/${version}/${annotations}`;
 
 interface FakeableUser {
   email: string;
