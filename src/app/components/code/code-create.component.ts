@@ -22,6 +22,7 @@ import { PropertyType } from '../../entities/property-type';
 import { ValueType } from '../../entities/value-type';
 import { MemberValueValidators } from '../form/member-value-validators';
 import { comparingLocalizable, contains, ignoreModalClose, restrictedStatuses, Status } from '@mju-psi/yti-common-ui';
+import { CodeAnnotation } from '../../entities/codeAnnotation';
 
 @Component({
   selector: 'app-code-create',
@@ -45,7 +46,8 @@ export class CodeCreateComponent implements OnInit, AfterViewInit {
     status: new FormControl('DRAFT' as Status),
     conceptUriInVocabularies: new FormControl(''),
     codeExtensions: new FormArray([]),
-    subCodeScheme: new FormControl(null)
+    subCodeScheme: new FormControl(null),
+    codeAnnotations: new FormControl()
   });
 
   constructor(private dataService: DataService,
@@ -90,7 +92,7 @@ export class CodeCreateComponent implements OnInit, AfterViewInit {
 
   save(formData: any): Observable<any> {
 
-    const { validity, externalReferences, subCodeScheme, broaderCode, codeExtensions, ...rest } = formData;
+    const { validity, externalReferences, subCodeScheme, broaderCode, codeExtensions, codeAnnotations, ...rest } = formData;
 
     const code: CodeType = <CodeType> {
       ...rest,
@@ -98,7 +100,8 @@ export class CodeCreateComponent implements OnInit, AfterViewInit {
       endDate: formatDate(validity.end),
       broaderCode: broaderCode != null ? broaderCode.serialize() : null,
       subCodeScheme: subCodeScheme != null ? subCodeScheme.serialize() : null,
-      externalReferences: externalReferences.map((er: ExternalReference) => er.serialize())
+      externalReferences: externalReferences.map((er: ExternalReference) => er.serialize()),
+      codeAnnotations: codeAnnotations.map((codeAnnotation: CodeAnnotation) => codeAnnotation.serialize())
     };
 
     const extensions: Extension[] | null = this.constructExtensions(codeExtensions);

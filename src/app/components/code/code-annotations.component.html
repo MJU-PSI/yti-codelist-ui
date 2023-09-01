@@ -1,0 +1,25 @@
+<dl *ngIf="editing || selectableCodeAnnotations.length > 0">
+  <dt>
+    <label translate>Annotations</label>
+    <app-information-symbol [infoText]="'INFO_TEXT_CODELIST_ANNOTATIONS'"></app-information-symbol>
+  </dt>
+
+  <span translate>INFO_TEXT_CODELIST_ANNOTATIONS</span>
+
+  <dd class="annotations">
+    <form [formGroup]="codeAnnotationForm" #form="ngForm">
+      <div *ngFor="let codeAnnotation of selectableCodeAnnotations">
+        <app-localizable-input-with-language-indicator-for-all-languages
+          [id]="'annotation_'+ codeAnnotation.annotation.codeValue"
+          [htmlIdentifierPrefix]="'annotation_'+ codeAnnotation.annotation.codeValue"
+          [label]=" codeAnnotation.annotation.prefLabel | translateValue" [parentElementsLanguageCodes]="languageCodes"
+          [formControlName]="'annotation_' + codeAnnotation.annotation.codeValue" [remove]="codeAnnotation"
+          (removeAction)="removeCodeAnnotation($event)"></app-localizable-input-with-language-indicator-for-all-languages>
+
+      </div>
+
+      <button id="add_code_annotation_button" type="button" class="btn btn-sm btn-action mt-2" *ngIf="editing"
+        (click)="addCodeAnnotation()" translate>Add annotation</button>
+    </form>
+  </dd>
+</dl>

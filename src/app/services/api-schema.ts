@@ -32,6 +32,15 @@ export interface CodeSchemeAnnotationType {
   value: Localizable;
 }
 
+export interface CodeAnnotationType {
+
+  codeId: string;
+  annotationId: string;
+  code: CodeType | null;
+  annotation: AnnotationType;
+  value: Localizable;
+}
+
 export interface CodeRegistryType extends BaseResourceType {
 
   modified?: string;
@@ -97,6 +106,7 @@ export interface CodeType extends BaseResourceType {
   description?: Localizable;
   definition?: Localizable;
   externalReferences?: ExternalReferenceType[];
+  codeAnnotations: CodeAnnotationType[];
   broaderCode?: CodePlainType;
   hierarchyLevel?: number;
   conceptUriInVocabularies: string;

@@ -106,6 +106,9 @@
                               [infoText]="'INFO_TEXT_CODE_VALIDITY'"
                               [formControlName]="'validity'"></app-date-range-input>
 
+        <app-code-annotations id="code_annotations" [languageCodes]="codeScheme.languageCodes"
+          [formControlName]="'codeAnnotations'"></app-code-annotations>
+
         <app-external-references-input [id]="'code_ext_references_input'"
                                        [label]="'Links' | translate"
                                        [codeScheme]="codeScheme"

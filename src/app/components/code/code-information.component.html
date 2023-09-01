@@ -125,6 +125,9 @@
                    [value]="code.modifiedDisplayValue"
                    [infoText]="'INFO_TEXT_CODE_LAST_MODIFICATION'"></app-literal>
 
+      <app-code-annotations id="code_annotations" [code]="code" [languageCodes]="codeScheme.languageCodes"
+        [restrict]="restricted" [formControlName]="'codeAnnotations'"></app-code-annotations>
+
       <app-external-references-input [id]="'code_ext_references_input'"
                                      [label]="'Links' | translate"
                                      [codeScheme]="codeScheme"

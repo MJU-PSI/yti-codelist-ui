@@ -91,6 +91,7 @@ import {
   SearchLinkedAnnotationModalComponent,
   SearchLinkedAnnotationModalService
 } from './components/form/search-linked-annotation-modal.component';
+import { CodeAnnotationsComponent } from './components/code/code-annotations.component';
 import { CodeSchemeVariantsComponent } from './components/codescheme/code-scheme-variants.component';
 import { CodeSchemeVariantMothersComponent } from './components/codescheme/code-scheme-variant-mothers.component';
 
@@ -145,7 +146,6 @@ import { AnnotationCreateComponent } from './components/annotation/annotation-cr
 import { AnnotationsComponent } from './components/annotation/annotations.component';
 import { AnnotationsTableComponent } from './components/annotation/annotations-table.component';
 import { AnnotationComponent } from './components/annotation/annotation.component';
-import { CodeSchemeAnnotationsInputComponent } from './components/form/code-scheme-annotations-input.component';
 
 function removeEmptyValues(obj: {}) {
 
@@ -336,7 +336,7 @@ export function createMissingTranslationHandler(): MissingTranslationHandler {
     AnnotationsTableComponent,
     AnnotationComponent,
     CodeSchemeAnnotationsComponent,
-    CodeSchemeAnnotationsInputComponent,
+    CodeAnnotationsComponent,
     SearchLinkedAnnotationModalComponent
   ],
   imports: [

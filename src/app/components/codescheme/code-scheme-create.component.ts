@@ -60,7 +60,7 @@ export class CodeSchemeCreateComponent implements OnInit {
     organizations: new FormControl([], [requiredList]),
     cumulative: new FormControl(),
     feedbackChannel: new FormControl(),
-    codeSchemeAnnotations: new FormControl(),
+    codeSchemeAnnotations: new FormControl([]),
   }, null, this.codeValueExistsValidator());
 
   constructor(private router: Router,

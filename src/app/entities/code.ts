@@ -9,6 +9,7 @@ import { CodePlain } from './code-simple';
 import { Extension } from './extension';
 import { Location, Localizable, Status, hasLocalization, contains, restrictedStatuses, Localizer } from '@mju-psi/yti-common-ui';
 import { getAllOrganizationIds } from './entity-utils';
+import { CodeAnnotation } from './codeAnnotation';
 
 export class Code extends AbstractResource implements EditableEntity {
 
@@ -20,6 +21,7 @@ export class Code extends AbstractResource implements EditableEntity {
   description: Localizable = {};
   definition: Localizable = {};
   externalReferences: ExternalReference[] = [];
+  codeAnnotations: CodeAnnotation[];
   broaderCode: CodePlain | null = null;
   hierarchyLevel: number;
   expanded: boolean;
@@ -49,6 +51,7 @@ export class Code extends AbstractResource implements EditableEntity {
     this.description = data.description || {};
     this.definition = data.definition || {};
     this.externalReferences = (data.externalReferences || []).map(er => new ExternalReference(er));
+    this.codeAnnotations = (data.codeAnnotations || []).map(o => new CodeAnnotation(o));
     if (data.hierarchyLevel) {
       this.hierarchyLevel = data.hierarchyLevel;
     }
@@ -137,6 +140,7 @@ export class Code extends AbstractResource implements EditableEntity {
       description: { ...this.description },
       definition: { ...this.definition },
       externalReferences: this.externalReferences.map(er => er.serialize()),
+      codeAnnotations: this.codeAnnotations.map(o => o.serialize()),
       broaderCode: this.broaderCode ? this.broaderCode.serialize() : undefined,
       hierarchyLevel: this.hierarchyLevel,
       conceptUriInVocabularies: this.conceptUriInVocabularies,

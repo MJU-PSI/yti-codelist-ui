@@ -46,7 +46,8 @@ export class CodeInformationComponent implements OnChanges, OnDestroy {
     status: new FormControl(),
     codeExtensions: new FormArray([]),
     conceptUriInVocabularies: new FormControl(''),
-    subCodeScheme: new FormControl(null)
+    subCodeScheme: new FormControl(null),
+    codeAnnotations: new FormControl()
   });
 
   user$ = new BehaviorSubject<UserSimple | null>(null);
@@ -81,12 +82,13 @@ export class CodeInformationComponent implements OnChanges, OnDestroy {
 
   reset() {
 
-    const { externalReferences, codeExtensions, startDate, endDate, ...rest } = this.code;
+    const { externalReferences, codeExtensions, startDate, endDate, codeAnnotations, ...rest } = this.code;
 
     this.codeForm.reset({
       ...rest,
       validity: { start: startDate, end: endDate },
       externalReferences: externalReferences.map(link => link.clone()),
+      codeAnnotations: codeAnnotations.map(codeAnnotation => codeAnnotation.clone())
     });
 
     this.initCodeExtensions();

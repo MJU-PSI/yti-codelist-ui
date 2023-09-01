@@ -334,6 +334,7 @@ export class DataService {
 
     let params = new HttpParams()
       .append('expand', 'codeScheme,codeRegistry,externalReference,propertyType,valueType,extension');
+      // .append('expand', 'codeScheme,codeRegistry,externalReference,propertyType,valueType,extension,codeAnnotation,annotation');
 
     if (language) {
       params = params.append('language', language);
@@ -346,7 +347,7 @@ export class DataService {
   getCode(registryCodeValue: string, schemeCodeValue: string, codeCodeValue: string): Observable<Code> {
 
     const params = {
-      'expand': 'codeScheme,codeRegistry,externalReference,propertyType,organization,valueType,extension,member,memberValue'
+      'expand': 'codeScheme,codeRegistry,externalReference,propertyType,organization,valueType,extension,member,memberValue,codeAnnotation,annotation'
     };
 
     const encodedCodeCodeValue = this.resolveCodeCodeValue(codeCodeValue);
@@ -928,30 +929,7 @@ export class DataService {
 
     return this.http.get<AnnotationType>(`${annotationsBasePath}/${codeValue}`, { params })
       .pipe(map(res => new Annotation(res)));
-  }  
-/* 
-  getCodes(registryCodeValue: string, schemeCodeValue: string, language: string | undefined): Observable<Code[]> {
-
-    let params = new HttpParams()
-      .append('expand', 'codeScheme,codeRegistry,externalReference,propertyType,valueType,extension');
-
-    if (language) {
-      params = params.append('language', language);
-    }
-
-    return this.http.get<WithResults<CodeType>>(`${codeRegistriesBasePath}/${registryCodeValue}/${codeSchemes}/${schemeCodeValue}/${codes}/`, { params })
-      .pipe(map(res => res.results.map(data => new Code(data))));
   }
-   */
-  // getAnnotations(searchTerm: string, language: string): Observable<Annotation[]> {
-
-  //   const params = new HttpParams()
-  //     .append('language', language ? language : '')
-  //     .append('searchTerm', searchTerm);
-
-  //   return this.http.get<WithResults<AnnotationType>>(`${annotationsBasePath}/${annotations}/`, { params })
-  //     .pipe(map(res => res.results.map(data => new Annotation(data))));
-  // }
 
   annotationCodeValueExists(codeValue: string): Observable<boolean> {
 
