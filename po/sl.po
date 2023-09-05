@@ -170,7 +170,7 @@ msgid "REDIRECTING_TO_FRONT_PAGE"
 msgstr "REDIRECTING_TO_FRONT_PAGE"
 
 msgid "All vocabularies"
-msgstr "Vsa besedišča"
+msgstr "Vsi pojmi"
 
 msgid "All languages"
 msgstr "Vsi jeziki"
@@ -842,7 +842,7 @@ msgid "INFO_TEXT_CODE_DESCRIPTION"
 msgstr "Opis vsebine"
 
 msgid "INFO_TEXT_CODE_DEFINITION"
-msgstr "Opredelitev izraza v zvezi z informacijsko vsebino kodiranja Koncept besedišča orodja za besedišče ali definicija samodefinirane kode."
+msgstr "Opredelitev izraza v zvezi z informacijsko vsebino šifranta, pojma iz orodja terminologije ali definicija samodefinirane kode."
 
 msgid "INFO_TEXT_CODE_SHORT_NAME"
 msgstr "Kratko ime ali okrajšava kode"
