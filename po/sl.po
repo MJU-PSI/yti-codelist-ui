@@ -197,10 +197,10 @@ msgid "Short name"
 msgstr "Kratko ime"
 
 msgid "Broader code"
-msgstr "Širša koda"
+msgstr "Nadrejena koda"
 
 msgid "Sub code list"
-msgstr "Seznam podrejenih kod"
+msgstr "Seznam povezanih kod"
 
 msgid "Validity"
 msgstr "Veljavnost"
@@ -776,7 +776,7 @@ msgid "INFO_TEXT_CODELIST_DESCRIPTION"
 msgstr "Opis vsebine"
 
 msgid "INFO_TEXT_CODELIST_DEFINITION"
-msgstr "Opredelitev izraza v zvezi z informacijsko vsebino kodiranja orodja Besedišče, pojma ali samodefinirane definicije."
+msgstr "Definicija izraza  v zvezi z informacijsko domeno šifranta  orodja terminologije, pojma ali samodefinirane definicije."
 
 msgid "INFO_TEXT_CODELIST_CHANGE_NOTE"
 msgstr "Spremenite informacije, na primer, spremembe na prejšnjo različico ali spremembe, kot so opisane za daljše časovno obdobje. Spremembe, ki so pomembne za uporabnika šifranta."
@@ -1172,10 +1172,10 @@ msgid "ERR_MSG_USER_DUPLICATE_HEADER_VALUE_WITH_IDENTIFIER"
 msgstr "Najdena podvojena vrednost glave {{ identifier }}, napaka."
 
 msgid "ERR_MSG_BROADER_CODE_DOES_NOT_EXIST"
-msgstr "Širša koda se sklicuje na kodno vrednost, ki ne obstaja, z vrednostjo kode {{ identifier }}, napaka."
+msgstr "Nadrejena koda se sklicuje na kodno vrednost, ki ne obstaja, z vrednostjo kode {{ identifier }}, napaka."
 
 msgid "ERR_MSG_BROADER_CODE_SELF_REFERENCE"
-msgstr "Širša koda se sklicuje na kodno vrednost same kode, napaka."
+msgstr "Nadrejena koda se sklicuje na kodno vrednost same kode, napaka."
 
 msgid "ERR_MSG_STATUS_NOT_VALID"
 msgstr "Neveljavna vrednost STATUS, določena v podatkih: {{ identifier }}"
@@ -1517,7 +1517,7 @@ msgid "SUGGEST CONCEPT MODAL QUESTION"
 msgstr "Ali želite predlagati pojem {{concept}} k besedišču {{vocabulary}}?"
 
 msgid "Are you sure you want to create the version as empty?"
-msgstr "Vsebina je uvožena v novo različico"
+msgstr "Ali ste prepričani, da želite ustvariti različico kot prazno?"
 
 msgid "Create extension"
 msgstr ""
@@ -1664,7 +1664,7 @@ msgid "annotationCodeValueExists"
 msgstr "ID anotacije je že v uporabi v tem registru."
 
 msgid "Add annotation"
-msgstr "Dodaj anotacijo"
+msgstr "Dodajte anotacijo"
 
 msgid "Annotations"
 msgstr "Anotacije"
@@ -1698,3 +1698,6 @@ msgstr "Izberi annotacijo"
 
 msgid "Search annotation"
 msgstr "Išči annotacijo"
+
+msgid "Choose file"
+msgstr "Izberite datoteko"

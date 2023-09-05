@@ -67,6 +67,7 @@ export class CodeSchemeAnnotationsComponent implements ControlValueAccessor, OnI
 
     this.control.valueChanges.subscribe(x => {
       this.propagateChange(x);
+      this.initData();
     });
 
 
@@ -78,8 +79,7 @@ export class CodeSchemeAnnotationsComponent implements ControlValueAccessor, OnI
           codeSchemeAnnotation.value = value;
         });
       }
-    }
-  );
+    });
 
     if (parentControl) {
       parentControl.valueAccessor = this;
@@ -89,6 +89,10 @@ export class CodeSchemeAnnotationsComponent implements ControlValueAccessor, OnI
   }
 
   ngOnInit() {
+    this.initData();
+  }
+
+  initData(): void {
     if (this.control.value) {
       let values = this.control.value.map((x: any) => Object.assign({}, x));
       values.forEach((codeSchemeAnnotation: CodeSchemeAnnotation) => {
