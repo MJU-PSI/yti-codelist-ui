@@ -101,7 +101,7 @@ export class CodeCreateComponent implements OnInit, AfterViewInit {
       broaderCode: broaderCode != null ? broaderCode.serialize() : null,
       subCodeScheme: subCodeScheme != null ? subCodeScheme.serialize() : null,
       externalReferences: externalReferences.map((er: ExternalReference) => er.serialize()),
-      codeAnnotations: codeAnnotations.map((codeAnnotation: CodeAnnotation) => codeAnnotation.serialize())
+      codeAnnotations: codeAnnotations != null ? codeAnnotations.map((codeAnnotation: CodeAnnotation) => codeAnnotation.serialize()) : null
     };
 
     const extensions: Extension[] | null = this.constructExtensions(codeExtensions);

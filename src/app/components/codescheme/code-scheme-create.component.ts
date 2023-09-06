@@ -221,7 +221,7 @@ export class CodeSchemeCreateComponent implements OnInit {
       languageCodes: languageCodes.map((lc: CodePlain) => lc.serialize()),
       externalReferences: externalReferences.map((er: ExternalReference) => er.serialize()),
       organizations: organizations.map((organization: Organization) => organization.serialize()),
-      codeSchemeAnnotations: codeSchemeAnnotations.map((codeSchemeAnnotation: CodeSchemeAnnotation) => codeSchemeAnnotation.serialize())
+      codeSchemeAnnotations: codeSchemeAnnotations != null ? codeSchemeAnnotations.map((codeSchemeAnnotation: CodeSchemeAnnotation) => codeSchemeAnnotation.serialize()) : null
     };
 
     if (this.cloning) {
