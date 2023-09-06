@@ -92,13 +92,25 @@ export class LinkListModalComponent implements OnInit {
   }
 
   get modalLabel() {
-    const propertyTypeName = this.selectedPropertyType ? this.languageService.translate(this.selectedPropertyType.prefLabel, true) : this.translateService.instant('link');
+    let propertyTypeName = this.selectedPropertyType ? this.languageService.translate(this.selectedPropertyType.prefLabel, true) : this.translateService.instant('link');
+    propertyTypeName = this.propertyTypeName(propertyTypeName);
     return this.translateService.instant('Select') + ' ' + propertyTypeName.charAt(0).toLowerCase() + propertyTypeName.slice(1);
   }
 
   get createNewButtonLabel() {
-    const propertyTypeName = this.selectedPropertyType ? this.languageService.translate(this.selectedPropertyType.prefLabel, true) : this.translateService.instant('link');
+    let propertyTypeName = this.selectedPropertyType ? this.languageService.translate(this.selectedPropertyType.prefLabel, true) : this.translateService.instant('link');
+    propertyTypeName = this.propertyTypeName(propertyTypeName);
     return this.translateService.instant('Create new') + ' ' + propertyTypeName.charAt(0).toLowerCase() + propertyTypeName.slice(1);
+  }
+
+  propertyTypeName(value: String) {
+    if (this.languageService.contentLanguage === 'sl') {
+      let translate = this.translateService.instant(value + ' LABEL');
+      if (translate && !translate.startsWith('[MISSING]')) {
+        return translate;
+      }
+    }
+    return value;
   }
 }
 

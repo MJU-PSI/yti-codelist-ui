@@ -1701,3 +1701,27 @@ msgstr "Išči annotacijo"
 
 msgid "Choose file"
 msgstr "Izberite datoteko"
+
+msgid "Sorodna povezava LABEL"
+msgstr "sorodno povezavo"
+
+msgid "Vir LABEL"
+msgstr "vir"
+
+msgid "Navodila LABEL"
+msgstr "navodilo"
+
+msgid "Standard LABEL"
+msgstr "standard"
+
+msgid "Se sklicuje na LABEL"
+msgstr "povezavo Se sklicuje na"
+
+msgid "Zahteva ga LABEL"
+msgstr "povezavo Zahteva ga"
+
+msgid "Licenca LABEL"
+msgstr "licenco"
+
+msgid "Objava LABEL"
+msgstr "objavo"
