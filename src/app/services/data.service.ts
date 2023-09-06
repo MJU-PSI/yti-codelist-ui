@@ -327,7 +327,7 @@ export class DataService {
 
   getLanguageCodes(language: string): Observable<Code[]> {
 
-    return this.getCodes('interoperabilityplatform', 'languagecodes', language);
+    return this.getCodes('prs', 'languagecodes', language);
   }
 
   getCodes(registryCodeValue: string, schemeCodeValue: string, language: string | undefined): Observable<Code[]> {
