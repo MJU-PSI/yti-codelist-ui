@@ -68,7 +68,7 @@ const request = 'request';
 const vocabularies = 'vocabularies';
 const concepts = 'concepts';
 const suggestion = 'suggestion';
-const publicAdministrationServicesOntology = 'mju';
+const publicAdministrationServicesOntology = 'prs';
 
 const codeSchemesBasePath = `${apiContext}/${api}/${version}/${codeSchemes}`;
 const codeRegistriesBasePath = `${apiContext}/${api}/${version}/${registries}`;
@@ -327,7 +327,7 @@ export class DataService {
 
   getLanguageCodes(language: string): Observable<Code[]> {
 
-    return this.getCodes('prs', 'languagecodes', language);
+    return this.getCodes(publicAdministrationServicesOntology, 'languagecodes', language);
   }
 
   getCodes(registryCodeValue: string, schemeCodeValue: string, language: string | undefined): Observable<Code[]> {
