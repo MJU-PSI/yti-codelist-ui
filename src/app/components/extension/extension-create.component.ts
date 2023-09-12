@@ -120,7 +120,12 @@ export class ExtensionCreateComponent implements OnInit {
     const save = () => {
       return this.dataService.createExtension(extension, this.codeScheme.codeRegistry.codeValue, this.codeScheme.codeValue, this.autoCreateMembers)
         .pipe(tap(createdExtension => {
-          this.router.navigate(createdExtension.route, { queryParams: { 'goToMembersTab': true } });
+          var queryParams = {};
+          const propertyTypeLocalName: string = this.propertyType.context;
+          if (propertyTypeLocalName === 'Extension') {
+            queryParams = { 'goToMembersTab': true };
+          }          
+          this.router.navigate(createdExtension.route, { queryParams: queryParams });
         }));
     };
 

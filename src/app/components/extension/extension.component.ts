@@ -184,7 +184,11 @@ export class ExtensionComponent implements OnInit, EditingComponent, AfterViewIn
           modalRef.enableClosingActions = true;
           modalRef.showOkButton = true;
         }
-        this.router.navigate(['re'], { skipLocationChange: true }).then(() => this.router.navigate(this.extension.route, { queryParams: { 'goToMembersTab': true, 'created': nrOfCreatedMembers } }));
+        var queryParams = {};
+        if (nrOfCreatedMembers && this.showMembersTab) {
+          queryParams = { 'goToMembersTab': true, 'created': nrOfCreatedMembers };
+        }
+        this.router.navigate(['re'], { skipLocationChange: true }).then(() => this.router.navigate(this.extension.route, { queryParams: queryParams }));
       }, error => {
         this.errorModalService.openSubmitError(error);
       })
