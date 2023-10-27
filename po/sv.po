@@ -222,7 +222,7 @@ msgstr "Länkar"
 msgid "Create code"
 msgstr "Skapa kod"
 
-msgid "Get concept from Terminologies"
+msgid "Get concept from Terminology"
 msgstr "Importera begreppet från ordlistor"
 
 msgid "URI"
@@ -671,10 +671,10 @@ msgstr "Användaruppgifter"
 msgid "Registries"
 msgstr "Register"
 
-msgid "Terminologies"
+msgid "Terminology"
 msgstr "Ordlistor"
 
-msgid "Data Vocabularies"
+msgid "Data models"
 msgstr "Informationsmodeller"
 
 msgid "Comments"
@@ -719,7 +719,7 @@ msgstr "Begreppets namn"
 msgid "Concept definition"
 msgstr "Begreppets definition"
 
-msgid "Suggest the concept to Terminologies"
+msgid "Suggest the concept to Terminology"
 msgstr "Föreslå ett begrepp i verktyget Ordlistor"
 
 msgid "Search for concept"

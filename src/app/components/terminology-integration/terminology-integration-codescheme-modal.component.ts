@@ -200,7 +200,7 @@ export class TerminologyIntegrationCodeschemeModalComponent implements OnInit, A
         this.terminologyIntegrationModalPageTitle = 'terminologyIntegrationModalPageTitleWhenCreatingCode';
       } else {
         this.cancelText = 'Cancel';
-        this.terminologyIntegrationModalPageTitle = 'Get concept from Terminologies';
+        this.terminologyIntegrationModalPageTitle = 'Get concept from Terminology';
       }
       this.terminologyIntegrationModalInstructionText = 'terminologyIntegrationModalInstructionTextWhenCreatingCode';
     } else if (this.targetEntityKind === 'codescheme') {
@@ -209,7 +209,7 @@ export class TerminologyIntegrationCodeschemeModalComponent implements OnInit, A
         this.terminologyIntegrationModalPageTitle = 'terminologyIntegrationModalPageTitleWhenCreatingCodeScheme';
       } else {
         this.cancelText = 'Cancel';
-        this.terminologyIntegrationModalPageTitle = 'Get concept from Terminologies';
+        this.terminologyIntegrationModalPageTitle = 'Get concept from Terminology';
       }
       this.terminologyIntegrationModalInstructionText = 'terminologyIntegrationModalInstructionTextWhenCreatingCodeScheme';
     }

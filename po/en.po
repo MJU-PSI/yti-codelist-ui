@@ -221,7 +221,7 @@ msgstr ""
 msgid "Create code"
 msgstr ""
 
-msgid "Get concept from Terminologies"
+msgid "Get concept from Terminology"
 msgstr ""
 
 msgid "URI"
@@ -658,10 +658,10 @@ msgstr ""
 msgid "Registries"
 msgstr ""
 
-msgid "Terminologies"
+msgid "Terminology"
 msgstr ""
 
-msgid "Data Vocabularies"
+msgid "Data models"
 msgstr ""
 
 msgid "Comments"
@@ -706,7 +706,7 @@ msgstr ""
 msgid "Concept definition"
 msgstr ""
 
-msgid "Suggest the concept to Terminologies"
+msgid "Suggest the concept to Terminology"
 msgstr ""
 
 msgid "Search for concept"
@@ -728,7 +728,7 @@ msgstr ""
 
 msgid "Concept suggestion instruction text"
 msgstr ""
-"If the proper concept does not exist, please suggest it to Terminologies. Choose the "
+"If the proper concept does not exist, please suggest it to Terminology. Choose the "
 "vocabulary for the suggestion."
 
 msgid "Email"
@@ -793,7 +793,7 @@ msgid "INFO_TEXT_CODELIST_NAME"
 msgstr "The name of the code list"
 
 msgid "INFO_TEXT_VOCABULARIES_URI"
-msgstr "Permanent web address of the concept in Terminologies tool"
+msgstr "Permanent web address of the concept in Terminology tool"
 
 msgid "INFO_TEXT_DEFAULT_CODE"
 msgstr ""
@@ -1305,7 +1305,7 @@ msgstr ""
 "Code value is not valid on row {{ identifier }}. Allowed characters are: a-zA-Z0-9_-"
 
 msgid "ERR_MSG_CANT_REACH_TERMINOLOGY_API"
-msgstr "Cannot reach Terminologies tool."
+msgstr "Cannot reach Terminology tool."
 
 msgid "ERR_MSG_USER_ROW_MISSING_PROPERTYTYPE"
 msgstr ""
@@ -1590,14 +1590,14 @@ msgid "cancelTextForCodeSchemeCreation"
 msgstr "Create code list without concept"
 
 msgid "terminologyIntegrationModalPageTitleWhenCreatingCode"
-msgstr "Create code name by importing it from Terminologies tool"
+msgstr "Create code name by importing it from Terminology tool"
 
 msgid "terminologyIntegrationModalPageTitleWhenCreatingCodeScheme"
-msgstr "Create code list name by importing it from Terminologies tool"
+msgstr "Create code list name by importing it from Terminology tool"
 
 msgid "terminologyIntegrationModalInstructionTextWhenCreatingCode"
 msgstr ""
-"Search for a concept which corresponds to the name of the code from the Terminologies "
+"Search for a concept which corresponds to the name of the code from the Terminology "
 "tool. Bring the concept as the name of the code by clicking on a search result. The term "
 "and the definition of the concept will be copied as the name and the definition of the "
 "code. Also, the URI of the concept will be copied to the Reference Data tool."
@@ -1605,7 +1605,7 @@ msgstr ""
 msgid "terminologyIntegrationModalInstructionTextWhenCreatingCodeScheme"
 msgstr ""
 "Search for a concept which corresponds to the name of the code list from the "
-"Terminologies tool. Bring the concept as the name of the code list by clicking on a "
+"Terminology tool. Bring the concept as the name of the code list by clicking on a "
 "search result. The term and the definition of the concept will be copied as the name and "
 "the definition of the code list. Also, the URI of the concept will be copied to the "
 "Reference Data tool."
@@ -1636,7 +1636,7 @@ msgid "searchresults"
 msgstr "search results"
 
 msgid "SUGGEST CONCEPT?"
-msgstr "Suggestion to Terminologies"
+msgstr "Suggestion to Terminology"
 
 msgid "SUGGEST CONCEPT MODAL QUESTION"
 msgstr "Do you want to suggest concept {{concept}} to vocabulary {{vocabulary}}?"

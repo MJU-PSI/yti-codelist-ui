@@ -223,7 +223,7 @@ msgstr "Linkit"
 msgid "Create code"
 msgstr "Luo koodi"
 
-msgid "Get concept from Terminologies"
+msgid "Get concept from Terminology"
 msgstr "Tuo käsite sanastoista"
 
 msgid "URI"
@@ -669,10 +669,10 @@ msgstr "Käyttäjätiedot"
 msgid "Registries"
 msgstr "Rekisterit"
 
-msgid "Terminologies"
+msgid "Terminology"
 msgstr "Sanastot"
 
-msgid "Data Vocabularies"
+msgid "Data models"
 msgstr "Tietomallit"
 
 msgid "Comments"
@@ -717,7 +717,7 @@ msgstr "Käsitteen  nimi"
 msgid "Concept definition"
 msgstr "Käsitteen määritelmä"
 
-msgid "Suggest the concept to Terminologies"
+msgid "Suggest the concept to Terminology"
 msgstr "Ehdota käsitettä Sanastot-työkaluun"
 
 msgid "Search for concept"

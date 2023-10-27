@@ -43,7 +43,7 @@ msgstr ""
 msgid "Create code"
 msgstr ""
 
-msgid "Get concept from Terminologies"
+msgid "Get concept from Terminology"
 msgstr ""
 
 msgid "URI"
@@ -485,10 +485,10 @@ msgstr ""
 msgid "Registries"
 msgstr ""
 
-msgid "Terminologies"
+msgid "Terminology"
 msgstr ""
 
-msgid "Data Vocabularies"
+msgid "Data models"
 msgstr ""
 
 msgid "Comments"
@@ -533,7 +533,7 @@ msgstr ""
 msgid "Concept definition"
 msgstr ""
 
-msgid "Suggest the concept to Terminologies"
+msgid "Suggest the concept to Terminology"
 msgstr ""
 
 msgid "Search for concept"
