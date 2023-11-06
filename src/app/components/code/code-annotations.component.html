@@ -4,8 +4,6 @@
     <app-information-symbol [infoText]="'INFO_TEXT_CODELIST_ANNOTATIONS'"></app-information-symbol>
   </dt>
 
-  <span translate>INFO_TEXT_CODELIST_ANNOTATIONS</span>
-
   <dd class="annotations">
     <form [formGroup]="codeAnnotationForm" #form="ngForm">
       <div *ngFor="let codeAnnotation of selectableCodeAnnotations">

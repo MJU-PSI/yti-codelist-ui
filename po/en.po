@@ -1820,7 +1820,7 @@ msgid "Back"
 msgstr ""
 
 msgid "INFO_TEXT_CODELIST_ANNOTATIONS"
-msgstr "TODO Some text for annotations"
+msgstr "Annotations"
 
 msgid "Select annotation"
 msgstr ""
