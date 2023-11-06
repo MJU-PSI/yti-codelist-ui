@@ -337,8 +337,8 @@ msgstr "Z uporabo uvožene datoteke se ustvari nov šifrant ali pa se starejši 
 msgid "Import code list from a file"
 msgstr "Uvozite šifrant iz datoteke"
 
-msgid "You can also add a new code list by creating it via the user interface of the Koodistot service."
-msgstr "Nov šifrant lahko dodate tudi tako, da ga ustvarite preko uporabniškega vmesnika storitve Koodistot."
+msgid "You can also add a new code list by creating it via the user interface."
+msgstr "Nov šifrant lahko dodate tudi tako, da ga ustvarite preko uporabniškega vmesnika."
 
 msgid "Create new code list"
 msgstr "Ustvarite nov šifrant"
@@ -503,7 +503,7 @@ msgid "variantModalPageTitle"
 msgstr "Šifrantu priložite varianto"
 
 msgid "variantModalInstructionText"
-msgstr "Poiščite šifrant v referenčnih podatkih"
+msgstr "Poiščite šifrant"
 
 msgid "LABEL_TEXT_CREATE_EXTENSION_ID"
 msgstr "Vrednost šifre razširitve"
@@ -983,7 +983,7 @@ msgid "INFO_TEXT_CHOOSE_HIERARCHICAL_PARENT_MEMBER"
 msgstr "Izberite hierarhičnega nadrejenega člana za tega člana. Ta izbira bo določila hierarhično razmerje med člani."
 
 msgid "INFO_TEXT_CODELIST_FEEDBACK_CHANNEL"
-msgstr "Kanal povratnih informacij za referenčne podatke, npr. elektronski naslov."
+msgstr "Kanal povratnih informacij za šifrant, npr. elektronski naslov."
 
 msgid "INFO_TEXT_EMAIL_SUBSCRIPTIONS"
 msgstr "Ta funkcija izbere, ali so naročnine aktivne ali ne. Če odkljukate polje »Dnevno«, lahko onemogočite vse naročnine hkrati. Če ga označite, se naročnine znova aktivirajo."
@@ -1481,10 +1481,10 @@ msgid "terminologyIntegrationModalPageTitleWhenCreatingCodeScheme"
 msgstr "Ustvarite ime šifranta tako, da ga uvozite iz orodja Terminologija"
 
 msgid "terminologyIntegrationModalInstructionTextWhenCreatingCode"
-msgstr "Poiščite pojem, ki ustreza imenu šifre iz orodja Terminologija. Prinesite pojem kot ime šifre s klikom na rezultat iskanja. Izraz in definicija pojma bosta kopirana kot ime in definicija šifre. Prav tako bo URI pojma kopiran v orodje za referenčne podatke."
+msgstr "Poiščite pojem, ki ustreza imenu šifre iz orodja Terminologija. Prinesite pojem kot ime šifre s klikom na rezultat iskanja. Izraz in definicija pojma bosta kopirana kot ime in definicija šifre. Prav tako bo URI pojma kopiran v orodje za šifrante."
 
 msgid "terminologyIntegrationModalInstructionTextWhenCreatingCodeScheme"
-msgstr "Poiščite pojem, ki ustreza imenu šifranta v orodju Terminologija. Pojem prinesite kot ime šifranta s klikom na rezultat iskanja. Izraz in definicija pojma bosta kopirana kot ime in definicija šifranta. Prav tako bo URI pojma kopiran v orodje za referenčne podatke."
+msgstr "Poiščite pojem, ki ustreza imenu šifranta v orodju Terminologija. Pojem prinesite kot ime šifranta s klikom na rezultat iskanja. Izraz in definicija pojma bosta kopirana kot ime in definicija šifranta. Prav tako bo URI pojma kopiran v orodje za šifrante."
 
 msgid "CHANGE STATUS?"
 msgstr ""
