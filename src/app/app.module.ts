@@ -146,6 +146,8 @@ import { AnnotationCreateComponent } from './components/annotation/annotation-cr
 import { AnnotationsComponent } from './components/annotation/annotations.component';
 import { AnnotationsTableComponent } from './components/annotation/annotations-table.component';
 import { AnnotationComponent } from './components/annotation/annotation.component';
+import { AccessibilityPageComponent } from './components/accessibility/accessibility-page.component';
+import { PrivacyPageComponent } from './components/privacy/privacy-page.component';
 
 function removeEmptyValues(obj: {}) {
 
@@ -197,6 +199,8 @@ const appRoutes: Routes = [
   { path: 'styles', component: StyleTestComponent },
   { path: 'userDetails', component: UserDetailsComponent },
   { path: 'information', component: InformationAboutServiceComponent },
+  { path: 'accessibility', component: AccessibilityPageComponent },
+  { path: 'privacy', component: PrivacyPageComponent },
   { path: 'registries', component: RegistriesComponent, pathMatch: 'full' },
   { path: 'registry', component: RegistryComponent, pathMatch: 'full' },
   { path: 'createannotation', component: AnnotationCreateComponent, pathMatch: 'full' },
@@ -337,7 +341,9 @@ export function createMissingTranslationHandler(): MissingTranslationHandler {
     AnnotationComponent,
     CodeSchemeAnnotationsComponent,
     CodeAnnotationsComponent,
-    SearchLinkedAnnotationModalComponent
+    SearchLinkedAnnotationModalComponent,
+    AccessibilityPageComponent,
+    PrivacyPageComponent
   ],
   imports: [
     BrowserModule,

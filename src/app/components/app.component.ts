@@ -21,7 +21,14 @@ export class AppComponent {
   }
 
   navigateToInformation() {
-
     this.router.navigate(['/information']);
+  }
+
+  navigateToAccessibility() {
+    this.router.navigate(['/accessibility']);
+  }
+
+  navigateToPrivacy() {
+    this.router.navigate(['/privacy']);
   }
 }

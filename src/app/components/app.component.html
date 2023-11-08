@@ -6,5 +6,8 @@
     <router-outlet></router-outlet>
   </div>
   <app-footer [title]="'Reference Data' | translate"
-              (informationClick)="navigateToInformation()"></app-footer>
+              (informationClick)="navigateToInformation()"
+              (accessibilityClick)="navigateToAccessibility()"
+              (privacyClick)="navigateToPrivacy()">
+  </app-footer>
 </div>

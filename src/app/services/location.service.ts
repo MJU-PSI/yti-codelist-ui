@@ -13,6 +13,8 @@ import { Annotation } from '../entities/annotation';
 
 const frontPage = { localizationKey: 'Front page', route: [''] };
 const informationAboutServicePage = { localizationKey: 'Information about the service', route: ['information'] };
+const accessibilityPage = { localizationKey: 'Accessibility', route: ['accessibility']};
+const privacyPage = { localizationKey: 'Privacy and protection of personal data', route: ['privacy']};
 const codeSchemeImportAndCreatePage = { localizationKey: 'Add code list', route: ['importandcreatecodescheme'] };
 const createNewVersionOfCodeSchemePage = { localizationKey: 'Create a new version', route: ['createcodescheme'] };
 const createCodeSchemePage = { localizationKey: 'Create code list', route: ['createcodescheme'] };
@@ -116,6 +118,14 @@ export class LocationService implements OnDestroy {
 
   atInformationAboutService(): void {
     this.changeLocation([informationAboutServicePage]);
+  }
+
+  atAccessibilityPage(): void {
+    this.changeLocation([accessibilityPage]);
+  }
+
+  atPrivacyPage(): void {
+    this.changeLocation([privacyPage]);
   }
 
   atAnnotationCreatePage(): void {
