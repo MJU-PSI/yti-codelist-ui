@@ -1,24 +1,49 @@
 <div class="content-box">
-  <h1>Šifranti</h1>
-  <p>
-    Modul Šifranti vsebuje ključne skupne šifrante, ki se uporabljajo v okviru javne uprave.
-  </p>
-  <p>
-    Šifranti so standardizirani nizi šifer in z njimi povezane vrednosti, ki se uporabljajo za predstavitev določenih atributov v nizih podatkov.<br>
-    Zagotavljajo doslednost in enotnost pri predstavitvi podatkov v različnih sistemih in aplikacijah. Tipično se šifranti ne spreminjajo pogosto, razen ob občasnih revizijah.<br>
-    Šifranti pridobijo svojo vrednost, kadar so široko sprejeti in v široki uporabi.
-  </p>
-  <p>
-    Enotni šifranti omogočajo:
-  </p>
-  <ul>
-    <li>Dosledno predstavitev podatkov,</li>
-    <li>Interoperabilnost sistemov,</li>
-    <li>Lažjo integracijo in medresorsko izmenjavo podatkov,</li>
-    <li>Lažjo izmenjavo podatkov z zunanjimi partnerji kot so zasebna podjetja, nevladne organizacije ali mednarodne organizacije,</li>
-    <li>Učinkovitejšo analizo podatkov.</li>
-  </ul>
-  <p>
-    Modul šifranti se neposredno povezuje s modulom Terminologija in modulom Podatkovni modeli.
-  </p>
+  <ng-container *ngIf="currentLang === 'en'">
+    <h1>Reference Data</h1>
+    <p>
+      The Reference Data module contains key common code lists used in public administration.
+    </p>
+    <p>
+      Code lists are standardised sets of codes and their associated values that are used to represent certain attributes in data sets. They ensure consistency and uniformity in the presentation of data across different systems and applications. Typically, code lists do not change often, except for occasional revisions. Code lists gain value when they are widely accepted and used. Uniform code lists enable:
+    </p>
+    <p>
+      Consistent presentation of data.
+    </p>
+    <ul>
+      <li>Consistent presentation of data.</li>
+      <li>Interoperability of systems.</li>
+      <li>Easier integration and data exchange between sectors and organizations.</li>
+      <li>Facilitate data exchange with external partners such as private companies, non-governmental or international organizations.</li>
+      <li>More effective data analysis.</li>
+    </ul>
+    <p>
+      The Reference Data module is directly linked to the Terminology and Data Models modules.
+    </p>
+  </ng-container>
+
+  <ng-container *ngIf="currentLang !== 'en'">
+    <h1>Šifranti</h1>
+    <p>
+      Modul Šifranti vsebuje ključne skupne šifrante, ki se uporabljajo v okviru javne uprave.
+    </p>
+    <p>
+      Šifranti so standardizirani nizi šifer in z njimi povezanih vrednosti, ki se uporabljajo za predstavitev določenih atributov v nizih podatkov.<br>
+      Zagotavljajo doslednost in enotnost pri predstavitvi podatkov v različnih sistemih in aplikacijah. Šifranti se običajno ne spreminjajo pogosto, razen ob občasnih revizijah.<br>
+      Šifranti pridobijo svojo vrednost, kadar so široko sprejeti in uporabljani.
+    </p>
+    <p>
+      Enotni šifranti omogočajo:
+    </p>
+    <ul>
+      <li>Dosledno predstavitev podatkov,</li>
+      <li>Interoperabilnost sistemov,</li>
+      <li>Lažjo integracijo in medresorsko izmenjavo podatkov,</li>
+      <li>Lažjo izmenjavo podatkov z zunanjimi partnerji kot so zasebna podjetja, nevladne ali mednarodne organizacije,</li>
+      <li>Učinkovitejšo analizo podatkov.</li>
+    </ul>
+    <p>
+      Modul šifranti se neposredno povezuje z moduloma Terminologija in Podatkovni modeli.
+    </p>
+  </ng-container>
 </div>
