@@ -597,12 +597,7 @@ msgid "search results"
 msgstr ""
 
 msgid "Frontpage long description"
-msgstr ""
-"The Reference Data tool is a technical platform for collecting and sharing common public "
-"sector code lists and reference data. The code lists and their language versions are up-"
-"to-date, reliable, browsable to everyone beyond sector limits and downloadable to one's "
-"own use. Using common code lists enables interoperability in statistics and between IT "
-"systems."
+msgstr "The Reference data tool is used to collect, maintain and publish common code lists of public administration."
 
 msgid "Extend search to"
 msgstr ""
