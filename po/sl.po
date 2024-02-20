@@ -8,7 +8,7 @@ msgstr ""
 "Language: sl\n"
 
 msgid "No codes were found with the starting status. No changes to code statuses."
-msgstr "Ni bilo najdenih šifr z začetnim stanjem. Ni sprememb na stanjih šifr."
+msgstr "Ni bilo najdenih šifer z začetnim stanjem. Ni sprememb na stanjih šifer."
 
 msgid "Status changed to one code."
 msgstr "Stanje spremenjeno na eno šifro."
@@ -41,7 +41,7 @@ msgid "{{title}}"
 msgstr "{{naslov}}"
 
 msgid "No new members created. All codes have a corresponding member already or there are no codes in the scope of the extension."
-msgstr "Ni ustvarjenih novih članov. Vse šifre že imajo ustreznega člana ali pa v obsegu razširitve ni šifr."
+msgstr "Ni ustvarjenih novih članov. Vse šifre že imajo ustreznega člana ali pa v obsegu razširitve ni šifer."
 
 msgid " missing member created."
 msgstr " manjkajoči član ustvarjen."
@@ -200,7 +200,7 @@ msgid "Broader code"
 msgstr "Nadrejena šifra"
 
 msgid "Sub code list"
-msgstr "Seznam povezanih šifr"
+msgstr "Seznam povezanih šifer"
 
 msgid "Validity"
 msgstr "Veljavnost"
@@ -248,7 +248,7 @@ msgid "Import codes to code list"
 msgstr "Uvozite šifre v šifrant"
 
 msgid "INFO_TEXT_IMPORT_CODES_MODAL_HELP_TEXT"
-msgstr "To funkcijo lahko uporabite za posodobitev podatkov, ki jih vrne funkcija izvoznih šifr."
+msgstr "To funkcijo lahko uporabite za posodobitev podatkov, ki jih vrne funkcija izvoznih šifer."
 
 msgid "File format"
 msgstr "Tip datoteke"
@@ -290,7 +290,7 @@ msgid "Language code"
 msgstr "Šifra jezika"
 
 msgid "Change note"
-msgstr "Spremenite opombo"
+msgstr "Opomba spremembe"
 
 msgid "Version"
 msgstr "Različica"
@@ -326,7 +326,7 @@ msgid "CODE EXTENSIONS"
 msgstr "RAZŠIRITVE ŠIFRE"
 
 msgid "Import code list by uploading a CSV- or Excel formatted file. Look up more detailed guide and information about using code list files from"
-msgstr "Uvozite seznam šifr tako, da naložite datoteko v formatu CSV ali Excel. Poiščite podrobnejša navodila in informacije o uporabi datotek iz šifranta pri"
+msgstr "Uvozite seznam šifer tako, da naložite datoteko v formatu CSV ali Excel. Poiščite podrobnejša navodila in informacije o uporabi datotek iz šifranta pri"
 
 msgid "LINK_TXT_FROM_SERVICE_HELP"
 msgstr "pomoč servisa"
@@ -356,7 +356,7 @@ msgid "INFO_TEXT_IMPORT_CODELIST_FRONTPAGE_MODAL_HELP_TEXT"
 msgstr "To funkcijo lahko uporabite za uvoz novega šifranta ali posodobitev podatkov, vrnjenih s funkcijo izvoza šifranta."
 
 msgid "INFO_TEXT_IMPORT_CODELIST_MODAL_HELP_TEXT"
-msgstr "To funkcijo lahko uporabite za posodobitev podatkov, vrnjenih s funkcijo Izvozi seznam šifr."
+msgstr "To funkcijo lahko uporabite za posodobitev podatkov, vrnjenih s funkcijo Izvozi seznam šifer."
 
 msgid "Cumulative code list"
 msgstr "Kumulativni šifrant"
@@ -368,10 +368,10 @@ msgid "Default code"
 msgstr "Privzeta šifra"
 
 msgid "Change code statuses at the same time"
-msgstr "Spremenite stanja šifr istočasno"
+msgstr "Spremenite stanja šifer istočasno"
 
 msgid "Update code list's codes' statuses"
-msgstr "Posodobite stanja šifr"
+msgstr "Posodobite stanja šifer"
 
 msgid "Name"
 msgstr "Ime"
@@ -386,7 +386,7 @@ msgid "Remove email subscription"
 msgstr "Odstranite naročnino na e-poštna obvestila"
 
 msgid "Import codes"
-msgstr "Uvoz šifr"
+msgstr "Uvoz šifer"
 
 msgid "Create a new version"
 msgstr "Ustvarite novo različico"
@@ -434,16 +434,16 @@ msgid "Export codelist CSV"
 msgstr "Izvoz šifranta CSV"
 
 msgid "Export codes CSV"
-msgstr "Izvoz šifr CSV"
+msgstr "Izvoz šifer CSV"
 
 msgid "Export codes Excel"
-msgstr "Izvoz šifr Excel"
+msgstr "Izvoz šifer Excel"
 
 msgid "Export codelist JSON"
-msgstr "Izvoz seznama šifr JSON"
+msgstr "Izvoz seznama šifer JSON"
 
 msgid "Show codelist JSON"
-msgstr "Prikaz seznama šifr JSON"
+msgstr "Prikaz seznama šifer JSON"
 
 msgid "Show JSON enumeration"
 msgstr "Prikaz naštevanja JSON"
@@ -668,7 +668,7 @@ msgid "Registry name"
 msgstr "Ime registra"
 
 msgid "Code registry name"
-msgstr "Ime registra šifr"
+msgstr "Ime registra šifer"
 
 msgid "Delete registry"
 msgstr "Izbris registra"
@@ -902,7 +902,7 @@ msgid "INFO_TEXT_REGISTRY_LAST_MODIFICATION"
 msgstr "Podatki o časovnem registru so bili nazadnje spremenjeni."
 
 msgid "INFO_TEXT_EXTENSION_CODE_LIST"
-msgstr "Seznam šifr, s katerim je povezana ta razširitev"
+msgstr "Seznam šifer, s katerim je povezana ta razširitev"
 
 msgid "INFO_TEXT_EXTENSION_ID"
 msgstr "Vrednost šifre razširitve"
@@ -932,7 +932,7 @@ msgid "INFO_TEXT_CREATE_EXTENSION_ID"
 msgstr "Tehnična šifra ali stalni identifikator razširitve"
 
 msgid "INFO_TEXT_FRONTPAGE_SEARCH"
-msgstr "Imena šifrantov se privzeto iščejo. Imena šifr lahko iščete tako, da potrdite polje \"Razširite iskanje na šifre\""
+msgstr "Imena šifrantov se privzeto iščejo. Imena šifer lahko iščete tako, da potrdite polje \"Razširite iskanje na šifre\""
 
 msgid "INFO_TEXT_FRONTPAGE_FILTER_W_INFODOMAIN"
 msgstr "Vsi šifranti so razvrščeni v informacijska področja. Če želite videti šifrante, razvrščene v določeno informacijsko področje, kliknite ime informacijsko področje. Filter lahko odstranite s ponovnim klikom na ime informacijsko področje."
@@ -965,16 +965,16 @@ msgid "INFO_TEXT_SUBCODESCHEME"
 msgstr "Zunanji šifrant, ki se nanaša na to šifro"
 
 msgid "INFO_TEXT_CUMULATIVE"
-msgstr "Kumulativni šifrant ne dovoljuje brisanja šifr iz katere koli različice."
+msgstr "Kumulativni šifrant ne dovoljuje brisanja šifer iz katere koli različice."
 
 msgid "INFO_TEXT_CUMULATIVE_CREATION_PAGE"
-msgstr "Kumulativni šifrant ne dovoljuje brisanja šifr iz katere koli različice. Obstoj šifr je zagotovljen od ene različice do druge."
+msgstr "Kumulativni šifrant ne dovoljuje brisanja šifer iz katere koli različice. Obstoj šifer je zagotovljen od ene različice do druge."
 
 msgid "INFO_TEXT_CUMULATIVE_CODELIST_UPDATE_PAGE"
-msgstr "Kumulativni šifrant ne dovoljuje brisanja šifr iz katere koli različice. Obstoj šifr je zagotovljen od ene različice do druge. Če je šifrant označen kot kumulativen, tega ali katere koli od njegovih prihodnjih različic nikoli ne morete označiti kot nekumulativnega."
+msgstr "Kumulativni šifrant ne dovoljuje brisanja šifer iz katere koli različice. Obstoj šifer je zagotovljen od ene različice do druge. Če je šifrant označen kot kumulativen, tega ali katere koli od njegovih prihodnjih različic nikoli ne morete označiti kot nekumulativnega."
 
 msgid "INFO_TEXT_CHOOSE_CODE_FOR_THIS_MEMBER"
-msgstr "Izberite šifro za tega člana s seznamov šifr te razširitve."
+msgstr "Izberite šifro za tega člana s seznamov šifer te razširitve."
 
 msgid "INFO_TEXT_CHOOSE_OTHER_SIDE_OF_CROSS_REFERENCE"
 msgstr "Izberite drugega člana navzkrižnega sklicevanja. Če izbira ni aktivna, za člana že obstaja navzkrižno sklicevanje. Navzkrižno sklicevanje je možno samo na en način."
@@ -1277,7 +1277,7 @@ msgid "ERR_MSG_USER_CODE_CANNOT_BE_DELETED"
 msgstr "Te šifre ni mogoče izbrisati."
 
 msgid "ERR_MSG_USER_CODE_CANNOT_BE_DELETED_BECAUSE_CUMULATIVE_CODELIST"
-msgstr "Te šifre ni mogoče izbrisati, ker je del kumulativnega seznama šifr."
+msgstr "Te šifre ni mogoče izbrisati, ker je del kumulativnega seznama šifer."
 
 msgid "ERR_MSG_USER_CODE_HIERARCHY_MAXLEVEL_REACHED"
 msgstr "Največje možno število hierarhij pri šifrah je bilo doseženih."
@@ -1349,10 +1349,10 @@ msgid "ERR_MSG_USER_CODESCHEME_CODEREGISTRY_DOES_NOT_MATCH"
 msgstr "Register šifrantov se ne ujema."
 
 msgid "ERR_MSG_USER_CODE_CODESCHEME_DOES_NOT_MATCH"
-msgstr "Neujemanje seznama šifr v vhodnih podatkih, povezano s šifro."
+msgstr "Neujemanje seznama šifer v vhodnih podatkih, povezano s šifro."
 
 msgid "ERR_MSG_USER_EXTENSION_PARENTCODESCHEME_DOES_NOT_MATCH"
-msgstr "Neujemanje seznama razširitvenih šifr."
+msgstr "Neujemanje seznama razširitvenih šifer."
 
 msgid "ERR_MSG_USER_MEMBER_EXTENSION_DOES_NOT_MATCH"
 msgstr "Razširitev člana se ne ujema."
@@ -1433,7 +1433,7 @@ msgid "ERR_MSG_USER_MEMBER_NOT_FOUND_WITH_URI"
 msgstr "Člana ni bilo mogoče najti z URI: {{identifier}}"
 
 msgid "ERR_MSG_USER_WRONG_CODESCHEME_IN_FILE_UPLOAD_WHEN_UPDATING_PARTICULAR_CODESCHEME"
-msgstr "Seznam šifr v datoteki ni isti kot cilj posodobitve."
+msgstr "Seznam šifer v datoteki ni isti kot cilj posodobitve."
 
 msgid "ERR_MSG_USER_ORDER_INVALID_VALUE"
 msgstr "V vrstici {{ identifier }} je določena neveljavna vrednost ORDER."
@@ -1532,7 +1532,7 @@ msgid "CREATE MISSING MEMBERS MODAL TITLE"
 msgstr "Ustvarite manjkajoče člane"
 
 msgid "CREATE MISSING MEMBERS MODAL BODY TEXT"
-msgstr "Ta funkcionalnost ustvari manjkajoče člane za to razširitev. Manjkajoči člani bodo ustvarjeni iz šifr naslednjih seznamov šifr, če v šifri manjka član."
+msgstr "Ta funkcionalnost ustvari manjkajoče člane za to razširitev. Manjkajoči člani bodo ustvarjeni iz šifer naslednjih seznamov šifer, če v šifri manjka član."
 
 msgid "Please wait. This could take a while..."
 msgstr "Prosim počakajte. To lahko traja nekaj časa..."
@@ -1568,7 +1568,7 @@ msgid "INFO_TEXT_MASS_MIGRATE_CODELIST_CODES_MODAL_HELP_TEXT"
 msgstr "To funkcijo lahko uporabite za posodobitev podatkov, vrnjenih s funkcijo Izvozi šifrant."
 
 msgid "Change code statuses at the same time?"
-msgstr "Istočasna sprememba stanja šifr?"
+msgstr "Istočasna sprememba stanja šifer?"
 
 msgid "CODE STATUS CHANGES RESULTS"
 msgstr "Rezultat sprememb statusa šifre"
